@@ -1,0 +1,3 @@
+# Translator's notes: sbh2.5 (Dhātu-prabheda — Analysis of Elements)
+
+The fourth of the five *carita-viśodhana* practices, corresponding to the *māna-carita* (conceit-temperament) practitioner. Analysis of the six elements — *pṛthivī* (earth), *ap* (water), *tejas* (fire), *vāyu* (air), *ākāśa* (space), *vijñāna* (consciousness) — each treated in inward (*ādhyātmika*) and outward (*bāhya*) aspect. The body-parts list, the *piṇḍa-saṁjñā* (lump-perception) dissolution, and the temperament rationale for why conceit yields to elemental analysis (the body that conceit clings to disclosed as a temporary aggregate of impersonal elements).

@@ -1,0 +1,3 @@
+# Translator's notes: sbh2.1 (Vyāpī-ālambana — The Pervasive Object)
+
+The first of the four *ālambana* (objects of meditative attention) introduced in Yogasthāna II. The 'pervasive' object is the universal one — common to all practitioners regardless of temperament — and it provides the framework within which the other three (carita-viśodhana, kauśalya, kleśa-viśodhana) operate. Comprised of four kinds: *savikalpa-pratibimba* (image with discrimination), *nirvikalpa-pratibimba* (image without discrimination), *vastu-paryantatā* (the limit of things), and *kārya-pariniṣpatti* (the consummation of the task).

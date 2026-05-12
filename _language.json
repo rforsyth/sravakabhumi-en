@@ -1,0 +1,12 @@
+{
+  "san": {
+    "type": "language",
+    "name": "Sanskrit",
+    "is_root": true
+  },
+  "en": {
+    "type": "language",
+    "name": "English",
+    "is_root": false
+  }
+}

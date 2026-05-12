@@ -1,0 +1,3 @@
+# Translator's notes: sbh2.3 (Maitrī — Lovingkindness)
+
+The second of the five *carita-viśodhana* practices, corresponding to the *dveṣa-carita* (hatred-temperament) practitioner. The Śrāvakabhūmi treats *maitrī* in its definitional aspect — three marks (*mitra-pakṣa*, friend-side; *amitra-pakṣa*, enemy-side; *udāsīna-pakṣa*, neutral-side), three intensities, the *brahma-vihāra* division of labor across the four immeasurables, and the temperament rationale for why hatred yields specifically to the cultivation of friendliness. Procedural development of the practice itself is given separately in the vipaśyanā illustration in [sbh3.2](sbh3.2.html).

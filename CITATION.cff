@@ -1,0 +1,23 @@
+cff-version: 1.2.0
+title: "Śrāvakabhūmi (Working Bilingual Edition)"
+message: "Please cite this translation as follows."
+type: dataset
+authors:
+  - family-names: Forsyth
+    given-names: Ryan
+abstract: >
+  A working bilingual edition of the Śrāvakabhūmi
+  (Asaṅga, 4th century CE), prepared from the Karunesha Shukla (1973)
+  Sanskrit edition. AI-assisted; not a scholarly
+  critical edition.
+keywords:
+  - Buddhism
+  - Yogācāra
+  - Śrāvakabhūmi
+  - Asaṅga
+  - meditation
+  - Sanskrit
+license: CC0-1.0
+url: "https://rforsyth.github.io/sravakabhumi-en/"
+repository-code: "https://github.com/rforsyth/sravakabhumi-en"
+year: 2026

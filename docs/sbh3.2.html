@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Vipaśyanā Method — Śrāvakabhūmi</title>
+<style>
+  :root {
+    --san-color: #2a2a2a;
+    --en-color: #2a2a2a;
+    --id-color: #999;
+    --rule-color: #e6e1d8;
+    --bg: #fbf8f1;
+    --max-width: 1400px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Charter", "Georgia", "Iowan Old Style", serif;
+    color: var(--en-color);
+    line-height: 1.55;
+  }
+  header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2.5rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--rule-color);
+  }
+  header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  header .sub {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  header nav {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  header nav a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  header nav a:hover { color: #000; text-decoration: underline; }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+  }
+  .col-headings {
+    display: grid;
+    grid-template-columns: 4rem 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule-color);
+    font-size: 0.78rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .col-headings .label-id { color: transparent; }
+  .row {
+    display: grid;
+    grid-template-columns: 4rem 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted var(--rule-color);
+  }
+  .row.heading {
+    margin-top: 1.5rem;
+    border-bottom: none;
+  }
+  .row.heading .san, .row.heading .en {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .row:target {
+    background: #f4ecd8;
+    border-left: 3px solid #c9a96e;
+    margin-left: -1rem;
+    padding-left: calc(1rem - 3px);
+  }
+  .seg-id {
+    color: var(--id-color);
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 0.75rem;
+    padding-top: 0.25rem;
+  }
+  .seg-id a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .seg-id a:hover {
+    color: #2a2a2a;
+    text-decoration: underline;
+  }
+  .san {
+    color: var(--san-color);
+    font-style: italic;
+  }
+  .en {
+    color: var(--en-color);
+  }
+  .en:empty::before {
+    content: "—";
+    color: #ccc;
+  }
+  .en-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .comment {
+    font-size: 0.85rem;
+    color: #6a6a6a;
+    line-height: 1.5;
+    padding-left: 0.6rem;
+    border-left: 2px solid #e6e1d8;
+  }
+  .intro {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    padding: 1rem 1.2rem;
+    background: #f4ecd8;
+    border-left: 3px solid #c9a96e;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #3a3a3a;
+  }
+  .intro p { margin: 0 0 0.6rem; }
+  .intro p:last-child { margin-bottom: 0; }
+  .intro em { font-style: italic; }
+  @media (max-width: 900px) {
+    .col-headings, .row {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+    .row { padding: 0.75rem 0; }
+    .seg-id { font-size: 0.7rem; }
+    .col-headings { display: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>The Vipaśyanā Method</h1>
+  <div class="sub">Śrāvakabhūmi · Sanskrit (Shukla 1973) ↔ English (1 rendering)</div>
+  <nav><a href="index.html">← All topics</a><a href="sbh3.2-en.html">View English only →</a></nav>
+</header>
+<main>
+<div class="intro"><p>The fourfold <em>vipaśyanā</em> (insight) method — <em>vicinoti</em> (investigates), <em>pravicinoti</em> (thoroughly investigates), <em>parivitarkayati</em> (reflects upon), <em>parimīmāṁsām āpadyate</em> (engages in full reflection). The chapter unfolds the framework through three gateways (<em>savikalpa-pratibimba</em>, <em>nirvikalpa-pratibimba</em>, <em>vastu-paryantatā</em>), six investigation-subjects (meaning, things, characteristics, sides, time, reasoning), and four reasonings (dependence, function, demonstration, real nature). Five illustrations apply the method to specific objects: aśubhā, maitrī, idaṁ-pratyayatā, dhātu-prabheda, ānāpānasmṛti — the first two are translated; the remaining three are present in Sanskrit but not yet rendered in English.</p></div>
+<div class="col-headings">
+  <div class="label-id">id</div>
+  <div>Sanskrit</div>
+  <div>English</div>
+</div>
+<div class="row heading" id="sbh3.2:0.1"><div class="seg-id"><a href="#sbh3.2:0.1">sbh3.2:0.1</a></div><div class="san">Śrāvakabhūmi</div><div class="en">Śrāvakabhūmi</div></div>
+<div class="row heading" id="sbh3.2:0.2"><div class="seg-id"><a href="#sbh3.2:0.2">sbh3.2:0.2</a></div><div class="san">vipaśyanā</div><div class="en">The Vipaśyanā Method</div></div>
+<div class="row" id="sbh3.2:1.1"><div class="seg-id"><a href="#sbh3.2:1.1">sbh3.2:1.1</a></div><div class="san">caturvidhā vipaśyanā |</div><div class="en">*Vipaśyanā* is fourfold.</div></div>
+<div class="row" id="sbh3.2:1.2"><div class="seg-id"><a href="#sbh3.2:1.2">sbh3.2:1.2</a></div><div class="san">katamā |</div><div class="en">What four?</div></div>
+<div class="row" id="sbh3.2:1.3"><div class="seg-id"><a href="#sbh3.2:1.3">sbh3.2:1.3</a></div><div class="san">bhikṣurdharmān vicinoti |</div><div class="en">A monk investigates phenomena,</div></div>
+<div class="row" id="sbh3.2:1.4"><div class="seg-id"><a href="#sbh3.2:1.4">sbh3.2:1.4</a></div><div class="san">pravicinoti |</div><div class="en">investigates closely,</div></div>
+<div class="row" id="sbh3.2:1.5"><div class="seg-id"><a href="#sbh3.2:1.5">sbh3.2:1.5</a></div><div class="san">parivitarkayati |</div><div class="en">deliberates,</div></div>
+<div class="row" id="sbh3.2:1.6"><div class="seg-id"><a href="#sbh3.2:1.6">sbh3.2:1.6</a></div><div class="san">parimīmāṁsāmāpadyate |</div><div class="en-cell"><div class="en">and engages in thorough examination —</div><div class="comment"><em>Vicinoti</em> → <em>pravicinoti</em> → <em>parivitarkayati</em> → <em>parimīmāṁsām āpadyate</em> — the same four <em>prajñā</em>-function verbs that appear throughout the Śrāvakabhūmi. The progression moves from coarse to fine inquiry: general examination → close discrimination → deliberation → thorough critical examination. The accumulation conveys that <em>vipaśyanā</em> is sustained, multi-aspected investigation rather than a single act of looking.</div></div></div>
+<div class="row" id="sbh3.2:1.7"><div class="seg-id"><a href="#sbh3.2:1.7">sbh3.2:1.7</a></div><div class="san">yadutādhyātmaṁ cetaḥśamathaṁ niśritya |</div><div class="en">taking inward calm-abiding as his support.</div></div>
+<div class="row" id="sbh3.2:2.1"><div class="seg-id"><a href="#sbh3.2:2.1">sbh3.2:2.1</a></div><div class="san">kathaṁ ca vicinoti |</div><div class="en">How does he investigate?</div></div>
+<div class="row" id="sbh3.2:2.2"><div class="seg-id"><a href="#sbh3.2:2.2">sbh3.2:2.2</a></div><div class="san">caritaviśodhanaṁ vā ālambanaṁ |</div><div class="en">He investigates the purifying-conduct object,</div></div>
+<div class="row" id="sbh3.2:2.3"><div class="seg-id"><a href="#sbh3.2:2.3">sbh3.2:2.3</a></div><div class="san">kauśalyālambanaṁ vā, kleśaviśodhanaṁ vā |</div><div class="en">the skillful object, or the defilement-purifying object —</div></div>
+<div class="row" id="sbh3.2:2.4"><div class="seg-id"><a href="#sbh3.2:2.4">sbh3.2:2.4</a></div><div class="san">yāvadbhāvikatayā vicinoti |</div><div class="en">under the aspect of &#x27;as far as it goes,&#x27;</div></div>
+<div class="row" id="sbh3.2:2.5"><div class="seg-id"><a href="#sbh3.2:2.5">sbh3.2:2.5</a></div><div class="san">yathāvadbhāvikatayā |</div><div class="en-cell"><div class="en">and &#x27;as it actually is.&#x27;</div><div class="comment"><em>Yāvad-bhāvikatā</em> and <em>yathāvad-bhāvikatā</em> — &#x27;as-far-as-it-goes-ness&#x27; and &#x27;as-it-actually-is-ness.&#x27; A key Yogācāra distinction running throughout the <em>vipaśyanā</em> method. The first asks the <em>scope</em> of the object; the second its <em>nature</em>.</div></div></div>
+<div class="row" id="sbh3.2:2.6"><div class="seg-id"><a href="#sbh3.2:2.6">sbh3.2:2.6</a></div><div class="san">pravicinoti |</div><div class="en">He investigates closely</div></div>
+<div class="row" id="sbh3.2:2.7"><div class="seg-id"><a href="#sbh3.2:2.7">sbh3.2:2.7</a></div><div class="san">savikalpena manaskāreṇa prajñāsahagatena |</div><div class="en">by way of conceptual attention joined with discernment.</div></div>
+<div class="row" id="sbh3.2:2.8"><div class="seg-id"><a href="#sbh3.2:2.8">sbh3.2:2.8</a></div><div class="san">nimittīkurvanneva parivitarkayati |</div><div class="en">Making it the basis, he deliberates,</div></div>
+<div class="row" id="sbh3.2:2.9"><div class="seg-id"><a href="#sbh3.2:2.9">sbh3.2:2.9</a></div><div class="san">santīrayatyadhimīmāṁsāmāpadyate |</div><div class="en">considers, and engages in thorough examination.</div></div>
+<div class="row" id="sbh3.2:3.1"><div class="seg-id"><a href="#sbh3.2:3.1">sbh3.2:3.1</a></div><div class="san">sā khalveṣā vipaśyanā trimukhī ṣaḍvastuprabhedālambanā veditavyā |</div><div class="en">This *vipaśyanā* should be known as having three gateways and six investigation-subjects.</div></div>
+<div class="row" id="sbh3.2:3.2"><div class="seg-id"><a href="#sbh3.2:3.2">sbh3.2:3.2</a></div><div class="san">katamāni trīṇi mukhāni |</div><div class="en">What are the three gateways?</div></div>
+<div class="row" id="sbh3.2:3.3"><div class="seg-id"><a href="#sbh3.2:3.3">sbh3.2:3.3</a></div><div class="san">vipaśyanā yannimittamātrānucaritā |</div><div class="en">*Vipaśyanā* that follows the sign alone;</div></div>
+<div class="row" id="sbh3.2:3.4"><div class="seg-id"><a href="#sbh3.2:3.4">sbh3.2:3.4</a></div><div class="san">vipaśyanā paryeṣaṇānucaritā, paryeṣitā ca |</div><div class="en">*vipaśyanā* that follows seeking, and seeking-as-sought;</div></div>
+<div class="row" id="sbh3.2:3.5"><div class="seg-id"><a href="#sbh3.2:3.5">sbh3.2:3.5</a></div><div class="san">pratyavekṣaṇānucaritā |</div><div class="en">*vipaśyanā* that follows reviewing.</div></div>
+<div class="row" id="sbh3.2:3.6"><div class="seg-id"><a href="#sbh3.2:3.6">sbh3.2:3.6</a></div><div class="san">tatra nimittamātrānucaritā |</div><div class="en">Following the sign alone:</div></div>
+<div class="row" id="sbh3.2:3.7"><div class="seg-id"><a href="#sbh3.2:3.7">sbh3.2:3.7</a></div><div class="san">yena yā śrutamudgṛhītaṁ |</div><div class="en">when, by what he has heard and grasped,</div></div>
+<div class="row" id="sbh3.2:3.8"><div class="seg-id"><a href="#sbh3.2:3.8">sbh3.2:3.8</a></div><div class="san">dharmamavavādasyāsamāhitabhūmikena manaskāreṇa manasi karoti |</div><div class="en">he attends to the dharma of instruction with unconcentrated attention.</div></div>
+<div class="row" id="sbh3.2:3.9"><div class="seg-id"><a href="#sbh3.2:3.9">sbh3.2:3.9</a></div><div class="san">na cintayati |</div><div class="en">He does not think it through,</div></div>
+<div class="row" id="sbh3.2:3.10"><div class="seg-id"><a href="#sbh3.2:3.10">sbh3.2:3.10</a></div><div class="san">na tulayati |</div><div class="en">weigh it,</div></div>
+<div class="row" id="sbh3.2:3.11"><div class="seg-id"><a href="#sbh3.2:3.11">sbh3.2:3.11</a></div><div class="san">nopaparīkṣate |</div><div class="en">or examine it.</div></div>
+<div class="row" id="sbh3.2:3.12"><div class="seg-id"><a href="#sbh3.2:3.12">sbh3.2:3.12</a></div><div class="san">iyaṁ nimittamātrānucaritā bhavati |</div><div class="en">This is *vipaśyanā* following the sign alone.</div></div>
+<div class="row" id="sbh3.2:3.13"><div class="seg-id"><a href="#sbh3.2:3.13">sbh3.2:3.13</a></div><div class="san">yadā punaścintayati |</div><div class="en">When he then thinks it through,</div></div>
+<div class="row" id="sbh3.2:3.14"><div class="seg-id"><a href="#sbh3.2:3.14">sbh3.2:3.14</a></div><div class="san">tīrayati tulayatyupaparīkṣate |</div><div class="en">weighs it, examines it,</div></div>
+<div class="row" id="sbh3.2:3.15"><div class="seg-id"><a href="#sbh3.2:3.15">sbh3.2:3.15</a></div><div class="san">tadā paryeṣaṇānucaritā bhavati |</div><div class="en">then it is *vipaśyanā* following seeking.</div></div>
+<div class="row" id="sbh3.2:3.16"><div class="seg-id"><a href="#sbh3.2:3.16">sbh3.2:3.16</a></div><div class="san">yadā punastīrayitvā upaparīkṣya yathā vyavasthāpitameva pratyavekṣate |</div><div class="en">When, having weighed and examined, he then reviews the conclusions just as established,</div></div>
+<div class="row" id="sbh3.2:3.17"><div class="seg-id"><a href="#sbh3.2:3.17">sbh3.2:3.17</a></div><div class="san">tadā pratyavekṣaṇānucaritā bhavati |</div><div class="en">then it is *vipaśyanā* following reviewing.</div></div>
+<div class="row" id="sbh3.2:3.18"><div class="seg-id"><a href="#sbh3.2:3.18">sbh3.2:3.18</a></div><div class="san">iyaṁ trimukhī vipaśyanā |</div><div class="en-cell"><div class="en">This is the threefold-gateway *vipaśyanā*.</div><div class="comment">The three gateways are stages in the maturation of an investigation, not three separate practices. First the topic is held loosely (sign-only). Then actively worked (seeking). Then rested in the conclusion (reviewing). The <em>asamāhita</em> qualifier on stage one is striking — initial holding doesn&#x27;t yet require absorbed attention.</div></div></div>
+<div class="row" id="sbh3.2:4.1"><div class="seg-id"><a href="#sbh3.2:4.1">sbh3.2:4.1</a></div><div class="san">katamāni ṣaḍvastuprabhedālambanāni |</div><div class="en">What are the six investigation-subjects?</div></div>
+<div class="row" id="sbh3.2:4.2"><div class="seg-id"><a href="#sbh3.2:4.2">sbh3.2:4.2</a></div><div class="san">sa paryeṣamāṇaḥ |</div><div class="en">While seeking,</div></div>
+<div class="row" id="sbh3.2:4.3"><div class="seg-id"><a href="#sbh3.2:4.3">sbh3.2:4.3</a></div><div class="san">ṣaḍvastūni paryeṣate |</div><div class="en">he seeks six things:</div></div>
+<div class="row" id="sbh3.2:4.4"><div class="seg-id"><a href="#sbh3.2:4.4">sbh3.2:4.4</a></div><div class="san">arthaṁ, vastu, lakṣaṇaṁ, pakṣaṁ, kālaṁ, yuktiṁ ca paryeṣyannetānyeva paryeṣamāṇa etānyeva pratyavekṣate |</div><div class="en">meaning, substance, characteristic, side, time, and reasoning. Having sought these, he reviews them.</div></div>
+<div class="row" id="sbh3.2:5.1"><div class="seg-id"><a href="#sbh3.2:5.1">sbh3.2:5.1</a></div><div class="san">kathamarthaṁ paryeṣate |</div><div class="en">How does he seek meaning?</div></div>
+<div class="row" id="sbh3.2:5.2"><div class="seg-id"><a href="#sbh3.2:5.2">sbh3.2:5.2</a></div><div class="san">asya bhāṣitasyāyamartho &#x27;sya bhāṣitasyāyamartha ityevamarthaṁ paryeṣate |</div><div class="en">&#x27;The meaning of this teaching is this; the meaning of this teaching is that&#x27; — thus he seeks meaning.</div></div>
+<div class="row" id="sbh3.2:5.3"><div class="seg-id"><a href="#sbh3.2:5.3">sbh3.2:5.3</a></div><div class="san">kathaṁ vastu paryeṣate |</div><div class="en">How does he seek substance?</div></div>
+<div class="row" id="sbh3.2:5.4"><div class="seg-id"><a href="#sbh3.2:5.4">sbh3.2:5.4</a></div><div class="san">dvividhaṁ vastu |</div><div class="en">Substance is twofold:</div></div>
+<div class="row" id="sbh3.2:5.5"><div class="seg-id"><a href="#sbh3.2:5.5">sbh3.2:5.5</a></div><div class="san">ādhyātmikaṁ bāhyaṁ ca |</div><div class="en">inward and outward.</div></div>
+<div class="row" id="sbh3.2:5.6"><div class="seg-id"><a href="#sbh3.2:5.6">sbh3.2:5.6</a></div><div class="san">evaṁ vastu paryeṣate |</div><div class="en">Thus he seeks substance.</div></div>
+<div class="row" id="sbh3.2:5.7"><div class="seg-id"><a href="#sbh3.2:5.7">sbh3.2:5.7</a></div><div class="san">kathaṁ lakṣaṇaṁ paryeṣate |</div><div class="en">How does he seek characteristic?</div></div>
+<div class="row" id="sbh3.2:5.8"><div class="seg-id"><a href="#sbh3.2:5.8">sbh3.2:5.8</a></div><div class="san">dvividhaṁ |</div><div class="en">Twofold:</div></div>
+<div class="row" id="sbh3.2:5.9"><div class="seg-id"><a href="#sbh3.2:5.9">sbh3.2:5.9</a></div><div class="san">svalakṣaṇaṁ sāmānyalakṣaṇaṁ ca |</div><div class="en-cell"><div class="en">specific characteristic and general characteristic.</div><div class="comment"><em>Svalakṣaṇa</em> / <em>sāmānya-lakṣaṇa</em> — what makes <em>this</em> thing <em>this</em> (the particular nature), and what is shared across many things (typically <em>anitya</em>, <em>duḥkha</em>, <em>anātman</em>). Insight in the classical sense usually arises from general-characteristic contemplation.</div></div></div>
+<div class="row" id="sbh3.2:5.10"><div class="seg-id"><a href="#sbh3.2:5.10">sbh3.2:5.10</a></div><div class="san">evaṁ lakṣaṇaṁ paryeṣate |</div><div class="en">Thus he seeks characteristic.</div></div>
+<div class="row" id="sbh3.2:5.11"><div class="seg-id"><a href="#sbh3.2:5.11">sbh3.2:5.11</a></div><div class="san">kathaṁ pakṣaṁ paryeṣate |</div><div class="en">How does he seek side?</div></div>
+<div class="row" id="sbh3.2:5.12"><div class="seg-id"><a href="#sbh3.2:5.12">sbh3.2:5.12</a></div><div class="san">dvividhaḥ pakṣaḥ kṛṣṇapakṣaḥ śuklapakṣaḥ |</div><div class="en">Side is twofold: dark side and bright side.</div></div>
+<div class="row" id="sbh3.2:5.13"><div class="seg-id"><a href="#sbh3.2:5.13">sbh3.2:5.13</a></div><div class="san">kṛṣṇapakṣaṁ doṣataḥ |</div><div class="en">The dark side is investigated as fault,</div></div>
+<div class="row" id="sbh3.2:5.14"><div class="seg-id"><a href="#sbh3.2:5.14">sbh3.2:5.14</a></div><div class="san">ādīnavataḥ |</div><div class="en">as danger.</div></div>
+<div class="row" id="sbh3.2:5.15"><div class="seg-id"><a href="#sbh3.2:5.15">sbh3.2:5.15</a></div><div class="san">śuklapakṣaṁ punarguṇato &#x27;nuśaṁsataścaivaṁ pakṣaṁ paryeṣate |</div><div class="en">The bright side as quality and benefit. Thus he seeks side.</div></div>
+<div class="row" id="sbh3.2:5.16"><div class="seg-id"><a href="#sbh3.2:5.16">sbh3.2:5.16</a></div><div class="san">kathaṁ kālaṁ paryeṣate |</div><div class="en">How does he seek time?</div></div>
+<div class="row" id="sbh3.2:5.17"><div class="seg-id"><a href="#sbh3.2:5.17">sbh3.2:5.17</a></div><div class="san">trayaḥ kālāḥ |</div><div class="en">There are three times:</div></div>
+<div class="row" id="sbh3.2:5.18"><div class="seg-id"><a href="#sbh3.2:5.18">sbh3.2:5.18</a></div><div class="san">atīto &#x27;nāgato vartamānaśca |</div><div class="en">past, future, present.</div></div>
+<div class="row" id="sbh3.2:5.19"><div class="seg-id"><a href="#sbh3.2:5.19">sbh3.2:5.19</a></div><div class="san">evametadabhūdatīte &#x27;dhvani |</div><div class="en">&#x27;Thus it was in the past time.&#x27;</div></div>
+<div class="row" id="sbh3.2:5.20"><div class="seg-id"><a href="#sbh3.2:5.20">sbh3.2:5.20</a></div><div class="san">evametadbhaviṣyati |</div><div class="en">&#x27;Thus it will be&#x27;,</div></div>
+<div class="row" id="sbh3.2:5.21"><div class="seg-id"><a href="#sbh3.2:5.21">sbh3.2:5.21</a></div><div class="san">anāgate &#x27;dhvani |</div><div class="en">&#x27;in the future time.&#x27;</div></div>
+<div class="row" id="sbh3.2:5.22"><div class="seg-id"><a href="#sbh3.2:5.22">sbh3.2:5.22</a></div><div class="san">evametadetarhi |</div><div class="en">&#x27;Thus it is now,&#x27;</div></div>
+<div class="row" id="sbh3.2:5.23"><div class="seg-id"><a href="#sbh3.2:5.23">sbh3.2:5.23</a></div><div class="san">pratyutpanne &#x27;dhvanītyevaṁ kālaṁ paryeṣate |</div><div class="en">&#x27;in the present time&#x27; — so he seeks time.</div></div>
+<div class="row" id="sbh3.2:5.24"><div class="seg-id"><a href="#sbh3.2:5.24">sbh3.2:5.24</a></div><div class="san">kathaṁ yuktim paryeṣate |</div><div class="en">How does he seek reasoning?</div></div>
+<div class="row" id="sbh3.2:5.25"><div class="seg-id"><a href="#sbh3.2:5.25">sbh3.2:5.25</a></div><div class="san">catasro yuktayaḥ |</div><div class="en">There are four reasonings:</div></div>
+<div class="row" id="sbh3.2:5.26"><div class="seg-id"><a href="#sbh3.2:5.26">sbh3.2:5.26</a></div><div class="san">apekṣāyuktiḥ, kāryakāraṇayuktiḥ, upapattisādhanayuktirdharmatāyuktiśca |</div><div class="en">dependence-reasoning, cause-and-effect reasoning, proof-establishing reasoning, and nature-of-things reasoning.</div></div>
+<div class="row" id="sbh3.2:5.27"><div class="seg-id"><a href="#sbh3.2:5.27">sbh3.2:5.27</a></div><div class="san">tatrāpekṣāyuktyā saṁvṛtiṁ ca saṁvṛtitaḥ |</div><div class="en">By dependence-reasoning he investigates the conventional as conventional,</div></div>
+<div class="row" id="sbh3.2:5.28"><div class="seg-id"><a href="#sbh3.2:5.28">sbh3.2:5.28</a></div><div class="san">paramārthaṁ ca paramārthataḥ |</div><div class="en">the ultimate as ultimate,</div></div>
+<div class="row" id="sbh3.2:5.29"><div class="seg-id"><a href="#sbh3.2:5.29">sbh3.2:5.29</a></div><div class="san">nidānaṁ ca nidānataḥ |</div><div class="en">and the causal-condition as causal-condition.</div></div>
+<div class="row" id="sbh3.2:5.30"><div class="seg-id"><a href="#sbh3.2:5.30">sbh3.2:5.30</a></div><div class="san">paryeṣate |</div><div class="en">Thus he seeks.</div></div>
+<div class="row" id="sbh3.2:5.31"><div class="seg-id"><a href="#sbh3.2:5.31">sbh3.2:5.31</a></div><div class="san">kāryakāraṇayuktyā kāritraṁ dharmāṇāṁ paryeṣate |</div><div class="en">By cause-and-effect reasoning he investigates the function of phenomena:</div></div>
+<div class="row" id="sbh3.2:5.32"><div class="seg-id"><a href="#sbh3.2:5.32">sbh3.2:5.32</a></div><div class="san">ayaṁ dharmaḥ, idaṁ kāritraṁ, ayamidaṁ kāritra iti |</div><div class="en">&#x27;This is the dharma; this is its function; this is its function.&#x27;</div></div>
+<div class="row" id="sbh3.2:5.33"><div class="seg-id"><a href="#sbh3.2:5.33">sbh3.2:5.33</a></div><div class="san">upapattisādhanayuktyā trīṇi pramāṇāni paryeṣate |</div><div class="en">By proof-establishing reasoning he investigates by means of the three *pramāṇas* (valid means of knowing):</div></div>
+<div class="row" id="sbh3.2:5.34"><div class="seg-id"><a href="#sbh3.2:5.34">sbh3.2:5.34</a></div><div class="san">āptāgamamanumānaṁ pratyakṣaṁ ca |</div><div class="en">trustworthy testimony, inference, and direct perception.</div></div>
+<div class="row" id="sbh3.2:5.35"><div class="seg-id"><a href="#sbh3.2:5.35">sbh3.2:5.35</a></div><div class="san">kimasti |</div><div class="en">&#x27;Is there a self?</div></div>
+<div class="row" id="sbh3.2:5.36"><div class="seg-id"><a href="#sbh3.2:5.36">sbh3.2:5.36</a></div><div class="san">atrātmā, nāstīti kiṁ pratyakṣamupalabhyate na veti, kimanumānena prayujyate na veti |</div><div class="en-cell"><div class="en">Is there a self here, or not? Is it apprehended by direct perception, or not? Is it established by inference, or not?&#x27;</div><div class="comment">The proof-establishing-reasoning move deploys the three pramāṇas — testimony, inference, perception — with the specific test &#x27;is there a self here?&#x27; The Buddhist anti-ātman investigation framed as a pramāṇa exercise.</div></div></div>
+<div class="row" id="sbh3.2:5.37"><div class="seg-id"><a href="#sbh3.2:5.37">sbh3.2:5.37</a></div><div class="san">tatra dharmatāyuktyā tathābhūtatāṁ dharmāṇāṁ prasiddhadharmatāmacintyadharmatāmavasthitadharmatāmadhimucyate, na cintayati |</div><div class="en-cell"><div class="en">By nature-of-things reasoning he resolves upon the suchness of phenomena, the established nature of things, the unthinkable nature of things, the abiding nature of things — he does not further think it through,</div><div class="comment"><em>Dharmatā-yukti</em> is the limit of inquiry: at some point one rests in the nature-of-things and stops further analysis (<em>na cintayati, na vikalpayati</em>). The contemplation has reached its proper terminus.</div></div></div>
+<div class="row" id="sbh3.2:5.38"><div class="seg-id"><a href="#sbh3.2:5.38">sbh3.2:5.38</a></div><div class="san">na vikalpayatyevaṁ yuktim paryeṣate |</div><div class="en">does not further discriminate. Thus he seeks reasoning.</div></div>
+<div class="row" id="sbh3.2:6.1"><div class="seg-id"><a href="#sbh3.2:6.1">sbh3.2:6.1</a></div><div class="san">iyaṁ ṣaḍvastuprabhedālambanā trimukhī vipaśyanā samāsataḥ |</div><div class="en">This is the *vipaśyanā* with the six investigation-subjects and three gateways, in summary.</div></div>
+<div class="row" id="sbh3.2:6.2"><div class="seg-id"><a href="#sbh3.2:6.2">sbh3.2:6.2</a></div><div class="san">anayā sarvavipaśyanāsaṁgrahaḥ |</div><div class="en">By this, all *vipaśyanā* is comprehended.</div></div>
+<div class="row" id="sbh3.2:6.3"><div class="seg-id"><a href="#sbh3.2:6.3">sbh3.2:6.3</a></div><div class="san">kena punaḥ kāraṇena ṣaṭprabhedā vyavasthāpitāḥ |</div><div class="en">Why are six divisions established?</div></div>
+<div class="row" id="sbh3.2:6.4"><div class="seg-id"><a href="#sbh3.2:6.4">sbh3.2:6.4</a></div><div class="san">āha |</div><div class="en">It is said:</div></div>
+<div class="row" id="sbh3.2:6.5"><div class="seg-id"><a href="#sbh3.2:6.5">sbh3.2:6.5</a></div><div class="san">trividhamavabodhamadhikṛtya bhāṣitārthāvabodhaṁ vastuparyantatāvabodhaṁ |</div><div class="en">Three kinds of comprehension are intended: comprehension of the meaning of what is taught; comprehension of &#x27;as far as it goes&#x27; of the substance;</div></div>
+<div class="row" id="sbh3.2:6.6"><div class="seg-id"><a href="#sbh3.2:6.6">sbh3.2:6.6</a></div><div class="san">yathābhūtāvabodhaṁ ca |</div><div class="en">and comprehension of &#x27;as it actually is.&#x27;</div></div>
+<div class="row" id="sbh3.2:6.7"><div class="seg-id"><a href="#sbh3.2:6.7">sbh3.2:6.7</a></div><div class="san">tatrārthaparyeṣaṇayā bhāṣitārthāvabodhaḥ |</div><div class="en">The investigation of meaning yields comprehension of what is taught.</div></div>
+<div class="row" id="sbh3.2:6.8"><div class="seg-id"><a href="#sbh3.2:6.8">sbh3.2:6.8</a></div><div class="san">vastuparyeṣaṇayā, svalakṣaṇaparyeṣaṇayā ca vastuparyantatāvabodhaḥ |</div><div class="en">The investigation of substance and the investigation of specific characteristic together yield comprehension of how far the substance extends.</div></div>
+<div class="row" id="sbh3.2:6.9"><div class="seg-id"><a href="#sbh3.2:6.9">sbh3.2:6.9</a></div><div class="san">tatra sāmānyalakṣaṇaparyeṣaṇayā, pakṣaparyeṣaṇayā, kālayuktiparyeṣaṇayā yathābhūtāvabodhaḥ |</div><div class="en">The investigation of general characteristic, of side, of time and reasoning together yield comprehension of how things actually are.</div></div>
+<div class="row" id="sbh3.2:6.10"><div class="seg-id"><a href="#sbh3.2:6.10">sbh3.2:6.10</a></div><div class="san">etāvacca yoginā jñeyaṁ |</div><div class="en">This much is to be known by the practitioner:</div></div>
+<div class="row" id="sbh3.2:6.11"><div class="seg-id"><a href="#sbh3.2:6.11">sbh3.2:6.11</a></div><div class="san">yaduta bhāṣitasyārthaḥ, jñeyasya vastunaḥ yāvadbhāvikatā |</div><div class="en">namely, the meaning of what is taught; and the *yāvad-bhāvikatā* of the substance to be known,</div></div>
+<div class="row" id="sbh3.2:6.12"><div class="seg-id"><a href="#sbh3.2:6.12">sbh3.2:6.12</a></div><div class="san">yathāvadbhāvikatā ca |</div><div class="en">and the *yathāvad-bhāvikatā*.</div></div>
+<div class="row" id="sbh3.2:7.1"><div class="seg-id"><a href="#sbh3.2:7.1">sbh3.2:7.1</a></div><div class="san">tatrāśubhe prayukto yogī ṣaḍvastūni paryeṣate |</div><div class="en">The practitioner engaged in foulness investigates the six investigation-subjects.</div></div>
+<div class="row" id="sbh3.2:7.2"><div class="seg-id"><a href="#sbh3.2:7.2">sbh3.2:7.2</a></div><div class="san">āha |</div><div class="en">It is said:</div></div>
+<div class="row" id="sbh3.2:7.3"><div class="seg-id"><a href="#sbh3.2:7.3">sbh3.2:7.3</a></div><div class="san">aśubhādhipateyaṁ dharmaṁ śrutamudgṛhītamadhipatiṁ kṛtvā samāhitabhūmikena manaskāreṇaivamarthapratisaṁvedī bhavati |</div><div class="en">Taking what he has heard and grasped about foulness as governing, with attention concentrated on its plane, he comprehends the meaning thus:</div></div>
+<div class="row" id="sbh3.2:7.4"><div class="seg-id"><a href="#sbh3.2:7.4">sbh3.2:7.4</a></div><div class="san">aśubheyaṁ pratirūpametat pratikūlametad durgandhamāmagandhamiti |</div><div class="en">&#x27;This foulness — this is repulsive, this is disgusting, this is foul-smelling, this is putrid.&#x27;</div></div>
+<div class="row" id="sbh3.2:7.5"><div class="seg-id"><a href="#sbh3.2:7.5">sbh3.2:7.5</a></div><div class="san">ebhirākārairevaṁbhāgīyaistasyaivāśubhādhikṛtasya dharmasya pūrvaśrutasyārthapratisaṁvedanā |</div><div class="en">By such aspects [there is] comprehension of the meaning of the foulness-teaching previously heard.</div></div>
+<div class="row" id="sbh3.2:7.6"><div class="seg-id"><a href="#sbh3.2:7.6">sbh3.2:7.6</a></div><div class="san">evamaśubhatayārthaṁ paryeṣate |</div><div class="en">Thus he investigates the meaning by way of foulness.</div></div>
+<div class="row" id="sbh3.2:8.1"><div class="seg-id"><a href="#sbh3.2:8.1">sbh3.2:8.1</a></div><div class="san">kathaṁ vastu paryeṣate |</div><div class="en">How does he investigate the substance?</div></div>
+<div class="row" id="sbh3.2:8.2"><div class="seg-id"><a href="#sbh3.2:8.2">sbh3.2:8.2</a></div><div class="san">sa evamarthapratisaṁvedī tāmaśubhatāṁ dvayorbhāvayorvyavasthāpitāṁ paśyatyadhyātmaṁ bahirdhā ca |</div><div class="en">Comprehending the meaning, he sees this foulness as established in two locations: inwardly and outwardly.</div></div>
+<div class="row" id="sbh3.2:9.1"><div class="seg-id"><a href="#sbh3.2:9.1">sbh3.2:9.1</a></div><div class="san">kathaṁ svalakṣaṇaṁ paryeṣate |</div><div class="en">How does he investigate the specific characteristic?</div></div>
+<div class="row" id="sbh3.2:9.2"><div class="seg-id"><a href="#sbh3.2:9.2">sbh3.2:9.2</a></div><div class="san">adhyātmaṁ tāvadantaḥkāyagatāmaśubhatāṁ pratyaśubhatāmadhimucyate |</div><div class="en">Inwardly, he resolves on the foulness-as-such of the foulness within the body:</div></div>
+<div class="row" id="sbh3.2:9.3"><div class="seg-id"><a href="#sbh3.2:9.3">sbh3.2:9.3</a></div><div class="san">santyasminkāye keśā romāṇi nakhā dantā rajo malaṁ tvaṅmāṁsamasthi snāyuḥ sirā vṛkkaṁ hṛdayaṁ plīhakaṁ kloma antrāṇyantraguṇā āmāśayaṁ pakvāśayaṁ mūtraṁ purīṣamaśru svedaḥ kheṭā śiṅghāṇakaṁ vasā lasīkā majjā medaḥ pittaṁ śleṣmā pūyaḥ śoṇitamastakaṁ mastakaluṅgaṁ prasrāvaḥ |</div><div class="en">&#x27;There exist in this body: hair of the head, body hair, nails, teeth, dust, dirt, skin, flesh, bone, sinew, vein, kidneys, heart, spleen, lungs, intestines, mesentery, stomach contents, bowel contents, urine, feces, tears, sweat, saliva, mucus, fat, lymph, marrow, grease, bile, phlegm, pus, blood, brain, cranial fluid, urine.&#x27;</div></div>
+<div class="row" id="sbh3.2:9.4"><div class="seg-id"><a href="#sbh3.2:9.4">sbh3.2:9.4</a></div><div class="san">tāṁ punaranekavidhāmantaḥkāyagatāmaśubhatāṁ dvābhyāṁ dhātubhyāṁ saṁgṛhītāmadhimucyate |</div><div class="en">He further resolves that this multifold inward-body foulness is comprised by two elements:</div></div>
+<div class="row" id="sbh3.2:9.5"><div class="seg-id"><a href="#sbh3.2:9.5">sbh3.2:9.5</a></div><div class="san">pṛthivīdhātunā, abdhātunā ca |</div><div class="en">the earth element and the water element.</div></div>
+<div class="row" id="sbh3.2:9.6"><div class="seg-id"><a href="#sbh3.2:9.6">sbh3.2:9.6</a></div><div class="san">tatra keśaromāṇyupādāya |</div><div class="en">From hair-of-head and body-hair</div></div>
+<div class="row" id="sbh3.2:9.7"><div class="seg-id"><a href="#sbh3.2:9.7">sbh3.2:9.7</a></div><div class="san">yāvadyakṛtpurīṣā pṛthivīdhāturadhimucyate |</div><div class="en">through liver and feces — this he resolves as the earth element.</div></div>
+<div class="row" id="sbh3.2:9.8"><div class="seg-id"><a href="#sbh3.2:9.8">sbh3.2:9.8</a></div><div class="san">aśruvedanāmupādāya yāvat prasrāvādabdhātumadhimucyate |</div><div class="en">From tears and lymph through urine — this he resolves as the water element.</div></div>
+<div class="row" id="sbh3.2:10.1"><div class="seg-id"><a href="#sbh3.2:10.1">sbh3.2:10.1</a></div><div class="san">bahirdhā vā punarbāhyagatāmaśubhatāṁ vinīlakādibhirākārairadhimucyate |</div><div class="en">Outwardly, he resolves on the foulness as found outside the body, by way of aspects beginning with the discolored.</div></div>
+<div class="row" id="sbh3.2:10.2"><div class="seg-id"><a href="#sbh3.2:10.2">sbh3.2:10.2</a></div><div class="san">tatra vinīlakamadhimucyate |</div><div class="en">He resolves on the discolored:</div></div>
+<div class="row" id="sbh3.2:10.3"><div class="seg-id"><a href="#sbh3.2:10.3">sbh3.2:10.3</a></div><div class="san">yadanena mṛtakuṇapaṁ svayaṁ vā dṛṣṭaṁ bhavati |</div><div class="en">a corpse he has himself seen,</div></div>
+<div class="row" id="sbh3.2:10.4"><div class="seg-id"><a href="#sbh3.2:10.4">sbh3.2:10.4</a></div><div class="san">purato vā śrutaṁ parikalpitaṁ vā, punaḥ striyā vā, puruṣasya vā, mitrasya vā, amitrasya vā, udāsīnasya vā |</div><div class="en">or heard described, or imagined — of a woman, a man, a friend, an enemy, or one indifferent to him;</div></div>
+<div class="row" id="sbh3.2:10.5"><div class="seg-id"><a href="#sbh3.2:10.5">sbh3.2:10.5</a></div><div class="san">hīnaṁ vā, madhyaṁ vā, praṇītaṁ vā, dahrasya vā, madhyasya vā, vṛddhasya vā |</div><div class="en">low, middling, or excellent; young, middle-aged, or elderly.</div></div>
+<div class="row" id="sbh3.2:10.6"><div class="seg-id"><a href="#sbh3.2:10.6">sbh3.2:10.6</a></div><div class="san">tatra nimittamudgṛhya ekāham mṛtaṁ pragaḍitaśoṇitamayaṁ prāptapūyabhāvaṁ vinīlakamityadhimucyate |</div><div class="en">Taking the sign, he resolves on a corpse one day dead, blood having clotted, just turning to pus — as the discolored.</div></div>
+<div class="row" id="sbh3.2:10.7"><div class="seg-id"><a href="#sbh3.2:10.7">sbh3.2:10.7</a></div><div class="san">dvyaham mṛtaṁ prāptapūyabhāvamasañjātakṛmi vipūyakamityadhimucyate |</div><div class="en">A corpse two days dead, fully turned to pus, before worms have arisen — as the festering.</div></div>
+<div class="row" id="sbh3.2:10.8"><div class="seg-id"><a href="#sbh3.2:10.8">sbh3.2:10.8</a></div><div class="san">saptāham mṛtaṁ sañjātakṛmi ādhmātaṁ ca vyādhmātakamityadhimucyate |</div><div class="en">A corpse seven days dead, with worms arisen, swollen, fully bloated — as the swollen.</div></div>
+<div class="row" id="sbh3.2:10.9"><div class="seg-id"><a href="#sbh3.2:10.9">sbh3.2:10.9</a></div><div class="san">kākaiḥ kuralairgṛddhaiḥ śvabhiḥ śṛgālair khādyamānaṁ vikhāditakamityadhimucyate |</div><div class="en">A corpse being eaten by crows, vultures, dogs, jackals — as the gnawed.</div></div>
+<div class="row" id="sbh3.2:10.10"><div class="seg-id"><a href="#sbh3.2:10.10">sbh3.2:10.10</a></div><div class="san">apagatatvaṅmāṁsaśoṇitaṁ snāyumātropanibaddhaṁ vilohitakamityadhimucyate |</div><div class="en">A corpse with skin, flesh, and blood gone, only sinews holding the bones together — as the bloody-skeletal.</div></div>
+<div class="row" id="sbh3.2:10.11"><div class="seg-id"><a href="#sbh3.2:10.11">sbh3.2:10.11</a></div><div class="san">diśodiśamaṅgapratyaṅgeṣu vikṣipteṣu viśleṣiteṣu samāṁseṣu nirmāṁseṣu kiñcicchiṣṭamāṁseṣu vikṣiptakamityadhimucyate |</div><div class="en">When the limbs have been scattered in different directions and pulled apart — bones with flesh, bones without flesh, bones with little flesh remaining — as the dispersed.</div></div>
+<div class="row" id="sbh3.2:11.1"><div class="seg-id"><a href="#sbh3.2:11.1">sbh3.2:11.1</a></div><div class="san">api ca dve śaṅkalike dehaśaṅkalikā pratyaṅgaśaṅkalikā ca |</div><div class="en">Furthermore, there are two skeletons: the body-skeleton and the limb-skeleton.</div></div>
+<div class="row" id="sbh3.2:11.2"><div class="seg-id"><a href="#sbh3.2:11.2">sbh3.2:11.2</a></div><div class="san">tatra dehaśaṅkalikā śroṇīkaṭāhamupādāya pṛṣṭhīvaṁśo yāvadyatra śiraskapālaṁ pratiṣṭhitam |</div><div class="en">The body-skeleton runs from the pelvis up the spine to where the skull rests.</div></div>
+<div class="row" id="sbh3.2:11.3"><div class="seg-id"><a href="#sbh3.2:11.3">sbh3.2:11.3</a></div><div class="san">pratyaṅgaśaṅkalikā sambaddhāni bāhvasthīni ūrujaṅghāsthīni ca |</div><div class="en">The limb-skeleton is the connected arm-bones and thigh-and-leg bones.</div></div>
+<div class="row" id="sbh3.2:11.4"><div class="seg-id"><a href="#sbh3.2:11.4">sbh3.2:11.4</a></div><div class="san">tatra yā dehaśaṅkalikā sā śaṅkalikaivocyate |</div><div class="en">The body-skeleton is properly called the *śaṅkalikā*;</div></div>
+<div class="row" id="sbh3.2:11.5"><div class="seg-id"><a href="#sbh3.2:11.5">sbh3.2:11.5</a></div><div class="san">yā punaḥ pratyaṅgaśaṅkalikā sā asthiśaṅkaliketyucyate |</div><div class="en">the limb-skeleton is called the *asthi-śaṅkalikā* (bone-skeleton).</div></div>
+<div class="row" id="sbh3.2:11.6"><div class="seg-id"><a href="#sbh3.2:11.6">sbh3.2:11.6</a></div><div class="san">api ca dvau śaṅkalikāyā nimittagrāhau citrakṛtāyāḥ pāṣāṇakāṣṭhaśādakṛtāyā vā |</div><div class="en">Furthermore, two skeleton-signs may be taken: the painted, the stone-and-wood-carved,</div></div>
+<div class="row" id="sbh3.2:11.7"><div class="seg-id"><a href="#sbh3.2:11.7">sbh3.2:11.7</a></div><div class="san">bhūtaśaṅkalikāyā vā |</div><div class="en">the actually-existing,</div></div>
+<div class="row" id="sbh3.2:11.8"><div class="seg-id"><a href="#sbh3.2:11.8">sbh3.2:11.8</a></div><div class="san">abhūtaśaṅkalikāyā vā |</div><div class="en">or the not-actually-existing.</div></div>
+<div class="row" id="sbh3.2:11.9"><div class="seg-id"><a href="#sbh3.2:11.9">sbh3.2:11.9</a></div><div class="san">nimittaṁ manasikaroti |</div><div class="en">He attends to the sign;</div></div>
+<div class="row" id="sbh3.2:11.10"><div class="seg-id"><a href="#sbh3.2:11.10">sbh3.2:11.10</a></div><div class="san">tadā śaṅkalikāmevādhimucyate nāsthiśaṅkalikāṁ |</div><div class="en-cell"><div class="en">[when he attends to the not-actually-existing,] he resolves only on the *śaṅkalikā*, not on the *asthi-śaṅkalikā*.</div><div class="comment">Asanga acknowledges that practitioners often work with painted images, carved skeletons, or imagined skeletons rather than actual corpses. He distinguishes the practice with imagined material (yields the <em>deha-śaṅkalikā</em> sign — the schematic body-form) from practice with an actual seen skeleton (yields the <em>asthi-śaṅkalikā</em> sign — the specific bone). Both are valid; they produce different signs.</div></div></div>
+<div class="row" id="sbh3.2:11.11"><div class="seg-id"><a href="#sbh3.2:11.11">sbh3.2:11.11</a></div><div class="san">yadā punarbhūtaśaṅkalikāyā nimittaṁ manasi karoti |</div><div class="en">When he attends to the sign of the actually-existing skeleton,</div></div>
+<div class="row" id="sbh3.2:11.12"><div class="seg-id"><a href="#sbh3.2:11.12">sbh3.2:11.12</a></div><div class="san">tadāsthiśaṅkalikāmadhimucyate |</div><div class="en">he resolves on the *asthi-śaṅkalikā*.</div></div>
+<div class="row" id="sbh3.2:12.1"><div class="seg-id"><a href="#sbh3.2:12.1">sbh3.2:12.1</a></div><div class="san">sa khalveṣa bāhyāyā varṇanibhāyā upādāyarūpagatāyāstrividho vipariṇāmaḥ |</div><div class="en">This outward color-form has three kinds of change:</div></div>
+<div class="row" id="sbh3.2:12.2"><div class="seg-id"><a href="#sbh3.2:12.2">sbh3.2:12.2</a></div><div class="san">svarasavipariṇāmaḥ |</div><div class="en">change-by-its-own-nature,</div></div>
+<div class="row" id="sbh3.2:12.3"><div class="seg-id"><a href="#sbh3.2:12.3">sbh3.2:12.3</a></div><div class="san">parakṛtastadubhayapakṣyaśca |</div><div class="en">change-by-another, and change of both kinds.</div></div>
+<div class="row" id="sbh3.2:12.4"><div class="seg-id"><a href="#sbh3.2:12.4">sbh3.2:12.4</a></div><div class="san">tatra vinīlakamupādāya yāvad vyādhmātakāt svarasavipariṇāmaḥ |</div><div class="en">From the discolored through the swollen — that is change-by-its-own-nature.</div></div>
+<div class="row" id="sbh3.2:12.5"><div class="seg-id"><a href="#sbh3.2:12.5">sbh3.2:12.5</a></div><div class="san">tatra vikhāditakamupādāya yāvad vikṣiptakāt parakṛto vipariṇāmaḥ |</div><div class="en">From the gnawed through the dispersed — that is change-by-another.</div></div>
+<div class="row" id="sbh3.2:12.6"><div class="seg-id"><a href="#sbh3.2:12.6">sbh3.2:12.6</a></div><div class="san">tatrāsthikā vā śaṅkalikā vā ityayamubhayapakṣyo vipariṇāmaḥ |</div><div class="en-cell"><div class="en">The bones and the skeleton — that is change of both kinds.</div><div class="comment">An elegant taxonomic move. The cemetery sequence is grouped by what causes the change: early stages (decay through bloating) happen by the body&#x27;s own internal processes; middle stages (gnawing through scattering) happen by external agents; the bone stages reflect both. Foulness is not just &#x27;the body falls apart&#x27; but &#x27;the body changes by itself, by what acts on it, and by both together.&#x27;</div></div></div>
+<div class="row" id="sbh3.2:12.7"><div class="seg-id"><a href="#sbh3.2:12.7">sbh3.2:12.7</a></div><div class="san">ya evaṁ yathābhūtaṁ prajānāti bahirdhā aśubhatāmākārata evaṁ bahirdhā aśubhatāyāḥ svalakṣaṇaṁ paryeṣate |</div><div class="en">One who thus knows directly the outward foulness in this aspect investigates the specific characteristic of outward foulness in just this aspect.</div></div>
+<div class="row" id="sbh3.2:13.1"><div class="seg-id"><a href="#sbh3.2:13.1">sbh3.2:13.1</a></div><div class="san">kathamaśubhatāyāḥ sāmānyalakṣaṇaṁ paryeṣate |</div><div class="en">How does he investigate the general characteristic of foulness?</div></div>
+<div class="row" id="sbh3.2:13.2"><div class="seg-id"><a href="#sbh3.2:13.2">sbh3.2:13.2</a></div><div class="san">yathā cādhyātmaṁ bahiḥ kāyasyāśubhā varṇanibhayā apariṇatā yāvad bahirdhā bahiḥ kāyasyāśubhā varṇanibhā vipariṇatā ādhyātmikayā aśubhayā varṇanibhā samānadharmatāṁ tulyadharmatāmadhimucyate |</div><div class="en">Just as inwardly the body&#x27;s color-form is unaltered foul-color [in some respects] and outwardly the body&#x27;s color-form is altered foul-color [in others], he resolves that they share the same nature and the same property:</div></div>
+<div class="row" id="sbh3.2:13.3"><div class="seg-id"><a href="#sbh3.2:13.3">sbh3.2:13.3</a></div><div class="san">iyamapi me śubhā varṇanibhā evaṁ dharmiṇī iti |</div><div class="en">&#x27;This unaltered color-form is also of this nature.&#x27;</div></div>
+<div class="row" id="sbh3.2:13.4"><div class="seg-id"><a href="#sbh3.2:13.4">sbh3.2:13.4</a></div><div class="san">ye &#x27;pi kecit sattvā anayā śubhayā varṇanibhayā samanvāgatāsteṣāmapi sāśubhāyāṁ evaṁ dharmiṇī tadyatheyaṁ bāhyā |</div><div class="en-cell"><div class="en">Whatever beings possess this fair color-form — they too have it of just this nature, of the kind belonging to outward foulness.</div><div class="comment">The insight move. Specific-characteristic investigation gave the body&#x27;s gross foulness in detail. General-characteristic investigation collapses the difference between the seemingly-fair and the obviously-foul: same nature, same property, same outcome. The fair color-form one finds attractive <em>now</em> is the same kind of thing as the corpse one would recoil from.</div></div></div>
+<div class="row" id="sbh3.2:14.1"><div class="seg-id"><a href="#sbh3.2:14.1">sbh3.2:14.1</a></div><div class="san">kathaṁ pakṣaṁ paryeṣate |</div><div class="en">How does he investigate the side?</div></div>
+<div class="row" id="sbh3.2:14.2"><div class="seg-id"><a href="#sbh3.2:14.2">sbh3.2:14.2</a></div><div class="san">tasyaivaṁ bhavati |</div><div class="en">It occurs to him:</div></div>
+<div class="row" id="sbh3.2:14.3"><div class="seg-id"><a href="#sbh3.2:14.3">sbh3.2:14.3</a></div><div class="san">yadyasyā anayā śubhayā varṇanibhayā etāmaśubhatām |</div><div class="en">&#x27;If I, [in regard to] this fair color-form, [generate] this foul-nature,&#x27;</div></div>
+<div class="row" id="sbh3.2:14.4"><div class="seg-id"><a href="#sbh3.2:14.4">sbh3.2:14.4</a></div><div class="san">tāṁ yathābhūtamaprajānann adhyātmaṁ vā bahirdhā vā śubhāyāṁ varṇanibhāyāṁ saṁrāgamutpādayāmi viparyāsa eva kṛṣṇapakṣasaṅgṛhītaḥ |</div><div class="en">&#x27;not knowing it as it is — neither as inward nor as outward foul color-form — should generate craving for fair color-form, that is mere perversion, gathered into the dark side.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.5"><div class="seg-id"><a href="#sbh3.2:14.5">sbh3.2:14.5</a></div><div class="san">niḥsaraṇadharmaḥ saduḥkhaḥ savighātaḥ sopadravaḥ saparidāhaḥ |</div><div class="en">&#x27;It produces escape-by-suffering, with affliction, with calamity, with burning.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.6"><div class="seg-id"><a href="#sbh3.2:14.6">sbh3.2:14.6</a></div><div class="san">atonidānā utpadyante āyatyāṁ jātijarāvyādhimaraṇaśokaparidevaduḥkhadaurmanasyopāyāsāḥ |</div><div class="en">&#x27;From this arise, in time to come, birth, aging, illness, death, sorrow, lamentation, pain, dejection, and despair.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.7"><div class="seg-id"><a href="#sbh3.2:14.7">sbh3.2:14.7</a></div><div class="san">yā punarasyāṁ śubhāyāṁ varṇanibhāyāṁ aśubhadharmatānugatā yathābhūtānupaśyanā śuklapakṣyā |</div><div class="en">&#x27;Whereas the seeing-as-it-is of the foulness-nature within fair color-form is the bright side.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.8"><div class="seg-id"><a href="#sbh3.2:14.8">sbh3.2:14.8</a></div><div class="san">eṣa dharmaḥ aduḥkhaḥ avighātaḥ yāvad atonidānā upāyāsā nirudhyante |</div><div class="en">&#x27;This dharma is without suffering, without affliction; from this, despair through to all subsequent suffering ceases.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.9"><div class="seg-id"><a href="#sbh3.2:14.9">sbh3.2:14.9</a></div><div class="san">tatra yo &#x27;yaṁ kṛṣṇapakṣasamayo nādhivāsayitavyaḥ prahātavyo viśodhayitavyaḥ |</div><div class="en">&#x27;Therefore, what is the dark-side condition is not to be tolerated; it is to be abandoned, purified.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.10"><div class="seg-id"><a href="#sbh3.2:14.10">sbh3.2:14.10</a></div><div class="san">śuklapakṣyaḥ punaranutpanna utpādayitavyaḥ |</div><div class="en">&#x27;The bright-side, when not arisen, is to be aroused;&#x27;</div></div>
+<div class="row" id="sbh3.2:14.11"><div class="seg-id"><a href="#sbh3.2:14.11">sbh3.2:14.11</a></div><div class="san">utpannasya ca sthitirvṛddhirvaipulyatā vipulatā karaṇīyā |</div><div class="en">&#x27;when arisen, its abiding, growth, abundance, and amplitude are to be made.&#x27;</div></div>
+<div class="row" id="sbh3.2:14.12"><div class="seg-id"><a href="#sbh3.2:14.12">sbh3.2:14.12</a></div><div class="san">evaṁ pakṣaṁ paryeṣate |</div><div class="en">Thus he investigates the side.</div></div>
+<div class="row" id="sbh3.2:15.1"><div class="seg-id"><a href="#sbh3.2:15.1">sbh3.2:15.1</a></div><div class="san">kathaṁ kālaṁ paryeṣate |</div><div class="en">How does he investigate time?</div></div>
+<div class="row" id="sbh3.2:15.2"><div class="seg-id"><a href="#sbh3.2:15.2">sbh3.2:15.2</a></div><div class="san">tasyaivaṁ bhavati |</div><div class="en">It occurs to him:</div></div>
+<div class="row" id="sbh3.2:15.3"><div class="seg-id"><a href="#sbh3.2:15.3">sbh3.2:15.3</a></div><div class="san">yeyamadhyātmaṁ aśubhā varṇanibhā seyaṁ vartamānamadhvānamupādāya yā punariyaṁ bahirdhā aśubhā varṇanibhā iyamapi vartamāna tāmevādhvānamupādāya |</div><div class="en">&#x27;This inward fair color-form is so taking the present time. This outward foul color-form is also so taking the present time.&#x27;</div></div>
+<div class="row" id="sbh3.2:15.4"><div class="seg-id"><a href="#sbh3.2:15.4">sbh3.2:15.4</a></div><div class="san">atītaṁ punaradhvānamupādāya |</div><div class="en">&#x27;Taking the past time, however,&#x27;</div></div>
+<div class="row" id="sbh3.2:15.5"><div class="seg-id"><a href="#sbh3.2:15.5">sbh3.2:15.5</a></div><div class="san">śubhā babhūva |</div><div class="en">&#x27;[the outward foul one] was a fair color-form.&#x27;</div></div>
+<div class="row" id="sbh3.2:15.6"><div class="seg-id"><a href="#sbh3.2:15.6">sbh3.2:15.6</a></div><div class="san">saiṣā tāvadatītamadhvānamupādāya śubhā satī tadyathā me etarhi |</div><div class="en">&#x27;As that was — taking past time — fair, just as I am now&#x27;,</div></div>
+<div class="row" id="sbh3.2:15.7"><div class="seg-id"><a href="#sbh3.2:15.7">sbh3.2:15.7</a></div><div class="san">vartamānamadhvānamupādāya |</div><div class="en">&#x27;taking present time,&#x27;</div></div>
+<div class="row" id="sbh3.2:15.8"><div class="seg-id"><a href="#sbh3.2:15.8">sbh3.2:15.8</a></div><div class="san">evamānupūrvyā etarhi vartamānamupādāya aśubhā saṁvṛttā, sā me iyaṁ aśubhā varṇanibhā vartamānamadhvānamupādāya aśubhā satī |</div><div class="en">&#x27;so by progression, taking present time, [the present fair one] has become foul. This fair color-form of mine, taking present time, is foul.&#x27;</div></div>
+<div class="row" id="sbh3.2:15.9"><div class="seg-id"><a href="#sbh3.2:15.9">sbh3.2:15.9</a></div><div class="san">anāgate adhvanyaśubhā na bhaviṣyatīti |</div><div class="en">&#x27;It will not, in time-to-come, not be foul —&#x27;</div></div>
+<div class="row" id="sbh3.2:15.10"><div class="seg-id"><a href="#sbh3.2:15.10">sbh3.2:15.10</a></div><div class="san">nedaṁ sthānaṁ vidyate |</div><div class="en">&#x27;there is no such case.&#x27;</div></div>
+<div class="row" id="sbh3.2:15.11"><div class="seg-id"><a href="#sbh3.2:15.11">sbh3.2:15.11</a></div><div class="san">tadyathaiṣā bāhyā evaṁ vartamānamadhvānamupādāya |</div><div class="en">&#x27;As is this outward [body], so is mine taking present time.&#x27;</div></div>
+<div class="row" id="sbh3.2:15.12"><div class="seg-id"><a href="#sbh3.2:15.12">sbh3.2:15.12</a></div><div class="san">iti hyatītānāgatapratyutpanneṣvadhvasvayamapi me kāya evaṁbhāvī, evaṁbhūtaḥ, etāṁ ca dharmatāmanatīta ityevaṁ kālaṁ samanveṣate |</div><div class="en">Thus through past, future, and present times: &#x27;this body of mine is of such a nature, has been such, will be such, and does not transcend this nature.&#x27; Thus he investigates time.</div></div>
+<div class="row" id="sbh3.2:16.1"><div class="seg-id"><a href="#sbh3.2:16.1">sbh3.2:16.1</a></div><div class="san">kathaṁ yuktiṁ samanveṣate |</div><div class="en">How does he investigate reasoning?</div></div>
+<div class="row" id="sbh3.2:16.2"><div class="seg-id"><a href="#sbh3.2:16.2">sbh3.2:16.2</a></div><div class="san">tasyaivaṁ bhavati |</div><div class="en">It occurs to him:</div></div>
+<div class="row" id="sbh3.2:16.3"><div class="seg-id"><a href="#sbh3.2:16.3">sbh3.2:16.3</a></div><div class="san">nāstīti sa kaścidātmā vā sattvo vā adhyātmaṁ vā bahirdhā vopalabhyamānaḥ yaḥ śubho vā syādaśubho vā |</div><div class="en">&#x27;There is no self, no being, inward or outward, that could be either fair or foul.&#x27;</div></div>
+<div class="row" id="sbh3.2:16.4"><div class="seg-id"><a href="#sbh3.2:16.4">sbh3.2:16.4</a></div><div class="san">api ca rūpamātrametat kaṇḍavaramātrametad yatreyaṁ saṁjñā samājñā prajñaptirvyavahāraḥ |</div><div class="en">&#x27;Rather, this is mere form — mere accumulation of itching and scratching — wherein this notion, this designation, this convention is applied&#x27;:</div></div>
+<div class="row" id="sbh3.2:16.5"><div class="seg-id"><a href="#sbh3.2:16.5">sbh3.2:16.5</a></div><div class="san">śubhamiti vā aśubhamiti vā |</div><div class="en">&#x27;fair&#x27; or &#x27;foul.&#x27;</div></div>
+<div class="row" id="sbh3.2:16.6"><div class="seg-id"><a href="#sbh3.2:16.6">sbh3.2:16.6</a></div><div class="san">api ca āyurūṣmātha vijñānaṁ |</div><div class="en">&#x27;Furthermore: vital force, heat, and consciousness —&#x27;</div></div>
+<div class="row" id="sbh3.2:16.7"><div class="seg-id"><a href="#sbh3.2:16.7">sbh3.2:16.7</a></div><div class="san">yadā kāyaṁ jahatyamī |</div><div class="en">&#x27;when these abandon the body,&#x27;</div></div>
+<div class="row" id="sbh3.2:16.8"><div class="seg-id"><a href="#sbh3.2:16.8">sbh3.2:16.8</a></div><div class="san">apaviddhastadā śete yathā kāṣṭhamacetanam ||</div><div class="en">&#x27;then it lies cast off like an unconscious log.&#x27;</div></div>
+<div class="row" id="sbh3.2:16.9"><div class="seg-id"><a href="#sbh3.2:16.9">sbh3.2:16.9</a></div><div class="san">tasyāsya mṛtasya kālagatasyānupūrveṇa vipariṇatā imā avasthāḥ prajñāyante |</div><div class="en">&#x27;Of this dead one, by stages, these altered states are to be known:&#x27;</div></div>
+<div class="row" id="sbh3.2:16.10"><div class="seg-id"><a href="#sbh3.2:16.10">sbh3.2:16.10</a></div><div class="san">yaduta vinīlakamiti vā yāvadasthiśaṅkalikāyā vā ayamapi me kāyaḥ |</div><div class="en">&#x27;the discolored through the bone-skeleton stages. This body of mine —&#x27;</div></div>
+<div class="row" id="sbh3.2:16.11"><div class="seg-id"><a href="#sbh3.2:16.11">sbh3.2:16.11</a></div><div class="san">pūrvakarmakleśaviddhaḥ |</div><div class="en">&#x27;pierced by previous-action defilements,&#x27;</div></div>
+<div class="row" id="sbh3.2:16.12"><div class="seg-id"><a href="#sbh3.2:16.12">sbh3.2:16.12</a></div><div class="san">mātāpitryaśucisaṁbhūta odanakakulmāṣopacitaḥ |</div><div class="en">&#x27;born of mother-and-father impurities, accumulated by gruel and barley —&#x27;</div></div>
+<div class="row" id="sbh3.2:16.13"><div class="seg-id"><a href="#sbh3.2:16.13">sbh3.2:16.13</a></div><div class="san">yena hetunā, yena nidānena iyaṁ tāvatkālikī śubhā varṇanibhā prajñāyate |</div><div class="en">&#x27;by what cause, by what condition, is this present-time fair color-form known as fair?&#x27;</div></div>
+<div class="row" id="sbh3.2:16.14"><div class="seg-id"><a href="#sbh3.2:16.14">sbh3.2:16.14</a></div><div class="san">antaḥkāyaḥ punarnityaṁ nityakālamadhyātmaṁ ca bahirdhā cāśubhā evaṁ saṁvṛtiparamārthanidānataḥ |</div><div class="en">&#x27;But the inward body is at all times, both inwardly and outwardly, foul.&#x27; Thus by way of the conventional, the ultimate, and the causal,</div></div>
+<div class="row" id="sbh3.2:16.15"><div class="seg-id"><a href="#sbh3.2:16.15">sbh3.2:16.15</a></div><div class="san">apekṣāyuktiṁ paryeṣate |</div><div class="en">he investigates dependence-reasoning.</div></div>
+<div class="row" id="sbh3.2:17.1"><div class="seg-id"><a href="#sbh3.2:17.1">sbh3.2:17.1</a></div><div class="san">tasyaivaṁ bhavatīyamaśubhatā evamāsevitā bhāvitā bahulīkṛtā kāmarāgaprahāṇāya saṁvartate |</div><div class="en">It occurs to him: &#x27;This foulness, thus practiced, cultivated, made much of, conduces to the abandonment of sensual craving.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.2"><div class="seg-id"><a href="#sbh3.2:17.2">sbh3.2:17.2</a></div><div class="san">kāmarāgaśca prahātavyaḥ |</div><div class="en">&#x27;And sensual craving is to be abandoned.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.3"><div class="seg-id"><a href="#sbh3.2:17.3">sbh3.2:17.3</a></div><div class="san">evaṁ kāryakāraṇayuktyā samanveṣate |</div><div class="en">Thus he investigates by cause-and-effect reasoning.</div></div>
+<div class="row" id="sbh3.2:17.4"><div class="seg-id"><a href="#sbh3.2:17.4">sbh3.2:17.4</a></div><div class="san">tasyaivaṁ bhavatyuktaṁ hi bhagavatā |</div><div class="en">It occurs to him: &#x27;It has been spoken by the Blessed One:</div></div>
+<div class="row" id="sbh3.2:17.5"><div class="seg-id"><a href="#sbh3.2:17.5">sbh3.2:17.5</a></div><div class="san">aśubhā āsevitā bhāvitā bahulīkṛtā kāmarāgaprahāṇāya saṁvartata ityayaṁ tāvanme āptāgamaḥ |</div><div class="en">Foulness practiced, cultivated, made much of, conduces to the abandonment of sensual craving. This, for me, is the trustworthy testimony.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.6"><div class="seg-id"><a href="#sbh3.2:17.6">sbh3.2:17.6</a></div><div class="san">pratyātmamapi me jñānadarśanaṁ pravartate |</div><div class="en-cell"><div class="en">&#x27;Direct knowing-and-seeing arises in me also:&#x27;</div><div class="comment">Asanga gives the practitioner an explicit experimental protocol: &#x27;as I cultivate foulness, sensual craving doesn&#x27;t arise; when arisen, it goes away.&#x27; The practice is verified pragmatically by its effect on the defilement — a precise statement of how a contemplative claim is to be tested.</div></div></div>
+<div class="row" id="sbh3.2:17.7"><div class="seg-id"><a href="#sbh3.2:17.7">sbh3.2:17.7</a></div><div class="san">ahamasmi yathā yathā aśubhatāṁ bhāvayāmi, manasi karomi |</div><div class="en">&#x27;as I, however much, cultivate foulness and attend to it,&#x27;</div></div>
+<div class="row" id="sbh3.2:17.8"><div class="seg-id"><a href="#sbh3.2:17.8">sbh3.2:17.8</a></div><div class="san">tathā kāmarāgaparyavasthānaṁ anutpannaṁ ca notpadyate |</div><div class="en">&#x27;thus the obsession of sensual craving — when not arisen — does not arise;&#x27;</div></div>
+<div class="row" id="sbh3.2:17.9"><div class="seg-id"><a href="#sbh3.2:17.9">sbh3.2:17.9</a></div><div class="san">utpannaṁ ca prativigacchati |</div><div class="en">&#x27;when arisen, it goes away.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.10"><div class="seg-id"><a href="#sbh3.2:17.10">sbh3.2:17.10</a></div><div class="san">ānulomiko &#x27;pyeṣa vidhirasti |</div><div class="en">&#x27;There is also this consequential gradation:&#x27;</div></div>
+<div class="row" id="sbh3.2:17.11"><div class="seg-id"><a href="#sbh3.2:17.11">sbh3.2:17.11</a></div><div class="san">kathamidānīṁ vipakṣaṁ dharmaṁ manasikurvataḥ |</div><div class="en">&#x27;when one attends to a counter-aspect dharma,&#x27;</div></div>
+<div class="row" id="sbh3.2:17.12"><div class="seg-id"><a href="#sbh3.2:17.12">sbh3.2:17.12</a></div><div class="san">tadvipakṣālambanena kleśa utpadyate |</div><div class="en">&#x27;defilement arises through the object of the counter-aspect.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.13"><div class="seg-id"><a href="#sbh3.2:17.13">sbh3.2:17.13</a></div><div class="san">evamupapattisādhanayuktyā paryeṣate |</div><div class="en">Thus he investigates by proof-establishing reasoning.</div></div>
+<div class="row" id="sbh3.2:17.14"><div class="seg-id"><a href="#sbh3.2:17.14">sbh3.2:17.14</a></div><div class="san">tasyaivaṁ bhavati |</div><div class="en">It occurs to him:</div></div>
+<div class="row" id="sbh3.2:17.15"><div class="seg-id"><a href="#sbh3.2:17.15">sbh3.2:17.15</a></div><div class="san">prasiddhā dharmatā khalveṣā acintyadharmatā |</div><div class="en">&#x27;This is an established nature-of-things, an unthinkable nature-of-things:&#x27;</div></div>
+<div class="row" id="sbh3.2:17.16"><div class="seg-id"><a href="#sbh3.2:17.16">sbh3.2:17.16</a></div><div class="san">yadaśubhā bhāvanā kāmarāgasya prahāṇapratipakṣa iti |</div><div class="en">&#x27;that foulness-cultivation is the antidote to the abandonment of sensual craving.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.17"><div class="seg-id"><a href="#sbh3.2:17.17">sbh3.2:17.17</a></div><div class="san">sā ca cintayitavyā |</div><div class="en">&#x27;This is to be considered,&#x27;</div></div>
+<div class="row" id="sbh3.2:17.18"><div class="seg-id"><a href="#sbh3.2:17.18">sbh3.2:17.18</a></div><div class="san">na vikalpayitavyā |</div><div class="en">&#x27;not further discriminated,&#x27;</div></div>
+<div class="row" id="sbh3.2:17.19"><div class="seg-id"><a href="#sbh3.2:17.19">sbh3.2:17.19</a></div><div class="san">adhimoktavyā |</div><div class="en">&#x27;but resolved upon.&#x27;</div></div>
+<div class="row" id="sbh3.2:17.20"><div class="seg-id"><a href="#sbh3.2:17.20">sbh3.2:17.20</a></div><div class="san">evaṁ dharmatāyuktyā aśubhatām paryeṣate |</div><div class="en">Thus by nature-of-things reasoning he investigates foulness.</div></div>
+<div class="row" id="sbh3.2:17.21"><div class="seg-id"><a href="#sbh3.2:17.21">sbh3.2:17.21</a></div><div class="san">iyaṁ tāvadaśubhāprayuktasya trimukhī ṣaḍvastuprabhedālambanā vipaśyanā |</div><div class="en">This is the threefold-gateway, six-investigation-subject *vipaśyanā* of one engaged in foulness.</div></div>
+<div class="row" id="sbh3.2:18.1"><div class="seg-id"><a href="#sbh3.2:18.1">sbh3.2:18.1</a></div><div class="san">kathaṁ maitrīprayukto vipaśyan ṣaḍvastūni paryeṣate |</div><div class="en">How does the practitioner engaged in lovingkindness investigate the six investigation-subjects?</div></div>
+<div class="row" id="sbh3.2:18.2"><div class="seg-id"><a href="#sbh3.2:18.2">sbh3.2:18.2</a></div><div class="san">maitryadhipateyaṁ dharmamadhipatiṁ kṛtvā hitasukhādhyāśayagatasya sarveṣu sukhopasaṁhārādhimokṣalakṣaṇā maitrītyetamarthapratisaṁvedyarthaṁ paryeṣate |</div><div class="en">Taking the lovingkindness-teaching as governing, comprehending the meaning of &#x27;lovingkindness — characterized by the resolve to bring happiness to all, established in benefit-and-happiness-aspiration&#x27; — he investigates the meaning.</div></div>
+<div class="row" id="sbh3.2:19.1"><div class="seg-id"><a href="#sbh3.2:19.1">sbh3.2:19.1</a></div><div class="san">sa evamarthapratisaṁvedī punarvicinotītyayaṁ mitrapakṣo &#x27;yamamitrapakṣo &#x27;yamudāsīnapakṣaḥ |</div><div class="en">He, comprehending the meaning, investigates closely: &#x27;This is the friend-side; this is the enemy-side; this is the indifferent-side.&#x27;</div></div>
+<div class="row" id="sbh3.2:19.2"><div class="seg-id"><a href="#sbh3.2:19.2">sbh3.2:19.2</a></div><div class="san">sarva ete pakṣāḥ parasantānapatitatvād bāhyaṁ vastvityadhimucyate |</div><div class="en">&#x27;All these sides, falling within the continuum of others, are outward substance&#x27; — so he resolves.</div></div>
+<div class="row" id="sbh3.2:19.3"><div class="seg-id"><a href="#sbh3.2:19.3">sbh3.2:19.3</a></div><div class="san">mitrapakṣaṁ vā adhyātmamamitrodāsīnapakṣaṁ bahirdhā evaṁ ca vastuni maitrīṁ samanveṣate |</div><div class="en">Or: friend-side as inward, enemy-and-indifferent-side as outward. Thus he investigates lovingkindness in the substance.</div></div>
+<div class="row" id="sbh3.2:20.1"><div class="seg-id"><a href="#sbh3.2:20.1">sbh3.2:20.1</a></div><div class="san">sa punarvicinoti |</div><div class="en">He investigates closely:</div></div>
+<div class="row" id="sbh3.2:20.2"><div class="seg-id"><a href="#sbh3.2:20.2">sbh3.2:20.2</a></div><div class="san">ya ete trayaḥ pakṣāḥ aduḥkhā sukhatāḥ |</div><div class="en">&#x27;These three sides — neither suffering nor happy,&#x27;</div></div>
+<div class="row" id="sbh3.2:20.3"><div class="seg-id"><a href="#sbh3.2:20.3">sbh3.2:20.3</a></div><div class="san">sukhakāmāste sukhitā bhavantviti |</div><div class="en">&#x27;desiring happiness — let them be happy.&#x27;</div></div>
+<div class="row" id="sbh3.2:20.4"><div class="seg-id"><a href="#sbh3.2:20.4">sbh3.2:20.4</a></div><div class="san">tatropakāralakṣaṇaṁ mitraṁ |</div><div class="en">Among these: the friend is characterized by helpfulness;</div></div>
+<div class="row" id="sbh3.2:20.5"><div class="seg-id"><a href="#sbh3.2:20.5">sbh3.2:20.5</a></div><div class="san">apakāralakṣaṇamamitraṁ |</div><div class="en">the enemy by harmfulness;</div></div>
+<div class="row" id="sbh3.2:20.6"><div class="seg-id"><a href="#sbh3.2:20.6">sbh3.2:20.6</a></div><div class="san">tadubhayaparītalakṣaṇamudāsīnapakṣaṁ |</div><div class="en">the indifferent by neither.</div></div>
+<div class="row" id="sbh3.2:20.7"><div class="seg-id"><a href="#sbh3.2:20.7">sbh3.2:20.7</a></div><div class="san">ye punarete aduḥkhāsukhitāḥ pakṣāḥ sukhakāmāsteṣāṁ trividhā sukhakāmatā prajñāyate |</div><div class="en">Among those who are not-suffering-and-happy and who desire happiness, three kinds of happiness-desire are known:</div></div>
+<div class="row" id="sbh3.2:20.8"><div class="seg-id"><a href="#sbh3.2:20.8">sbh3.2:20.8</a></div><div class="san">eke kāmasukhamicchantyeke rūpāvacaraṁ saprītikameke niṣprītikaṁ |</div><div class="en">some desire sensual happiness; some desire form-realm happiness with rapture; some desire form-realm happiness without rapture.</div></div>
+<div class="row" id="sbh3.2:20.9"><div class="seg-id"><a href="#sbh3.2:20.9">sbh3.2:20.9</a></div><div class="san">tatra ye kāmasukhena vihanyante |</div><div class="en">Of those who are afflicted by sensual happiness:</div></div>
+<div class="row" id="sbh3.2:20.10"><div class="seg-id"><a href="#sbh3.2:20.10">sbh3.2:20.10</a></div><div class="san">te kāmasukhino bhavantvanavadyena |</div><div class="en">&#x27;let them be happy with blameless [happiness].&#x27;</div></div>
+<div class="row" id="sbh3.2:20.11"><div class="seg-id"><a href="#sbh3.2:20.11">sbh3.2:20.11</a></div><div class="san">evaṁ saprītikena niṣprītikena ca sukhena veditavyam |</div><div class="en">Likewise of those wishing rapture-happiness or rapture-less happiness.</div></div>
+<div class="row" id="sbh3.2:20.12"><div class="seg-id"><a href="#sbh3.2:20.12">sbh3.2:20.12</a></div><div class="san">evaṁ svalakṣaṇato maitrīṁ samanveṣate |</div><div class="en">Thus by way of specific characteristic he investigates lovingkindness.</div></div>
+<div class="row" id="sbh3.2:21.1"><div class="seg-id"><a href="#sbh3.2:21.1">sbh3.2:21.1</a></div><div class="san">sa punaḥ pravicinoti |</div><div class="en">He investigates closely:</div></div>
+<div class="row" id="sbh3.2:21.2"><div class="seg-id"><a href="#sbh3.2:21.2">sbh3.2:21.2</a></div><div class="san">yaśca mitrapakṣo, yaścāmitrapakṣo, yaścodāsīnapakṣaḥ |</div><div class="en">&#x27;Of friend, enemy, and indifferent,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.3"><div class="seg-id"><a href="#sbh3.2:21.3">sbh3.2:21.3</a></div><div class="san">tulyacittatā tu mayā karaṇīyeti |</div><div class="en">&#x27;equanimity-of-mind is to be made by me,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.4"><div class="seg-id"><a href="#sbh3.2:21.4">sbh3.2:21.4</a></div><div class="san">samacittatā |</div><div class="en">&#x27;equality-of-mind.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.5"><div class="seg-id"><a href="#sbh3.2:21.5">sbh3.2:21.5</a></div><div class="san">tatkasya hetoḥ |</div><div class="en">&#x27;Why?&#x27;</div></div>
+<div class="row" id="sbh3.2:21.6"><div class="seg-id"><a href="#sbh3.2:21.6">sbh3.2:21.6</a></div><div class="san">yastāvanmitrapakṣastatra me na duṣkaraḥ |</div><div class="en">&#x27;With the friend, bringing happiness is not difficult for me —&#x27;</div></div>
+<div class="row" id="sbh3.2:21.7"><div class="seg-id"><a href="#sbh3.2:21.7">sbh3.2:21.7</a></div><div class="san">sukhopasaṁhāraḥ |</div><div class="en">&#x27;bringing happiness.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.8"><div class="seg-id"><a href="#sbh3.2:21.8">sbh3.2:21.8</a></div><div class="san">yo &#x27;pyayamudāsīnapakṣaḥ |</div><div class="en">&#x27;And the indifferent-side —&#x27;</div></div>
+<div class="row" id="sbh3.2:21.9"><div class="seg-id"><a href="#sbh3.2:21.9">sbh3.2:21.9</a></div><div class="san">tatrāpi me nātiduṣkaraḥ |</div><div class="en">&#x27;with that also, not very difficult for me.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.10"><div class="seg-id"><a href="#sbh3.2:21.10">sbh3.2:21.10</a></div><div class="san">yastvayamamitrapakṣaḥ |</div><div class="en">&#x27;But the enemy-side —&#x27;</div></div>
+<div class="row" id="sbh3.2:21.11"><div class="seg-id"><a href="#sbh3.2:21.11">sbh3.2:21.11</a></div><div class="san">tatrātiduṣkaraḥ |</div><div class="en">&#x27;with that, most difficult.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.12"><div class="seg-id"><a href="#sbh3.2:21.12">sbh3.2:21.12</a></div><div class="san">tatra tāvanmayā sukhopasaṁhāraḥ karaṇīyaḥ |</div><div class="en">&#x27;So bringing happiness is to be made by me here above all.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.13"><div class="seg-id"><a href="#sbh3.2:21.13">sbh3.2:21.13</a></div><div class="san">kaḥ punarvādaḥ |</div><div class="en">&#x27;What need to speak of —&#x27;</div></div>
+<div class="row" id="sbh3.2:21.14"><div class="seg-id"><a href="#sbh3.2:21.14">sbh3.2:21.14</a></div><div class="san">mitrapakṣe vodāsīnapakṣe vā |</div><div class="en">&#x27;friend or indifferent?&#x27;</div></div>
+<div class="row" id="sbh3.2:21.15"><div class="seg-id"><a href="#sbh3.2:21.15">sbh3.2:21.15</a></div><div class="san">tatkasya hetoḥ |</div><div class="en">&#x27;Why?&#x27;</div></div>
+<div class="row" id="sbh3.2:21.16"><div class="seg-id"><a href="#sbh3.2:21.16">sbh3.2:21.16</a></div><div class="san">nātra kaścidyaḥ ākrośate vā, ākruśyate vā |</div><div class="en">&#x27;In this case, no one actually scolds or is scolded,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.17"><div class="seg-id"><a href="#sbh3.2:21.17">sbh3.2:21.17</a></div><div class="san">roṣayati vā, roṣyate vā |</div><div class="en">&#x27;angers or is angered,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.18"><div class="seg-id"><a href="#sbh3.2:21.18">sbh3.2:21.18</a></div><div class="san">bhaṇḍayati vā, bhaṇḍyate vā |</div><div class="en">&#x27;abuses or is abused,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.19"><div class="seg-id"><a href="#sbh3.2:21.19">sbh3.2:21.19</a></div><div class="san">tāḍayati vā, tāḍyate vā |</div><div class="en">&#x27;beats or is beaten —&#x27;</div></div>
+<div class="row" id="sbh3.2:21.20"><div class="seg-id"><a href="#sbh3.2:21.20">sbh3.2:21.20</a></div><div class="san">anyatra akṣarāṇyetāni ravanti |</div><div class="en">&#x27;apart from these letters of speech that resound.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.21"><div class="seg-id"><a href="#sbh3.2:21.21">sbh3.2:21.21</a></div><div class="san">śabdamātraṁ māṣamātrametadapi ca tathā saṁbhūto &#x27;yaṁ kāyo rūpī audārikaścāturmahābhautiko yatra me sthitasyeme evaṁ rūpāḥ sparśāḥ krāmanti |</div><div class="en">&#x27;They are mere syllables, mere measure-of-syllable. And this body, of form, gross, made of the four great elements — it is here that such contacts come to me, [I] standing here:&#x27;</div></div>
+<div class="row" id="sbh3.2:21.22"><div class="seg-id"><a href="#sbh3.2:21.22">sbh3.2:21.22</a></div><div class="san">yaduta śabdasaṁsparśā vā |</div><div class="en">&#x27;namely, contacts of speech,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.23"><div class="seg-id"><a href="#sbh3.2:21.23">sbh3.2:21.23</a></div><div class="san">pāṇiloṣṭhadaṇḍaśastrasaṁsparśā vā ayaṁ me kāyaḥ |</div><div class="en">&#x27;contacts of hand, clod, stick, weapon. This body of mine —&#x27;</div></div>
+<div class="row" id="sbh3.2:21.24"><div class="seg-id"><a href="#sbh3.2:21.24">sbh3.2:21.24</a></div><div class="san">anitya, ete &#x27;pi sparśā ye te apakārakāste &#x27;pyanityāḥ |</div><div class="en">&#x27;is impermanent; these contacts that harm — these too are impermanent.&#x27;</div></div>
+<div class="row" id="sbh3.2:21.25"><div class="seg-id"><a href="#sbh3.2:21.25">sbh3.2:21.25</a></div><div class="san">api ca |</div><div class="en">&#x27;Moreover:&#x27;</div></div>
+<div class="row" id="sbh3.2:21.26"><div class="seg-id"><a href="#sbh3.2:21.26">sbh3.2:21.26</a></div><div class="san">sarva eva sattvā jātijarāvyādhimaraṇadharmāṇaste prakṛtyaiva duḥkhitāstanme pratirūpaṁ syāt |</div><div class="en">&#x27;all beings are subject to birth, aging, illness, death; by their very nature they suffer. It would be unbecoming for me,&#x27;</div></div>
+<div class="row" id="sbh3.2:21.27"><div class="seg-id"><a href="#sbh3.2:21.27">sbh3.2:21.27</a></div><div class="san">yadyahaṁ prakṛtiduḥkhiteṣu sattveṣu bhūyo duḥkhopasaṁhārameva kuryāṁ, na sukhopasaṁhāraṁ tadamitratraṁ mitrasya kuryādyad ete sattvā ātmanaivātmanaḥ kurvanti |</div><div class="en-cell"><div class="en">&#x27;if to beings already naturally suffering, I should bring further suffering rather than happiness — that would be like an enemy acting on a friend, since these beings already do this to themselves.&#x27;</div><div class="comment">The Sanskrit <em>anitya, ete &#x27;pi sparśā ye te apakārakās te &#x27;py anityāḥ</em> anchors the equanimity argument in impermanence. Three reasoning moves toward universal <em>maitrī</em>: speech-act analysis (abuse is mere syllables, body is mere elements, contacts arise and pass); universal-suffering recognition (all beings suffer; adding to suffering is unbecoming); long-saṁsāric-time argument.</div></div></div>
+<div class="row" id="sbh3.2:22.1"><div class="seg-id"><a href="#sbh3.2:22.1">sbh3.2:22.1</a></div><div class="san">api coktaṁ bhagavatā |</div><div class="en">Furthermore, it has been spoken by the Blessed One:</div></div>
+<div class="row" id="sbh3.2:22.2"><div class="seg-id"><a href="#sbh3.2:22.2">sbh3.2:22.2</a></div><div class="san">nāhaṁ taṁ sulabharūpaṁ samanupaśyāmi |</div><div class="en">&#x27;I do not see any easily-found being&#x27;</div></div>
+<div class="row" id="sbh3.2:22.3"><div class="seg-id"><a href="#sbh3.2:22.3">sbh3.2:22.3</a></div><div class="san">yo &#x27;nena dīrghasyādhvanotyayān mātā vā bhūt pitā vā, bhrātā vā, bhaginī vā, ācāryo vā, upādhyāyo vā, gururvā, gurusthānīyo veti |</div><div class="en">&#x27;who, in this long course of *saṁsāra*, has not been my mother, father, brother, sister, teacher, preceptor, or one in the position of a guru.&#x27;</div></div>
+<div class="row" id="sbh3.2:22.4"><div class="seg-id"><a href="#sbh3.2:22.4">sbh3.2:22.4</a></div><div class="san">tadanenāpi paryāyeṇāmitrapakṣa evaṁ me amitrapakṣaḥ |</div><div class="en">Thus by this consideration also: the enemy-side is enemy-side only as a designation.</div></div>
+<div class="row" id="sbh3.2:22.5"><div class="seg-id"><a href="#sbh3.2:22.5">sbh3.2:22.5</a></div><div class="san">na cātra kasyacit pariniṣpattiḥ, mitrāmitrabhāvo, mitro &#x27;pi tramapi ca kālāntareṇāmitro traṁ bhavati |</div><div class="en">There is no fixed essence here — friend-or-enemy-being. The friend, by the passage of time, becomes the enemy;</div></div>
+<div class="row" id="sbh3.2:22.6"><div class="seg-id"><a href="#sbh3.2:22.6">sbh3.2:22.6</a></div><div class="san">amitro tramapi mitrībhavati |</div><div class="en">the enemy too becomes the friend.</div></div>
+<div class="row" id="sbh3.2:22.7"><div class="seg-id"><a href="#sbh3.2:22.7">sbh3.2:22.7</a></div><div class="san">tasmān na sarvasattveṣu samacittatā |</div><div class="en">Therefore equanimity-of-mind toward all beings,</div></div>
+<div class="row" id="sbh3.2:22.8"><div class="seg-id"><a href="#sbh3.2:22.8">sbh3.2:22.8</a></div><div class="san">samatādṛṣṭiḥ karaṇīyā |</div><div class="en">the view of equality, is to be made;</div></div>
+<div class="row" id="sbh3.2:22.9"><div class="seg-id"><a href="#sbh3.2:22.9">sbh3.2:22.9</a></div><div class="san">tulyaśca hitāśayaḥ, sukhādhyāśayaḥ, sukhopasaṁhāraḥ |</div><div class="en">an equal benefit-aspiration, happiness-aspiration, happiness-bringing —</div></div>
+<div class="row" id="sbh3.2:22.10"><div class="seg-id"><a href="#sbh3.2:22.10">sbh3.2:22.10</a></div><div class="san">sukhopasaṁhārādhimokṣa iti |</div><div class="en">the resolve to bring happiness.</div></div>
+<div class="row" id="sbh3.2:22.11"><div class="seg-id"><a href="#sbh3.2:22.11">sbh3.2:22.11</a></div><div class="san">evaṁ sāmānyalakṣaṇena maitrīṁ samanveṣate |</div><div class="en">Thus by way of general characteristic he investigates lovingkindness.</div></div>
+<div class="row" id="sbh3.2:23.1"><div class="seg-id"><a href="#sbh3.2:23.1">sbh3.2:23.1</a></div><div class="san">sa punaḥ pravicinoti |</div><div class="en">He investigates closely:</div></div>
+<div class="row" id="sbh3.2:23.2"><div class="seg-id"><a href="#sbh3.2:23.2">sbh3.2:23.2</a></div><div class="san">yo me pāpakāriṣu sattveṣu vyāpādaḥ maraṇa eṣa dharma iti vistareṇa pūrvavat |</div><div class="en">&#x27;Whatever ill-will arises in me toward harm-doing beings — that is the death-nature&#x27; — extended at length as before.</div></div>
+<div class="row" id="sbh3.2:23.3"><div class="seg-id"><a href="#sbh3.2:23.3">sbh3.2:23.3</a></div><div class="san">yo vā punarayametarhyavyāpādaḥ amaraṇa eṣa dharma iti vistareṇa pūrvavat |</div><div class="en">&#x27;And whatever non-ill-will is now present — that is the deathless-nature&#x27; — extended at length as before.</div></div>
+<div class="row" id="sbh3.2:23.4"><div class="seg-id"><a href="#sbh3.2:23.4">sbh3.2:23.4</a></div><div class="san">evaṁ maitryāḥ kṛṣṇaśuklapakṣaṁ paryeṣate |</div><div class="en">Thus he investigates the dark-and-bright sides of lovingkindness.</div></div>
+<div class="row" id="sbh3.2:24.1"><div class="seg-id"><a href="#sbh3.2:24.1">sbh3.2:24.1</a></div><div class="san">sa punaḥ pravicinoti |</div><div class="en">He investigates closely:</div></div>
+<div class="row" id="sbh3.2:24.2"><div class="seg-id"><a href="#sbh3.2:24.2">sbh3.2:24.2</a></div><div class="san">ye tāvadatītamadhvānamupādāya sukhakāmāḥ sattvāḥ te atītāḥ, teṣāṁ kiṁ punaḥ sukhopasaṁhāraṁ kariṣyāmaḥ |</div><div class="en">&#x27;Those happiness-desiring beings, taking past time — they have passed away. To whom shall we now bring happiness?&#x27;</div></div>
+<div class="row" id="sbh3.2:24.3"><div class="seg-id"><a href="#sbh3.2:24.3">sbh3.2:24.3</a></div><div class="san">ye punarvartamānāḥ sattvāste vartamānamadhvānamupādāya |</div><div class="en">&#x27;But those beings of present time — taking present time,&#x27;</div></div>
+<div class="row" id="sbh3.2:24.4"><div class="seg-id"><a href="#sbh3.2:24.4">sbh3.2:24.4</a></div><div class="san">yāvadanāgatādadhvano nityakālaṁ sukhino bhavantvityevaṁ maitryāḥ kālaṁ paryeṣate |</div><div class="en">&#x27;taking future time — let them be at all times happy.&#x27; Thus he investigates the time of lovingkindness.</div></div>
+<div class="row" id="sbh3.2:25.1"><div class="seg-id"><a href="#sbh3.2:25.1">sbh3.2:25.1</a></div><div class="san">sa punaḥ pravicinoti |</div><div class="en">He investigates closely:</div></div>
+<div class="row" id="sbh3.2:25.2"><div class="seg-id"><a href="#sbh3.2:25.2">sbh3.2:25.2</a></div><div class="san">nāsti kaścidātmā vā, sattvo vā ya eṣa sukhakāmo vā syāt |</div><div class="en">&#x27;There is no self, no being, who would be the desirer-of-happiness,&#x27;</div></div>
+<div class="row" id="sbh3.2:25.3"><div class="seg-id"><a href="#sbh3.2:25.3">sbh3.2:25.3</a></div><div class="san">yasya vā sukhamupasaṁhriyate |</div><div class="en">&#x27;or to whom happiness would be brought.&#x27;</div></div>
+<div class="row" id="sbh3.2:25.4"><div class="seg-id"><a href="#sbh3.2:25.4">sbh3.2:25.4</a></div><div class="san">api tu skandhamātrametat saṁskāramātrakametad yatraiṣā saṁjñā saṁjñaptirvyavahāraḥ |</div><div class="en">&#x27;Rather, this is mere aggregate, mere accumulation of formations, wherein this notion, designation, convention is applied.&#x27;</div></div>
+<div class="row" id="sbh3.2:25.5"><div class="seg-id"><a href="#sbh3.2:25.5">sbh3.2:25.5</a></div><div class="san">te punaḥ saṁskārāḥ karmakleśahetukā ityevamapekṣāyuktyā maitrīm paryeṣate |</div><div class="en">&#x27;And these formations are caused by *karma* and *kleśa*.&#x27; Thus by dependence-reasoning he investigates lovingkindness.</div></div>
+<div class="row" id="sbh3.2:25.6"><div class="seg-id"><a href="#sbh3.2:25.6">sbh3.2:25.6</a></div><div class="san">prasiddhadharmatā khalveṣā acintyadharmatā yan maitrīvyāpādabhāvanā prahāṇāya saṁvartata ityevaṁ dharmatāyuktyā maitrīm paryeṣate |</div><div class="en-cell"><div class="en">&#x27;It is an established nature-of-things, an unthinkable nature-of-things, that lovingkindness-cultivation conduces to the abandonment of ill-will.&#x27; Thus by nature-of-things reasoning he investigates lovingkindness.</div><div class="comment">The reasoning-investigation collapses <em>maitrī</em> into <em>anātman</em>. Even lovingkindness practice is to be done with full recognition that there is no self sending the <em>maitrī</em> and no self receiving it — only aggregates conditioned by <em>karma</em> and <em>kleśa</em>. The Yogācāra distinctive: <em>maitrī</em> is not at odds with emptiness; the deepest <em>maitrī</em> is <em>maitrī</em> informed by <em>anātman</em>.</div></div></div>
+</main>
+</body>
+</html>

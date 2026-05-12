@@ -1,0 +1,26 @@
+[
+  {
+    "root_lang_iso": "san",
+    "root_lang_name": "Sanskrit",
+    "translation_lang_iso": "en",
+    "translation_lang_name": "English",
+    "source_url": "https://github.com/rforsyth/sravakabhumi-en",
+    "creator_uid": "ryanforsyth",
+    "creator_name": "Ryan Forsyth",
+    "creator_github_handle": "rforsyth",
+    "text_uid": "sbh",
+    "translation_title": "Śrāvakabhūmi",
+    "translation_subtitle": "An English rendering from the Sanskrit of Shukla (1973), with translator's notes",
+    "root_title": "Śrāvakabhūmi",
+    "creation_process": "AI-assisted working translation, prepared from the Karuṇeśa Śukla (1973) Sanskrit edition as hosted by SuttaCentral, with reference to Wallace's English rendering and the Tibetan sequential elaboration of the doctrine (e.g., Tsongkhapa). The rendering favors readable English while staying close to the Sanskrit; where the source verb's morphology and its sequential-doctrine function diverge, the function is preferred (e.g., saṁsthāpayati rendered as 'places it continuously' rather than literal 'places it thoroughly'). Translator's notes accompany the rendering for terminology choices, sandhi-and-corruption observations, and editorial decisions where the English departs from a strictly literal reading. Both the Sanskrit root and the English translation are complete and segmented for the entire text.",
+    "text_description": "A bilingual Sanskrit–English edition of the entire Śrāvakabhūmi (Asaṅga, 4th century CE) in working-translation form. The English is a single rendering with translator's notes.",
+    "is_published": true,
+    "publication_status": "Complete English working translation; Sanskrit complete.",
+    "license_type": "Creative Commons Zero",
+    "license_abbreviation": "CC0",
+    "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "license_statement": "This work is dedicated to the public domain under Creative Commons Zero (CC0 1.0 Universal). You may copy, reproduce, adapt, alter, translate, or otherwise make use of it without restriction or attribution. Citation is appreciated but not required.",
+    "first_published": "2026",
+    "editions_url": "https://github.com/rforsyth/sravakabhumi-en"
+  }
+]

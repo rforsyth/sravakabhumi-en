@@ -1,0 +1,3 @@
+# Translator's notes: sbh2.4 (Idaṁ-pratyayatā-pratītyasamutpāda — This-Conditionality Dependent Origination)
+
+The third of the five *carita-viśodhana* practices, corresponding to the *moha-carita* (delusion-temperament) practitioner. The Śrāvakabhūmi's source treatment of this carita-viśodhana entry is unusually brief — definition only, distinguishing 'this-conditionality dependent origination' (the abstract structural principle: that arising is conditioned and conditions arising) from the substantive twelve-link account. The fuller practice unfolds in [sbh2.6](sbh2.6.html)'s third *paricaya* of breath-mindfulness, where dependent origination is the third of five investigative frames applied to the breath.

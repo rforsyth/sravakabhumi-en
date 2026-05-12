@@ -1,0 +1,3 @@
+# Translator's notes: sbh2.7 (Kauśalya-ālambana — The Five Skill-Objects)
+
+The third of the four primary *ālambana* categories (alongside *vyāpī*, *carita-viśodhana*, and *kleśa-viśodhana*). The *kauśalya-ālambana* (skill-object) names five domains in which the practitioner cultivates skill: *skandha-kauśalya* (skill in the aggregates), *dhātu-kauśalya* (in the elements), *āyatana-kauśalya* (in the spheres), *pratītyasamutpāda-kauśalya* (in dependent origination), and *sthānāsthāna-kauśalya* (in the possible-and-impossible). Each is treated through both *svalakṣaṇa* (specific characteristic) and *sāmānya-lakṣaṇa* (general characteristic) framing.

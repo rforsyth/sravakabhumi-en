@@ -1,0 +1,3 @@
+# Translator's notes: sbh2.6 (Ānāpānasmṛti — Mindfulness of Breathing)
+
+The fifth and longest of the *carita-viśodhana* practices, corresponding to the *vitarka-carita* (discursive-thinking-temperament) practitioner. Covers the definition (mindfulness with the in-breath and out-breath as object), the anatomy of the breath (*āśvāsa* and *praśvāsa*), two faults to avoid in practice, and the five *paricayas* — five progressive investigative frames applied to the breath: counting (*gaṇanā*), aggregates (*skandha*), dependent origination (*pratītyasamutpāda*), the four noble truths (*satya*), and the sixteen aspects (*ṣoḍaśākāra*). Closes with the arhatship-claim through breath-mindfulness and the temperament-match rationale.

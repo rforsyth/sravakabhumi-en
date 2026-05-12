@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Analysis of Elements — Śrāvakabhūmi</title>
+<style>
+  :root {
+    --san-color: #2a2a2a;
+    --en-color: #2a2a2a;
+    --id-color: #999;
+    --rule-color: #e6e1d8;
+    --bg: #fbf8f1;
+    --max-width: 1400px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Charter", "Georgia", "Iowan Old Style", serif;
+    color: var(--en-color);
+    line-height: 1.55;
+  }
+  header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2.5rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--rule-color);
+  }
+  header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  header .sub {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  header nav {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  header nav a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  header nav a:hover { color: #000; text-decoration: underline; }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+  }
+  .col-headings {
+    display: grid;
+    grid-template-columns: 4rem 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule-color);
+    font-size: 0.78rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .col-headings .label-id { color: transparent; }
+  .row {
+    display: grid;
+    grid-template-columns: 4rem 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted var(--rule-color);
+  }
+  .row.heading {
+    margin-top: 1.5rem;
+    border-bottom: none;
+  }
+  .row.heading .san, .row.heading .en {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .row:target {
+    background: #f4ecd8;
+    border-left: 3px solid #c9a96e;
+    margin-left: -1rem;
+    padding-left: calc(1rem - 3px);
+  }
+  .seg-id {
+    color: var(--id-color);
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 0.75rem;
+    padding-top: 0.25rem;
+  }
+  .seg-id a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .seg-id a:hover {
+    color: #2a2a2a;
+    text-decoration: underline;
+  }
+  .san {
+    color: var(--san-color);
+    font-style: italic;
+  }
+  .en {
+    color: var(--en-color);
+  }
+  .en:empty::before {
+    content: "—";
+    color: #ccc;
+  }
+  .en-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .comment {
+    font-size: 0.85rem;
+    color: #6a6a6a;
+    line-height: 1.5;
+    padding-left: 0.6rem;
+    border-left: 2px solid #e6e1d8;
+  }
+  .intro {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    padding: 1rem 1.2rem;
+    background: #f4ecd8;
+    border-left: 3px solid #c9a96e;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #3a3a3a;
+  }
+  .intro p { margin: 0 0 0.6rem; }
+  .intro p:last-child { margin-bottom: 0; }
+  .intro em { font-style: italic; }
+  @media (max-width: 900px) {
+    .col-headings, .row {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+    .row { padding: 0.75rem 0; }
+    .seg-id { font-size: 0.7rem; }
+    .col-headings { display: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Analysis of Elements</h1>
+  <div class="sub">Śrāvakabhūmi · Sanskrit (Shukla 1973) ↔ English (1 rendering)</div>
+  <nav><a href="index.html">← All topics</a><a href="sbh2.5-en.html">View English only →</a></nav>
+</header>
+<main>
+<div class="intro"><p>The fourth of the five <em>carita-viśodhana</em> practices, corresponding to the <em>māna-carita</em> (conceit-temperament) practitioner. Analysis of the six elements — <em>pṛthivī</em> (earth), <em>ap</em> (water), <em>tejas</em> (fire), <em>vāyu</em> (air), <em>ākāśa</em> (space), <em>vijñāna</em> (consciousness) — each treated in inward (<em>ādhyātmika</em>) and outward (<em>bāhya</em>) aspect. The body-parts list, the <em>piṇḍa-saṁjñā</em> (lump-perception) dissolution, and the temperament rationale for why conceit yields to elemental analysis (the body that conceit clings to disclosed as a temporary aggregate of impersonal elements).</p></div>
+<div class="col-headings">
+  <div class="label-id">id</div>
+  <div>Sanskrit</div>
+  <div>English</div>
+</div>
+<div class="row heading" id="sbh2.5:0.1"><div class="seg-id"><a href="#sbh2.5:0.1">sbh2.5:0.1</a></div><div class="san">Śrāvakabhūmi</div><div class="en">Śrāvakabhūmi</div></div>
+<div class="row heading" id="sbh2.5:0.2"><div class="seg-id"><a href="#sbh2.5:0.2">sbh2.5:0.2</a></div><div class="san">dhātuprabhedaḥ</div><div class="en">Analysis of Elements</div></div>
+<div class="row" id="sbh2.5:1.1"><div class="seg-id"><a href="#sbh2.5:1.1">sbh2.5:1.1</a></div><div class="san">tatra dhātuprabhedaḥ katamaḥ |</div><div class="en">What is the analysis of elements?</div></div>
+<div class="row" id="sbh2.5:1.2"><div class="seg-id"><a href="#sbh2.5:1.2">sbh2.5:1.2</a></div><div class="san">tadyathā ṣaḍ dhātavaḥ |</div><div class="en">Namely, the six elements:</div></div>
+<div class="row" id="sbh2.5:1.3"><div class="seg-id"><a href="#sbh2.5:1.3">sbh2.5:1.3</a></div><div class="san">pṛthivīdhāturabdhātustejodhāturvāyudhāturākāśadhāturvijñānadhātuśca |</div><div class="en-cell"><div class="en">the earth element, water element, fire element, wind element, space element, and consciousness element.</div><div class="comment">Asanga gives a *<em>six-element</em><em> scheme rather than the four-great-element analysis dominant in the Theravada tradition. The six adds space (</em>ākāśa<em>) and consciousness (</em>vijñāna*), giving a complete decomposition of the embodied person, not just the physical body. This follows MN 140 (Dhātuvibhaṅga) and MN 62 (Mahā-Rāhulovāda) rather than VSM Ch 11.</div></div></div>
+<div class="row" id="sbh2.5:2.1"><div class="seg-id"><a href="#sbh2.5:2.1">sbh2.5:2.1</a></div><div class="san">tatra pṛthivīdhāturdvividhaḥ |</div><div class="en">The earth element is twofold:</div></div>
+<div class="row" id="sbh2.5:2.2"><div class="seg-id"><a href="#sbh2.5:2.2">sbh2.5:2.2</a></div><div class="san">ādhyātmiko bāhyaśca |</div><div class="en">inward and outward.</div></div>
+<div class="row" id="sbh2.5:2.3"><div class="seg-id"><a href="#sbh2.5:2.3">sbh2.5:2.3</a></div><div class="san">tatrādhyātmiko yadasminkāye adhyātmaṁ pratyātmaṁ khakkhaṭaṁ kharataramupādattaṁ |</div><div class="en-cell"><div class="en">The inward earth element: whatever in this body, internally, individually, is hard or harsh, taken up [into experience].</div><div class="comment"><em>upādatta</em> — &#x27;taken up, appropriated&#x27; — is technical. It marks the element-instance that has become <em>part of a being</em> through the appropriation-process of consciousness. The body&#x27;s hard parts are <em>upādatta</em> earth; external rocks are not. The practice is to see that, whether or not upādatta, it is still earth.</div></div></div>
+<div class="row" id="sbh2.5:2.4"><div class="seg-id"><a href="#sbh2.5:2.4">sbh2.5:2.4</a></div><div class="san">bāhyaḥ punaḥ pṛthivīdhāturyadbāhyaṁ khakkhaṭaṁ kharagatamupagatamupādattaṁ |</div><div class="en">The outward earth element: whatever externally is hard, has gone to hardness, has come to be taken up.</div></div>
+<div class="row" id="sbh2.5:2.5"><div class="seg-id"><a href="#sbh2.5:2.5">sbh2.5:2.5</a></div><div class="san">sa punarādhyātmikapṛthivīdhātuḥ katamaḥ |</div><div class="en">What is the inward earth element specifically?</div></div>
+<div class="row" id="sbh2.5:2.6"><div class="seg-id"><a href="#sbh2.5:2.6">sbh2.5:2.6</a></div><div class="san">tadyathā keśā, romāṇi, nakhā, dantā, rajo, malaṁ, tvaṅmāṁsamasthi, snāyuḥ, sirā, vṛkkaṁ, hṛdayaṁ, plīhakaṁ, klomamantrāṇyantraguṇāḥ |</div><div class="en-cell"><div class="en">Hair of the head, body hair, nails, teeth, dust, dirt, skin, flesh, bone, sinew, vein, kidney, heart, spleen, lungs, intestines, mesentery;</div><div class="comment">Same body-parts list as the <em>aśubhā</em> section, but here framed as instances of the earth element rather than objects of disgust. A key Yogācāra point: the same observation can serve as either <em>aśubhā</em> (antidote to lust) or <em>dhātu-prabheda</em> (antidote to pride), depending on how it is held.</div></div></div>
+<div class="row" id="sbh2.5:2.7"><div class="seg-id"><a href="#sbh2.5:2.7">sbh2.5:2.7</a></div><div class="san">āmāśayaḥ |</div><div class="en">stomach contents,</div></div>
+<div class="row" id="sbh2.5:2.8"><div class="seg-id"><a href="#sbh2.5:2.8">sbh2.5:2.8</a></div><div class="san">pakvāśayaḥ |</div><div class="en">bowel contents,</div></div>
+<div class="row" id="sbh2.5:2.9"><div class="seg-id"><a href="#sbh2.5:2.9">sbh2.5:2.9</a></div><div class="san">yakṛtpurīṣamayamucyate ādhyātmikaḥ pṛthivīdhātuḥ |</div><div class="en">liver, feces. This is called the inward earth element.</div></div>
+<div class="row" id="sbh2.5:2.10"><div class="seg-id"><a href="#sbh2.5:2.10">sbh2.5:2.10</a></div><div class="san">sa punarbāhyaḥ pṛthivīdhātuḥ katamaḥ |</div><div class="en">What is the outward earth element specifically?</div></div>
+<div class="row" id="sbh2.5:2.11"><div class="seg-id"><a href="#sbh2.5:2.11">sbh2.5:2.11</a></div><div class="san">kāṣṭhāni vā, loṣṭhāni vā, śarkarā vā, kaṭhillā vā, vṛkṣā vā, parvatāgrā vā, iti vā punaranyo &#x27;pyevaṁbhāgīyaḥ ayamucyate bāhyaḥ pṛthivīdhātuḥ |</div><div class="en">Wood, clods, gravel, pebbles, trees, mountain-peaks — and anything else of this kind. This is called the outward earth element.</div></div>
+<div class="row" id="sbh2.5:3.1"><div class="seg-id"><a href="#sbh2.5:3.1">sbh2.5:3.1</a></div><div class="san">abdhātuḥ katamaḥ |</div><div class="en">What is the water element?</div></div>
+<div class="row" id="sbh2.5:3.2"><div class="seg-id"><a href="#sbh2.5:3.2">sbh2.5:3.2</a></div><div class="san">abdhāturdvividhaḥ |</div><div class="en">The water element is twofold:</div></div>
+<div class="row" id="sbh2.5:3.3"><div class="seg-id"><a href="#sbh2.5:3.3">sbh2.5:3.3</a></div><div class="san">ādhyātmiko bāhyaśca |</div><div class="en">inward and outward.</div></div>
+<div class="row" id="sbh2.5:3.4"><div class="seg-id"><a href="#sbh2.5:3.4">sbh2.5:3.4</a></div><div class="san">tatrādhyātmiko &#x27;bdhātuḥ katamaḥ |</div><div class="en">What is the inward water element?</div></div>
+<div class="row" id="sbh2.5:3.5"><div class="seg-id"><a href="#sbh2.5:3.5">sbh2.5:3.5</a></div><div class="san">yadadhyātmaṁ pratyātmaṁ snehaḥ snehagataṁ |</div><div class="en">Whatever, internally, individually, is liquid or has gone to liquidity;</div></div>
+<div class="row" id="sbh2.5:3.6"><div class="seg-id"><a href="#sbh2.5:3.6">sbh2.5:3.6</a></div><div class="san">āpaḥ abdhātumupagatamupādātuṁ abdhātugatamupagatamupādattaṁ |</div><div class="en">whatever has gone to the water element and been taken up.</div></div>
+<div class="row" id="sbh2.5:3.7"><div class="seg-id"><a href="#sbh2.5:3.7">sbh2.5:3.7</a></div><div class="san">tadyathā aśru, svedaḥ |</div><div class="en">Tears, sweat,</div></div>
+<div class="row" id="sbh2.5:3.8"><div class="seg-id"><a href="#sbh2.5:3.8">sbh2.5:3.8</a></div><div class="san">kheṭaḥ śiṅghāṇakaḥ |</div><div class="en">saliva, mucus,</div></div>
+<div class="row" id="sbh2.5:3.9"><div class="seg-id"><a href="#sbh2.5:3.9">sbh2.5:3.9</a></div><div class="san">vasā, lasīkā, majjā, medaḥ, pittaṁ, śleṣmā, pūyaḥ, śoṇitaṁ, mastakaṁ, mastakaluṅgaṁ, prasrāvaḥ, ayamucyate ādhyātmiko &#x27;bdhātuḥ |</div><div class="en">fat, lymph, marrow, grease, bile, phlegm, pus, blood, brain, cranial fluid, urine. This is called the inward water element.</div></div>
+<div class="row" id="sbh2.5:3.10"><div class="seg-id"><a href="#sbh2.5:3.10">sbh2.5:3.10</a></div><div class="san">bāhyo &#x27;bdhātuḥ katamaḥ |</div><div class="en">What is the outward water element?</div></div>
+<div class="row" id="sbh2.5:3.11"><div class="seg-id"><a href="#sbh2.5:3.11">sbh2.5:3.11</a></div><div class="san">yadbāhyamāpaḥ apgataṁ, snehaḥ snehagatamupagatamupādattaṁ |</div><div class="en">Whatever externally is water or has gone to water; whatever is moist and has come to be taken up.</div></div>
+<div class="row" id="sbh2.5:3.12"><div class="seg-id"><a href="#sbh2.5:3.12">sbh2.5:3.12</a></div><div class="san">tatpunarutso vā, sarāṁsi vā, taḍāgā vā, nadyo vā, prasravaṇāni vā, iti yo vā punaranyo &#x27;pyevaṁbhāgīyo &#x27;yamucyate bāhyo &#x27;bdhātuḥ |</div><div class="en">Springs, lakes, ponds, rivers, fountains — and anything else of this kind. This is called the outward water element.</div></div>
+<div class="row" id="sbh2.5:4.1"><div class="seg-id"><a href="#sbh2.5:4.1">sbh2.5:4.1</a></div><div class="san">tejodhātuḥ katamaḥ |</div><div class="en">What is the fire element?</div></div>
+<div class="row" id="sbh2.5:4.2"><div class="seg-id"><a href="#sbh2.5:4.2">sbh2.5:4.2</a></div><div class="san">tejodhāturdvividhaḥ ādhyātmiko bāhyaśca |</div><div class="en">The fire element is twofold: inward and outward.</div></div>
+<div class="row" id="sbh2.5:4.3"><div class="seg-id"><a href="#sbh2.5:4.3">sbh2.5:4.3</a></div><div class="san">tatrādhyātmikastejodhātuḥ katamaḥ |</div><div class="en">What is the inward fire element?</div></div>
+<div class="row" id="sbh2.5:4.4"><div class="seg-id"><a href="#sbh2.5:4.4">sbh2.5:4.4</a></div><div class="san">yadadhyātmaṁ pratyātmaṁ tejastejogatamūṣmā ūṣmāgatamupagatamupādattaṁ |</div><div class="en">Whatever, internally, individually, is fire or heat, has gone to fire or heat, has come to be taken up.</div></div>
+<div class="row" id="sbh2.5:4.5"><div class="seg-id"><a href="#sbh2.5:4.5">sbh2.5:4.5</a></div><div class="san">tadyathā yadasminkāye tejo yenāyaṁ kāya ātapyate |</div><div class="en-cell"><div class="en">Namely: the fire in this body by which the body is heated,</div><div class="comment">Four functions of inward fire enumerated: general bodily warmth (<em>ātapyate</em>), feverish heat (<em>saṁtapyate</em>), burning sensation (<em>paritapyate</em>), and digestive heat (<em>paripākaṁ gacchati</em>). The last function is the standard <em>pakkācchaka</em> of the Pali commentaries.</div></div></div>
+<div class="row" id="sbh2.5:4.6"><div class="seg-id"><a href="#sbh2.5:4.6">sbh2.5:4.6</a></div><div class="san">saṁtapyate, paritapyate |</div><div class="en">fevered, burned through;</div></div>
+<div class="row" id="sbh2.5:4.7"><div class="seg-id"><a href="#sbh2.5:4.7">sbh2.5:4.7</a></div><div class="san">yena cāśitapītakhāditasvāditaṁ samyaksukhena paripākaṁ gacchati |</div><div class="en">by which what is eaten, drunk, chewed, and tasted goes to proper digestion with ease;</div></div>
+<div class="row" id="sbh2.5:4.8"><div class="seg-id"><a href="#sbh2.5:4.8">sbh2.5:4.8</a></div><div class="san">yasya cotsadatvāt jārito jārita iti saṅkhyāṁ gacchati |</div><div class="en">and by which, when in excess, a person comes to be described as &#x27;burning, burning.&#x27;</div></div>
+<div class="row" id="sbh2.5:4.9"><div class="seg-id"><a href="#sbh2.5:4.9">sbh2.5:4.9</a></div><div class="san">bāhyastejodhātuḥ katamaḥ |</div><div class="en">What is the outward fire element?</div></div>
+<div class="row" id="sbh2.5:4.10"><div class="seg-id"><a href="#sbh2.5:4.10">sbh2.5:4.10</a></div><div class="san">yadbāhyaṁ tejastejogatamūṣmā ūṣmāgatamupagatamupādattaṁ |</div><div class="en">Whatever externally is fire or heat, has gone to fire or heat, has come to be taken up.</div></div>
+<div class="row" id="sbh2.5:4.11"><div class="seg-id"><a href="#sbh2.5:4.11">sbh2.5:4.11</a></div><div class="san">tatpunaryanmanuṣyā araṇīsahagatakebhyo gomayacūrṇebhyaḥ samanveṣante |</div><div class="en">That which men obtain from fire-sticks together with cow-dung powder;</div></div>
+<div class="row" id="sbh2.5:4.12"><div class="seg-id"><a href="#sbh2.5:4.12">sbh2.5:4.12</a></div><div class="san">yattūtpannaṁ grāmamapi dahati |</div><div class="en">that which, having arisen, burns even a village,</div></div>
+<div class="row" id="sbh2.5:4.13"><div class="seg-id"><a href="#sbh2.5:4.13">sbh2.5:4.13</a></div><div class="san">grāmapradeśamapi |</div><div class="en">even part of a village,</div></div>
+<div class="row" id="sbh2.5:4.14"><div class="seg-id"><a href="#sbh2.5:4.14">sbh2.5:4.14</a></div><div class="san">nagaraṁ vā, nagarapradeśaṁ vā, janapadaṁ vā, janapadapradeśaṁ vā, dvīpaṁ vā, kakṣaṁ vā, dāvaṁ vā, kāṣṭhaṁ vā, tṛṇaṁ vā, gomayaṁ vā dahan paraiti |</div><div class="en">a city, part of a city, a country, part of a country, an island, a thicket, a forest, wood, grass, or cow-dung — burning these, it goes on.</div></div>
+<div class="row" id="sbh2.5:4.15"><div class="seg-id"><a href="#sbh2.5:4.15">sbh2.5:4.15</a></div><div class="san">iti yo vā punaranyo &#x27;pyevaṁbhāgīyaḥ |</div><div class="en">And anything else of this kind.</div></div>
+<div class="row" id="sbh2.5:5.1"><div class="seg-id"><a href="#sbh2.5:5.1">sbh2.5:5.1</a></div><div class="san">tatra vāyudhātuḥ katamaḥ |</div><div class="en">What is the wind element?</div></div>
+<div class="row" id="sbh2.5:5.2"><div class="seg-id"><a href="#sbh2.5:5.2">sbh2.5:5.2</a></div><div class="san">vāyudhāturdvividhaḥ |</div><div class="en">The wind element is twofold:</div></div>
+<div class="row" id="sbh2.5:5.3"><div class="seg-id"><a href="#sbh2.5:5.3">sbh2.5:5.3</a></div><div class="san">ādhyātmiko bāhyaśca |</div><div class="en">inward and outward.</div></div>
+<div class="row" id="sbh2.5:5.4"><div class="seg-id"><a href="#sbh2.5:5.4">sbh2.5:5.4</a></div><div class="san">tatrādhyātmiko vāyudhātuḥ |</div><div class="en">The inward wind element:</div></div>
+<div class="row" id="sbh2.5:5.5"><div class="seg-id"><a href="#sbh2.5:5.5">sbh2.5:5.5</a></div><div class="san">yadapyadhyātmaṁ pratyātmaṁ vāyurvāyugataṁ |</div><div class="en">whatever, internally, individually, is wind or has gone to wind —</div></div>
+<div class="row" id="sbh2.5:5.6"><div class="seg-id"><a href="#sbh2.5:5.6">sbh2.5:5.6</a></div><div class="san">laghutvaṁ samudīraṇatvamupagatamupādattaṁ |</div><div class="en">that which is lightness, motion, come to be taken up.</div></div>
+<div class="row" id="sbh2.5:5.7"><div class="seg-id"><a href="#sbh2.5:5.7">sbh2.5:5.7</a></div><div class="san">sa punaḥ santyasminkāye ūrdhvaṁgamā vāyavaḥ, adhogamā vāyavaḥ, pārśvaśayā vāyavaḥ |</div><div class="en">Furthermore, in this body there are: upward-going winds, downward-going winds, side-resting winds;</div></div>
+<div class="row" id="sbh2.5:5.8"><div class="seg-id"><a href="#sbh2.5:5.8">sbh2.5:5.8</a></div><div class="san">kukṣiśayā vāyavaḥ |</div><div class="en">belly-resting winds;</div></div>
+<div class="row" id="sbh2.5:5.9"><div class="seg-id"><a href="#sbh2.5:5.9">sbh2.5:5.9</a></div><div class="san">pṛṣṭhiśayā vāyavaḥ |</div><div class="en">back-resting winds;</div></div>
+<div class="row" id="sbh2.5:5.10"><div class="seg-id"><a href="#sbh2.5:5.10">sbh2.5:5.10</a></div><div class="san">vāyvaṣṭhīlā vātāṣṭhīlā vāyavaḥ |</div><div class="en-cell"><div class="en">wind-stretching winds (*vāyv-aṣṭhīlā*, *vātāṣṭhīlā*);</div><div class="comment"><em>vāyv-aṣṭhīlā</em> / <em>vātāṣṭhīlā</em> — &#x27;wind-stretching&#x27; or &#x27;knotty winds&#x27; (uncertain). Likely refers to localized rigidity or knotted winds in Indian medical analysis.</div></div></div>
+<div class="row" id="sbh2.5:5.11"><div class="seg-id"><a href="#sbh2.5:5.11">sbh2.5:5.11</a></div><div class="san">kṣurakapippalakaśastrakā vāyavaḥ |</div><div class="en-cell"><div class="en">razor-pippal-blade winds (sharp, stabbing pains);</div><div class="comment"><em>kṣuraka-pippalaka-śastrakā</em> — &#x27;razor-pippal-blade winds.&#x27; Hapax legomenon; the precise referent is uncertain. Translated conjecturally as sharp, stabbing pains attributed to disturbed wind.</div></div></div>
+<div class="row" id="sbh2.5:5.12"><div class="seg-id"><a href="#sbh2.5:5.12">sbh2.5:5.12</a></div><div class="san">āśvāsapraśvāsā vāyavaḥ |</div><div class="en">the in-and-out breaths;</div></div>
+<div class="row" id="sbh2.5:5.13"><div class="seg-id"><a href="#sbh2.5:5.13">sbh2.5:5.13</a></div><div class="san">aṅgapratyaṅgānusāriṇo vāyavaḥ |</div><div class="en">winds following the limbs and minor limbs.</div></div>
+<div class="row" id="sbh2.5:5.14"><div class="seg-id"><a href="#sbh2.5:5.14">sbh2.5:5.14</a></div><div class="san">bāhyo vāyudhātuḥ katamaḥ |</div><div class="en">What is the outward wind element?</div></div>
+<div class="row" id="sbh2.5:5.15"><div class="seg-id"><a href="#sbh2.5:5.15">sbh2.5:5.15</a></div><div class="san">yadbāhyaṁ vāyurvāyugataṁ laghutvaṁ, samudīraṇatvaṁ |</div><div class="en">Whatever externally is wind or has gone to wind — that lightness and motion,</div></div>
+<div class="row" id="sbh2.5:5.16"><div class="seg-id"><a href="#sbh2.5:5.16">sbh2.5:5.16</a></div><div class="san">upagatamupādattaṁ |</div><div class="en">come to be taken up.</div></div>
+<div class="row" id="sbh2.5:5.17"><div class="seg-id"><a href="#sbh2.5:5.17">sbh2.5:5.17</a></div><div class="san">santi bahirdhā pūrvā vāyavo, dakṣiṇā vāyavaḥ |</div><div class="en">There are externally: eastern winds, southern winds,</div></div>
+<div class="row" id="sbh2.5:5.18"><div class="seg-id"><a href="#sbh2.5:5.18">sbh2.5:5.18</a></div><div class="san">uttarā vāyavaḥ paścimā vāyavaḥ |</div><div class="en">northern winds, western winds;</div></div>
+<div class="row" id="sbh2.5:5.19"><div class="seg-id"><a href="#sbh2.5:5.19">sbh2.5:5.19</a></div><div class="san">sarajaso vāyavaḥ, arajaso vāyavaḥ, parīttā mahadgatā vāyavaḥ, viśvā vāyavo, vairambhā vāyavaḥ vāyumaṇḍalakavāyavaḥ |</div><div class="en">dust-bearing winds, dustless winds, slight winds, exalted winds, miscellaneous winds, hurricane (*vairambha*) winds, wind-circle winds.</div></div>
+<div class="row" id="sbh2.5:5.20"><div class="seg-id"><a href="#sbh2.5:5.20">sbh2.5:5.20</a></div><div class="san">bhavati ca samayaḥ yanmahān vāyuskandhaḥ samudāgataḥ vṛkṣāgrānapi pātayati |</div><div class="en">There is a time when a great mass of wind has accumulated and topples even tree-tops,</div></div>
+<div class="row" id="sbh2.5:5.21"><div class="seg-id"><a href="#sbh2.5:5.21">sbh2.5:5.21</a></div><div class="san">kuḍyāgrānapi pātayati |</div><div class="en">even wall-tops,</div></div>
+<div class="row" id="sbh2.5:5.22"><div class="seg-id"><a href="#sbh2.5:5.22">sbh2.5:5.22</a></div><div class="san">parvatāgrānapi pātayati |</div><div class="en">even mountain-peaks;</div></div>
+<div class="row" id="sbh2.5:5.23"><div class="seg-id"><a href="#sbh2.5:5.23">sbh2.5:5.23</a></div><div class="san">pātayitvā nirupādāno nirgacchati |</div><div class="en-cell"><div class="en">having toppled them, it goes on, taking nothing with it.</div><div class="comment"><em>nirupādāno nirgacchati</em> — &#x27;without taking anything up, it goes on.&#x27; The great wind that fells trees and walls is described as <em>not</em> appropriating anything — silently underscoring the elemental point: the great wind is the same kind of thing as the breath in your nose; one is <em>upādatta</em>, the other is not, but the element is the same.</div></div></div>
+<div class="row" id="sbh2.5:5.24"><div class="seg-id"><a href="#sbh2.5:5.24">sbh2.5:5.24</a></div><div class="san">ye sattvāścīvarakarṇikena vā paryeṣante, tālavṛntena vā, vidhamanakena vā |</div><div class="en">There are beings who seek [wind] using a corner of the robe, a palm-leaf fan, or a bellows.</div></div>
+<div class="row" id="sbh2.5:5.25"><div class="seg-id"><a href="#sbh2.5:5.25">sbh2.5:5.25</a></div><div class="san">iti vāyuranyo &#x27;pyevaṁbhāgīyaḥ |</div><div class="en">Such, and anything else of this kind, is [the outward] wind element.</div></div>
+<div class="row" id="sbh2.5:6.1"><div class="seg-id"><a href="#sbh2.5:6.1">sbh2.5:6.1</a></div><div class="san">ākāśadhātuḥ katamaḥ |</div><div class="en">What is the space element?</div></div>
+<div class="row" id="sbh2.5:6.2"><div class="seg-id"><a href="#sbh2.5:6.2">sbh2.5:6.2</a></div><div class="san">yaccakṣuḥsauṣiryaṁ vā, śrotrasauṣiryaṁ vā, ghrāṇasauṣiryaṁ vā, mukhasauṣiryaṁ vā, kaṇṭhasauṣiryaṁ vā |</div><div class="en">The cavities of the eye, ear, nose, mouth, and throat;</div></div>
+<div class="row" id="sbh2.5:6.3"><div class="seg-id"><a href="#sbh2.5:6.3">sbh2.5:6.3</a></div><div class="san">iti yena cābhyavaharati |</div><div class="en">that by which one swallows,</div></div>
+<div class="row" id="sbh2.5:6.4"><div class="seg-id"><a href="#sbh2.5:6.4">sbh2.5:6.4</a></div><div class="san">yatra vābhyavaharati |</div><div class="en">the place where one swallows,</div></div>
+<div class="row" id="sbh2.5:6.5"><div class="seg-id"><a href="#sbh2.5:6.5">sbh2.5:6.5</a></div><div class="san">yena vābhyavahriyate |</div><div class="en">that which is swallowed;</div></div>
+<div class="row" id="sbh2.5:6.6"><div class="seg-id"><a href="#sbh2.5:6.6">sbh2.5:6.6</a></div><div class="san">yadadhobhāgena pragharati |</div><div class="en">that by which the lower part is purged;</div></div>
+<div class="row" id="sbh2.5:6.7"><div class="seg-id"><a href="#sbh2.5:6.7">sbh2.5:6.7</a></div><div class="san">iti yo vā punarapyevaṁbhāgīyaḥ ayamucyate ākāśadhātuḥ |</div><div class="en">and anything else of this kind. This is called the space element.</div></div>
+<div class="row" id="sbh2.5:7.1"><div class="seg-id"><a href="#sbh2.5:7.1">sbh2.5:7.1</a></div><div class="san">vijñānadhātuḥ katamaḥ |</div><div class="en">What is the consciousness element?</div></div>
+<div class="row" id="sbh2.5:7.2"><div class="seg-id"><a href="#sbh2.5:7.2">sbh2.5:7.2</a></div><div class="san">yaccakṣurvijñānaṁ śrotraghrāṇajihvākāyamanovijñānaṁ |</div><div class="en">Eye-consciousness; ear-, nose-, tongue-, body-, mind-consciousness;</div></div>
+<div class="row" id="sbh2.5:7.3"><div class="seg-id"><a href="#sbh2.5:7.3">sbh2.5:7.3</a></div><div class="san">tatpunaścittaṁ manovijñānaṁ ca |</div><div class="en-cell"><div class="en">and further, *citta* and *mano-vijñāna*.</div><div class="comment">Asanga lists the six sense-consciousnesses, then adds <em>citta</em> and <em>mano-vijñāna</em> as separate items. The Yogācāra threefold mind — <em>citta</em> (storehouse-function), <em>manas</em> (appropriating mind), <em>mano-vijñāna</em> (active discriminating mind) — is here mentioned but not fully distinguished; the eightfold consciousness model arrives in later Yogācāra texts.</div></div></div>
+<div class="row" id="sbh2.5:7.4"><div class="seg-id"><a href="#sbh2.5:7.4">sbh2.5:7.4</a></div><div class="san">ayamucyate vijñānadhātuḥ |</div><div class="en">This is called the consciousness element.</div></div>
+<div class="row" id="sbh2.5:8.1"><div class="seg-id"><a href="#sbh2.5:8.1">sbh2.5:8.1</a></div><div class="san">tatra mānacaritaḥ pudgala imaṁ dhātuprabhedaṁ manasi kurvan kāye piṇḍasaṁjñāṁ vibhāvayati |</div><div class="en-cell"><div class="en">The conceited-temperament person, attending to this analysis of elements, dispels the perception of the body as a unified lump.</div><div class="comment"><em>piṇḍa-saṁjñā</em> — the perception of the body as one solid thing, the implicit &#x27;this is me&#x27; that pride hooks into. <em>vibhāvayati</em> — &#x27;dispels, breaks down&#x27; — this lump-perception. Once the body is perceived as six elements in their inward and outward forms, there is no unified entity to claim ownership of.</div></div></div>
+<div class="row" id="sbh2.5:8.2"><div class="seg-id"><a href="#sbh2.5:8.2">sbh2.5:8.2</a></div><div class="san">aśubhasaṁjñāṁ ca pratilabhate |</div><div class="en-cell"><div class="en">He also obtains the perception of foulness;</div><div class="comment">The practice has a useful side-effect: <em>aśubha-saṁjñā</em> arises naturally as well. <em>Dhātu-prabheda</em> is dual-purpose — primary antidote to pride, secondary antidote to lust. A practitioner whose primary issue is pride but who also struggles with attraction can use this practice as covering both grounds.</div></div></div>
+<div class="row" id="sbh2.5:8.3"><div class="seg-id"><a href="#sbh2.5:8.3">sbh2.5:8.3</a></div><div class="san">na ca punastenonnatiṁ gacchati |</div><div class="en">and no longer becomes elevated [proud] through [the body].</div></div>
+<div class="row" id="sbh2.5:8.4"><div class="seg-id"><a href="#sbh2.5:8.4">sbh2.5:8.4</a></div><div class="san">mānaṁ pratanukaroti |</div><div class="en">He attenuates the conceit</div></div>
+<div class="row" id="sbh2.5:8.5"><div class="seg-id"><a href="#sbh2.5:8.5">sbh2.5:8.5</a></div><div class="san">tasmāccaritāccittaṁ viśodhayati |</div><div class="en">and purifies the mind from that [conceited] conduct.</div></div>
+<div class="row" id="sbh2.5:8.6"><div class="seg-id"><a href="#sbh2.5:8.6">sbh2.5:8.6</a></div><div class="san">ayamucyate dhātuprabhedaḥ |</div><div class="en">This is called the analysis of elements —</div></div>
+<div class="row" id="sbh2.5:8.7"><div class="seg-id"><a href="#sbh2.5:8.7">sbh2.5:8.7</a></div><div class="san">mānacaritasya pudgalasya |</div><div class="en">for the conceited-temperament person.</div></div>
+</main>
+</body>
+</html>

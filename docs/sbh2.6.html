@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mindfulness of Breathing — Śrāvakabhūmi</title>
+<style>
+  :root {
+    --san-color: #2a2a2a;
+    --en-color: #2a2a2a;
+    --id-color: #999;
+    --rule-color: #e6e1d8;
+    --bg: #fbf8f1;
+    --max-width: 1400px;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    font-family: "Charter", "Georgia", "Iowan Old Style", serif;
+    color: var(--en-color);
+    line-height: 1.55;
+  }
+  header {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 2.5rem 2rem 1.5rem;
+    border-bottom: 1px solid var(--rule-color);
+  }
+  header h1 {
+    margin: 0 0 0.25rem;
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  header .sub {
+    color: #666;
+    font-size: 0.95rem;
+  }
+  header nav {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+  }
+  header nav a {
+    color: #666;
+    text-decoration: none;
+    margin-right: 1rem;
+  }
+  header nav a:hover { color: #000; text-decoration: underline; }
+  main {
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 1.5rem 2rem 4rem;
+  }
+  .col-headings {
+    display: grid;
+    grid-template-columns: 4rem 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0 0.75rem;
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--rule-color);
+    font-size: 0.78rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+  }
+  .col-headings .label-id { color: transparent; }
+  .row {
+    display: grid;
+    grid-template-columns: 4rem 1.4fr 1fr;
+    gap: 1.5rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px dotted var(--rule-color);
+  }
+  .row.heading {
+    margin-top: 1.5rem;
+    border-bottom: none;
+  }
+  .row.heading .san, .row.heading .en {
+    font-weight: 600;
+    font-size: 1.1rem;
+  }
+  .row:target {
+    background: #f4ecd8;
+    border-left: 3px solid #c9a96e;
+    margin-left: -1rem;
+    padding-left: calc(1rem - 3px);
+  }
+  .seg-id {
+    color: var(--id-color);
+    font-family: "SF Mono", "Menlo", monospace;
+    font-size: 0.75rem;
+    padding-top: 0.25rem;
+  }
+  .seg-id a {
+    color: inherit;
+    text-decoration: none;
+  }
+  .seg-id a:hover {
+    color: #2a2a2a;
+    text-decoration: underline;
+  }
+  .san {
+    color: var(--san-color);
+    font-style: italic;
+  }
+  .en {
+    color: var(--en-color);
+  }
+  .en:empty::before {
+    content: "—";
+    color: #ccc;
+  }
+  .en-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  .comment {
+    font-size: 0.85rem;
+    color: #6a6a6a;
+    line-height: 1.5;
+    padding-left: 0.6rem;
+    border-left: 2px solid #e6e1d8;
+  }
+  .intro {
+    max-width: 720px;
+    margin: 0 auto 1.5rem;
+    padding: 1rem 1.2rem;
+    background: #f4ecd8;
+    border-left: 3px solid #c9a96e;
+    font-size: 0.95rem;
+    line-height: 1.55;
+    color: #3a3a3a;
+  }
+  .intro p { margin: 0 0 0.6rem; }
+  .intro p:last-child { margin-bottom: 0; }
+  .intro em { font-style: italic; }
+  @media (max-width: 900px) {
+    .col-headings, .row {
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+    .row { padding: 0.75rem 0; }
+    .seg-id { font-size: 0.7rem; }
+    .col-headings { display: none; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <h1>Mindfulness of Breathing</h1>
+  <div class="sub">Śrāvakabhūmi · Sanskrit (Shukla 1973) ↔ English (1 rendering)</div>
+  <nav><a href="index.html">← All topics</a><a href="sbh2.6-en.html">View English only →</a></nav>
+</header>
+<main>
+<div class="intro"><p>The fifth and longest of the <em>carita-viśodhana</em> practices, corresponding to the <em>vitarka-carita</em> (discursive-thinking-temperament) practitioner. Covers the definition (mindfulness with the in-breath and out-breath as object), the anatomy of the breath (<em>āśvāsa</em> and <em>praśvāsa</em>), two faults to avoid in practice, and the five <em>paricayas</em> — five progressive investigative frames applied to the breath: counting (<em>gaṇanā</em>), aggregates (<em>skandha</em>), dependent origination (<em>pratītyasamutpāda</em>), the four noble truths (<em>satya</em>), and the sixteen aspects (<em>ṣoḍaśākāra</em>). Closes with the arhatship-claim through breath-mindfulness and the temperament-match rationale.</p></div>
+<div class="col-headings">
+  <div class="label-id">id</div>
+  <div>Sanskrit</div>
+  <div>English</div>
+</div>
+<div class="row heading" id="sbh2.6:0.1"><div class="seg-id"><a href="#sbh2.6:0.1">sbh2.6:0.1</a></div><div class="san">Śrāvakabhūmi</div><div class="en">Śrāvakabhūmi</div></div>
+<div class="row heading" id="sbh2.6:0.2"><div class="seg-id"><a href="#sbh2.6:0.2">sbh2.6:0.2</a></div><div class="san">ānāpānasmṛtiḥ</div><div class="en">Mindfulness of Breathing</div></div>
+<div class="row" id="sbh2.6:1.1"><div class="seg-id"><a href="#sbh2.6:1.1">sbh2.6:1.1</a></div><div class="san">tatrānāpānasmṛtiḥ katamā |</div><div class="en">What is mindfulness of breathing?</div></div>
+<div class="row" id="sbh2.6:1.2"><div class="seg-id"><a href="#sbh2.6:1.2">sbh2.6:1.2</a></div><div class="san">āśvāsapraśvāsālambanā smṛtiriyamucyate ānāpānasmṛtiḥ |</div><div class="en">Mindfulness having in-and-out-breaths as its object — this is called *ānāpānasmṛti*.</div></div>
+<div class="row" id="sbh2.6:2.1"><div class="seg-id"><a href="#sbh2.6:2.1">sbh2.6:2.1</a></div><div class="san">tatra dvāvāśvāsau katamau |</div><div class="en">What are the two in-breaths?</div></div>
+<div class="row" id="sbh2.6:2.2"><div class="seg-id"><a href="#sbh2.6:2.2">sbh2.6:2.2</a></div><div class="san">dvau āśvāso &#x27;ntarāśvāsaśca |</div><div class="en">In-breath (*āśvāsa*) and inner-in-breath (*antarāśvāsa*).</div></div>
+<div class="row" id="sbh2.6:2.3"><div class="seg-id"><a href="#sbh2.6:2.3">sbh2.6:2.3</a></div><div class="san">dvau praśvāsau katamau |</div><div class="en">What are the two out-breaths?</div></div>
+<div class="row" id="sbh2.6:2.4"><div class="seg-id"><a href="#sbh2.6:2.4">sbh2.6:2.4</a></div><div class="san">dvau praśvāso &#x27;ntaraḥpraśvāsaśca |</div><div class="en">Out-breath (*praśvāsa*) and inner-out-breath (*antaraḥ-praśvāsa*).</div></div>
+<div class="row" id="sbh2.6:2.5"><div class="seg-id"><a href="#sbh2.6:2.5">sbh2.6:2.5</a></div><div class="san">tatra śvāsaḥ yaḥ praśvāsasamanantaraṁ antarmukho vāyuḥ pravartate yāvannābhīpradeśāt |</div><div class="en">The in-breath is the air that, immediately after the out-breath, moves inward as far as the navel region.</div></div>
+<div class="row" id="sbh2.6:2.6"><div class="seg-id"><a href="#sbh2.6:2.6">sbh2.6:2.6</a></div><div class="san">tatrāntarāśvāso ya uparate &#x27;sminnāśvāse na tāvatpraśvāsa utpadyate yadantarālaviśrāmasthānasahagata itvarakālīnastadanusadṛśo vāyurutpadyate |</div><div class="en-cell"><div class="en">The inner-in-breath is, when the in-breath has ceased and the out-breath has not yet arisen, the brief intervening air at the resting-place that arises in a similar manner.</div><div class="comment">The four-phase analysis (in-breath, pause-after-in, out-breath, pause-after-out) is more granular than what the Pali suttas give. MN 118 has just <em>assāsa</em> and <em>passāsa</em>. The Yogācāra refinement explicitly carves out the two pauses as part of the practice object — they are not &#x27;gaps&#x27; between breaths but legitimate phases the practitioner attends to.</div></div></div>
+<div class="row" id="sbh2.6:2.7"><div class="seg-id"><a href="#sbh2.6:2.7">sbh2.6:2.7</a></div><div class="san">ayamucyate &#x27;ntarāśvāsaḥ |</div><div class="en">This is called the inner-in-breath.</div></div>
+<div class="row" id="sbh2.6:2.8"><div class="seg-id"><a href="#sbh2.6:2.8">sbh2.6:2.8</a></div><div class="san">yathāśvāso &#x27;ntarāśvāsaścaivaṁ praśvāso &#x27;ntaraḥpraśvāsaśca veditavyaḥ |</div><div class="en">The out-breath and inner-out-breath should be understood likewise.</div></div>
+<div class="row" id="sbh2.6:2.9"><div class="seg-id"><a href="#sbh2.6:2.9">sbh2.6:2.9</a></div><div class="san">tatrāyaṁ viśeṣaḥ |</div><div class="en">The distinction here:</div></div>
+<div class="row" id="sbh2.6:2.10"><div class="seg-id"><a href="#sbh2.6:2.10">sbh2.6:2.10</a></div><div class="san">bahirmukho vāyuḥ pravartate bahiḥ nābhīdeśamupādāya yāvanmukhāgrānnāsikāgrāttato vā punarbahiḥ |</div><div class="en">the air moves outward from the navel region as far as the tip of the mouth or nose, and from there outside.</div></div>
+<div class="row" id="sbh2.6:3.1"><div class="seg-id"><a href="#sbh2.6:3.1">sbh2.6:3.1</a></div><div class="san">dvāvāśvāsapraśvāsanidānau |</div><div class="en">What are the two causes of in-and-out-breathing?</div></div>
+<div class="row" id="sbh2.6:3.2"><div class="seg-id"><a href="#sbh2.6:3.2">sbh2.6:3.2</a></div><div class="san">katamau dvau |</div><div class="en">What two?</div></div>
+<div class="row" id="sbh2.6:3.3"><div class="seg-id"><a href="#sbh2.6:3.3">sbh2.6:3.3</a></div><div class="san">tattādṛśakaṁ ca karma, nābhīpradeśasauṣiryaṁ ca |</div><div class="en">Karmic action conditioned by the body, and the cavity of the navel region;</div></div>
+<div class="row" id="sbh2.6:3.4"><div class="seg-id"><a href="#sbh2.6:3.4">sbh2.6:3.4</a></div><div class="san">tato vā punarutpannaṁ yatkāyasauṣiryaṁ |</div><div class="en">or alternatively, the cavity of the body that arises from this.</div></div>
+<div class="row" id="sbh2.6:3.5"><div class="seg-id"><a href="#sbh2.6:3.5">sbh2.6:3.5</a></div><div class="san">dvāvāśvāsapraśvāsayoḥ saṁniśrayau katamau |</div><div class="en">What are the two supports of in-and-out-breathing?</div></div>
+<div class="row" id="sbh2.6:3.6"><div class="seg-id"><a href="#sbh2.6:3.6">sbh2.6:3.6</a></div><div class="san">dvau kāyaścittaṁ ca |</div><div class="en">The body and the mind.</div></div>
+<div class="row" id="sbh2.6:3.7"><div class="seg-id"><a href="#sbh2.6:3.7">sbh2.6:3.7</a></div><div class="san">tatkasya hetoḥ |</div><div class="en">Why?</div></div>
+<div class="row" id="sbh2.6:3.8"><div class="seg-id"><a href="#sbh2.6:3.8">sbh2.6:3.8</a></div><div class="san">kāyasanniśritāścittasanniśritāścāśvāsapraśvāsāḥ pravartante |</div><div class="en">In-and-out-breaths are body-supported and mind-supported,</div></div>
+<div class="row" id="sbh2.6:3.9"><div class="seg-id"><a href="#sbh2.6:3.9">sbh2.6:3.9</a></div><div class="san">te ca yathāyogaṁ sa cetkāyasanniśritā eva pravarteran |</div><div class="en">and proceed accordingly. If they were body-supported only,</div></div>
+<div class="row" id="sbh2.6:3.10"><div class="seg-id"><a href="#sbh2.6:3.10">sbh2.6:3.10</a></div><div class="san">asañjñisamāpannānāṁ, nirodhasamāpannānāṁ asañjñisattveṣu deveṣūpapannānāṁ sattvānāṁ pravarteran |</div><div class="en">they would proceed in beings attained to the unconscious attainment, the cessation attainment, and in beings born among the unconscious gods.</div></div>
+<div class="row" id="sbh2.6:3.11"><div class="seg-id"><a href="#sbh2.6:3.11">sbh2.6:3.11</a></div><div class="san">sa cet cittasanniśritā eva pravarteran |</div><div class="en">If they were mind-supported only,</div></div>
+<div class="row" id="sbh2.6:3.12"><div class="seg-id"><a href="#sbh2.6:3.12">sbh2.6:3.12</a></div><div class="san">tenārūpyasamāpannopapannānāṁ sattvānāṁ pravarteran |</div><div class="en">they would proceed in beings attained to or born in the formless attainments.</div></div>
+<div class="row" id="sbh2.6:3.13"><div class="seg-id"><a href="#sbh2.6:3.13">sbh2.6:3.13</a></div><div class="san">sa cet kāyasanniśritāścittasanniśritāḥ pravarteran |</div><div class="en">If they were body-and-mind-supported in the simple sense,</div></div>
+<div class="row" id="sbh2.6:3.14"><div class="seg-id"><a href="#sbh2.6:3.14">sbh2.6:3.14</a></div><div class="san">te ca na yathāyogaṁ tena caturthadhyānasamāpannopapannānāṁ, kalalagatānāṁ ca arbudagatānāṁ, peśīgatānāṁ sattvānāṁ pravarteran |</div><div class="en-cell"><div class="en">they would proceed in beings attained to the fourth absorption and in beings in the *kalala* (zygote), *arbuda* (early embryo), and *peśī* (fleshy mass) stages of gestation.</div><div class="comment">An empirically grounded fact disguised as scholastic argument: the breath ceases in the fourth jhāna, in the cessation attainment, and does not begin until the embryo has developed past the <em>peśī</em> (fleshy-mass) stage. The takeaway: *<em>in deep concentration the breath stops</em>* — Asanga validates this canonically.</div></div></div>
+<div class="row" id="sbh2.6:3.15"><div class="seg-id"><a href="#sbh2.6:3.15">sbh2.6:3.15</a></div><div class="san">na ca pravartate |</div><div class="en">But they do not so proceed.</div></div>
+<div class="row" id="sbh2.6:3.16"><div class="seg-id"><a href="#sbh2.6:3.16">sbh2.6:3.16</a></div><div class="san">tasmādāśvāsapraśvāsāḥ kāyasanniśritāścittasanniśritāśca pravartante tena yathāyogaṁ |</div><div class="en">Therefore in-and-out-breaths are body-supported and mind-supported in a specifically conditioned sense, and proceed accordingly.</div></div>
+<div class="row" id="sbh2.6:4.1"><div class="seg-id"><a href="#sbh2.6:4.1">sbh2.6:4.1</a></div><div class="san">dve āśvāsapraśvāsayorgatī |</div><div class="en">The two paths of the breaths:</div></div>
+<div class="row" id="sbh2.6:4.2"><div class="seg-id"><a href="#sbh2.6:4.2">sbh2.6:4.2</a></div><div class="san">katame dve |</div><div class="en">what two?</div></div>
+<div class="row" id="sbh2.6:4.3"><div class="seg-id"><a href="#sbh2.6:4.3">sbh2.6:4.3</a></div><div class="san">āśvāsayoradhogatiḥ |</div><div class="en">In-breaths go downward,</div></div>
+<div class="row" id="sbh2.6:4.4"><div class="seg-id"><a href="#sbh2.6:4.4">sbh2.6:4.4</a></div><div class="san">praśvāsayorūrdhvagatiḥ |</div><div class="en">out-breaths go upward.</div></div>
+<div class="row" id="sbh2.6:4.5"><div class="seg-id"><a href="#sbh2.6:4.5">sbh2.6:4.5</a></div><div class="san">dve āśvāsapraśvāsayorbhūmī |</div><div class="en">The two abodes of the breaths:</div></div>
+<div class="row" id="sbh2.6:4.6"><div class="seg-id"><a href="#sbh2.6:4.6">sbh2.6:4.6</a></div><div class="san">katame dve |</div><div class="en">what two?</div></div>
+<div class="row" id="sbh2.6:4.7"><div class="seg-id"><a href="#sbh2.6:4.7">sbh2.6:4.7</a></div><div class="san">audārikaṁ ca sauṣiryaṁ, sūkṣmaṁ ca sauṣiryam |</div><div class="en">The gross cavity and the subtle cavity.</div></div>
+<div class="row" id="sbh2.6:4.8"><div class="seg-id"><a href="#sbh2.6:4.8">sbh2.6:4.8</a></div><div class="san">tatraudārikaṁ sauṣiryaṁ nābhīpradeśamupādāya yāvanmukhanāsikādvāraṁ |</div><div class="en">The gross cavity is from the navel region as far as the door of mouth-and-nose,</div></div>
+<div class="row" id="sbh2.6:4.9"><div class="seg-id"><a href="#sbh2.6:4.9">sbh2.6:4.9</a></div><div class="san">mukhanāsikādvāramupādāya yāvannābhīpradeśasauṣiryaṁ |</div><div class="en">and from the door of mouth-and-nose as far as the navel cavity.</div></div>
+<div class="row" id="sbh2.6:4.10"><div class="seg-id"><a href="#sbh2.6:4.10">sbh2.6:4.10</a></div><div class="san">sūkṣmasauṣiryaṁ katamat |</div><div class="en">What is the subtle cavity?</div></div>
+<div class="row" id="sbh2.6:4.11"><div class="seg-id"><a href="#sbh2.6:4.11">sbh2.6:4.11</a></div><div class="san">sarvakāyagatāni romakūpāni |</div><div class="en-cell"><div class="en">All the pores of the body.</div><div class="comment"><em>sūkṣma-sauṣirya</em> — the subtle cavity, meaning all the pores of the body. The breath &#x27;lives&#x27; not just in the gross airway but in the pores of the entire body.</div></div></div>
+<div class="row" id="sbh2.6:5.1"><div class="seg-id"><a href="#sbh2.6:5.1">sbh2.6:5.1</a></div><div class="san">catvāryāśvāsapraśvāsānāṁ paryāyanāmāni |</div><div class="en">The four synonyms of in-and-out-breaths:</div></div>
+<div class="row" id="sbh2.6:5.2"><div class="seg-id"><a href="#sbh2.6:5.2">sbh2.6:5.2</a></div><div class="san">katamāni catvāri |</div><div class="en">what four?</div></div>
+<div class="row" id="sbh2.6:5.3"><div class="seg-id"><a href="#sbh2.6:5.3">sbh2.6:5.3</a></div><div class="san">vāyavaḥ, ānāpānāḥ, āśvāsapraśvāsāḥ, kāyasaṁskārāśceti |</div><div class="en-cell"><div class="en">Airs, in-and-out, in-breath-and-out-breath, and body-formations.</div><div class="comment">The fourth name, <em>kāya-saṁskāra</em> (body-formation), is the term used in MN 118&#x27;s third tetrad (&#x27;calming the body-formation, I breathe in&#x27;). Asanga signals the canonical anchor here.</div></div></div>
+<div class="row" id="sbh2.6:5.4"><div class="seg-id"><a href="#sbh2.6:5.4">sbh2.6:5.4</a></div><div class="san">tatrānyairvāyubhiḥ sādhāraṇaṁ paryāyanāmaikaṁ |</div><div class="en">Of these, one synonym is shared with other airs —</div></div>
+<div class="row" id="sbh2.6:5.5"><div class="seg-id"><a href="#sbh2.6:5.5">sbh2.6:5.5</a></div><div class="san">yaduta vāyuriti |</div><div class="en">namely, &#x27;air.&#x27;</div></div>
+<div class="row" id="sbh2.6:5.6"><div class="seg-id"><a href="#sbh2.6:5.6">sbh2.6:5.6</a></div><div class="san">asādhāraṇāni tadanyāni trīṇi |</div><div class="en">The other three are exclusive.</div></div>
+<div class="row" id="sbh2.6:6.1"><div class="seg-id"><a href="#sbh2.6:6.1">sbh2.6:6.1</a></div><div class="san">dvāvapakṣālāvāśvāsapraśvāsaprayuktasya |</div><div class="en">Two faults [arise] for one engaged in *ānāpāna*.</div></div>
+<div class="row" id="sbh2.6:6.2"><div class="seg-id"><a href="#sbh2.6:6.2">sbh2.6:6.2</a></div><div class="san">katamau dvau |</div><div class="en">What two?</div></div>
+<div class="row" id="sbh2.6:6.3"><div class="seg-id"><a href="#sbh2.6:6.3">sbh2.6:6.3</a></div><div class="san">aśithilaprayogatā ca, atyabhyavaṣṭabdhaprayogatā ca |</div><div class="en">Slack engagement, and over-tight engagement.</div></div>
+<div class="row" id="sbh2.6:6.4"><div class="seg-id"><a href="#sbh2.6:6.4">sbh2.6:6.4</a></div><div class="san">tatrāśithilaprayogatayā kausīdyaprāptasya styānamiddhaṁ vā cittaṁ paryavanahyati, bahirdhā vā vikṣipyate |</div><div class="en">In slack engagement, falling into laziness, the mind is overcome by sloth-and-torpor or distracted outwardly.</div></div>
+<div class="row" id="sbh2.6:6.5"><div class="seg-id"><a href="#sbh2.6:6.5">sbh2.6:6.5</a></div><div class="san">atyabhyavaṣṭabdhaprayuktasya kāyavaiṣamyaṁ cotpadyate |</div><div class="en">In over-tight engagement, bodily disturbance arises,</div></div>
+<div class="row" id="sbh2.6:6.6"><div class="seg-id"><a href="#sbh2.6:6.6">sbh2.6:6.6</a></div><div class="san">cittavaiṣamyaṁ vā |</div><div class="en">or mental disturbance.</div></div>
+<div class="row" id="sbh2.6:6.7"><div class="seg-id"><a href="#sbh2.6:6.7">sbh2.6:6.7</a></div><div class="san">kathaṁ kāyavaiṣamyamutpadyate |</div><div class="en">How does bodily disturbance arise?</div></div>
+<div class="row" id="sbh2.6:6.8"><div class="seg-id"><a href="#sbh2.6:6.8">sbh2.6:6.8</a></div><div class="san">balābhinigraheṇāśvāsapraśvāsānabhiniṣpīḍayataḥ kāye viṣamā vāyavaḥ pravartante |</div><div class="en">When one applies force to the breath through forceful restraint — pressing the in-and-out-breaths — irregular airs proceed in the body.</div></div>
+<div class="row" id="sbh2.6:6.9"><div class="seg-id"><a href="#sbh2.6:6.9">sbh2.6:6.9</a></div><div class="san">yeṣya tatprathamatasteṣu teṣvaṅgapratyaṅgeṣu sphuranti |</div><div class="en">They first stir in such-and-such limbs and minor limbs;</div></div>
+<div class="row" id="sbh2.6:6.10"><div class="seg-id"><a href="#sbh2.6:6.10">sbh2.6:6.10</a></div><div class="san">ye sphuraka iti ucyante |</div><div class="en">these are called *sphurakas* (throbbings).</div></div>
+<div class="row" id="sbh2.6:6.11"><div class="seg-id"><a href="#sbh2.6:6.11">sbh2.6:6.11</a></div><div class="san">te punaḥ sphurakā vāyavo vivardhamānā rujakā bhavanti |</div><div class="en-cell"><div class="en">When these throbbing airs grow, they become *rujakas* (paining airs);</div><div class="comment">A clinical observation. Forceful breath-control produces actual physical disturbances — beginning as palpitations or tics (<em>sphuraka</em> — &#x27;throbber&#x27;) and progressing to pain (<em>rujaka</em> — &#x27;pain-maker&#x27;). The remedy isn&#x27;t a separate technique — it&#x27;s avoiding both extremes from the start.</div></div></div>
+<div class="row" id="sbh2.6:6.12"><div class="seg-id"><a href="#sbh2.6:6.12">sbh2.6:6.12</a></div><div class="san">ye &#x27;pi eteṣvaṅgapratyaṅgeṣu rujamutpādayanti |</div><div class="en">they produce pain in those very limbs.</div></div>
+<div class="row" id="sbh2.6:6.13"><div class="seg-id"><a href="#sbh2.6:6.13">sbh2.6:6.13</a></div><div class="san">idamucyate kāyavaiṣamyaṁ |</div><div class="en">This is called bodily disturbance.</div></div>
+<div class="row" id="sbh2.6:6.14"><div class="seg-id"><a href="#sbh2.6:6.14">sbh2.6:6.14</a></div><div class="san">kathaṁ cittavaiṣamyamutpadyate |</div><div class="en">How does mental disturbance arise?</div></div>
+<div class="row" id="sbh2.6:6.15"><div class="seg-id"><a href="#sbh2.6:6.15">sbh2.6:6.15</a></div><div class="san">cittaṁ vāsya vikṣipyate |</div><div class="en">The mind is distracted,</div></div>
+<div class="row" id="sbh2.6:6.16"><div class="seg-id"><a href="#sbh2.6:6.16">sbh2.6:6.16</a></div><div class="san">prāgasau na vā daurmanasyopāyāsenābhibhūyate |</div><div class="en">and is overcome by previous dejection-and-distress.</div></div>
+<div class="row" id="sbh2.6:6.17"><div class="seg-id"><a href="#sbh2.6:6.17">sbh2.6:6.17</a></div><div class="san">evaṁ cittavaiṣamyamutpadyate |</div><div class="en">Thus mental disturbance arises.</div></div>
+<div class="row" id="sbh2.6:7.1"><div class="seg-id"><a href="#sbh2.6:7.1">sbh2.6:7.1</a></div><div class="san">asyā ānāpānasmṛteḥ pañcavidhaḥ paricayo veditavyaḥ |</div><div class="en">Five familiarities of this *ānāpānasmṛti* should be known:</div></div>
+<div class="row" id="sbh2.6:7.2"><div class="seg-id"><a href="#sbh2.6:7.2">sbh2.6:7.2</a></div><div class="san">tadyathā gaṇanāparicayaḥ, skandhāvatāraparicayaḥ, pratītyasamutpādāvatāraparicayaḥ, satyāvatāraparicayaḥ, ṣoḍaśākāraparicayaśca |</div><div class="en-cell"><div class="en">counting-familiarity, aggregate-entry-familiarity, dependent-origination-entry-familiarity, truth-entry-familiarity, and sixteen-aspect-familiarity.</div><div class="comment">The spine of the Yogācāra breath practice: five progressive depths, each complete in itself, cumulative. Counting establishes stability. Aggregate-entry pivots breath into insight by analyzing the breath into the five aggregates. Dependent-origination-entry traces the conditional chain. Truth-entry generates the four noble truths. Sixteen-aspect-familiarity is the canonical <em>ṣoḍaśākāra</em> of MN 118.</div></div></div>
+<div class="row" id="sbh2.6:8.1"><div class="seg-id"><a href="#sbh2.6:8.1">sbh2.6:8.1</a></div><div class="san">tatraikaikagaṇanā katamā |</div><div class="en">What is one-by-one counting?</div></div>
+<div class="row" id="sbh2.6:8.2"><div class="seg-id"><a href="#sbh2.6:8.2">sbh2.6:8.2</a></div><div class="san">yadā āśvāsaḥ praviṣṭo bhavati |</div><div class="en">When the in-breath has entered,</div></div>
+<div class="row" id="sbh2.6:8.3"><div class="seg-id"><a href="#sbh2.6:8.3">sbh2.6:8.3</a></div><div class="san">tadā āśvāsapraśvāsopanibaddhayā smṛtyā ekamiti gaṇayati |</div><div class="en">with mindfulness bound to the in-and-out-breath, he counts &#x27;one.&#x27;</div></div>
+<div class="row" id="sbh2.6:8.4"><div class="seg-id"><a href="#sbh2.6:8.4">sbh2.6:8.4</a></div><div class="san">yadā āśvāse niruddhe praśvāsa utpadya nirgato bhavati |</div><div class="en">When the in-breath has ceased and the out-breath arises and goes out,</div></div>
+<div class="row" id="sbh2.6:8.5"><div class="seg-id"><a href="#sbh2.6:8.5">sbh2.6:8.5</a></div><div class="san">tadā dvitīyaṁ gaṇayatyevaṁ yāvaddaśa gaṇayati |</div><div class="en">he counts &#x27;two.&#x27; Thus he counts up to ten.</div></div>
+<div class="row" id="sbh2.6:8.6"><div class="seg-id"><a href="#sbh2.6:8.6">sbh2.6:8.6</a></div><div class="san">eṣā hi gaṇanā saṅkhyā nātisaṁkṣiptā nātivistarā iyamucyate ekaikagaṇanā |</div><div class="en">This counting is neither too compressed nor too extended. This is called one-by-one counting.</div></div>
+<div class="row" id="sbh2.6:8.7"><div class="seg-id"><a href="#sbh2.6:8.7">sbh2.6:8.7</a></div><div class="san">dvayaikagaṇanā katamā |</div><div class="en">What is two-as-one counting?</div></div>
+<div class="row" id="sbh2.6:8.8"><div class="seg-id"><a href="#sbh2.6:8.8">sbh2.6:8.8</a></div><div class="san">yadā āśvāsaḥ praviṣṭo bhavati, niruddhaśca |</div><div class="en">When the in-breath has entered and ceased,</div></div>
+<div class="row" id="sbh2.6:8.9"><div class="seg-id"><a href="#sbh2.6:8.9">sbh2.6:8.9</a></div><div class="san">praśvāsa utpanno bhavati |</div><div class="en">and the out-breath has arisen</div></div>
+<div class="row" id="sbh2.6:8.10"><div class="seg-id"><a href="#sbh2.6:8.10">sbh2.6:8.10</a></div><div class="san">nirgataśca tadā ekamiti gaṇayati |</div><div class="en">and gone out, he counts &#x27;one.&#x27;</div></div>
+<div class="row" id="sbh2.6:8.11"><div class="seg-id"><a href="#sbh2.6:8.11">sbh2.6:8.11</a></div><div class="san">anena gaṇanāyogena yāvaddaśa gaṇayati |</div><div class="en">By this method of counting he counts up to ten.</div></div>
+<div class="row" id="sbh2.6:8.12"><div class="seg-id"><a href="#sbh2.6:8.12">sbh2.6:8.12</a></div><div class="san">iyamucyate dvayaikagaṇanā |</div><div class="en">This is called two-as-one counting.</div></div>
+<div class="row" id="sbh2.6:8.13"><div class="seg-id"><a href="#sbh2.6:8.13">sbh2.6:8.13</a></div><div class="san">āśvāsaṁ ca praśvāsaṁ cedaṁ dvayamekatyamabhisaṁkṣipya ekamiti gaṇayati tenocyate dvayaikagaṇanā |</div><div class="en">He combines in-and-out into a single unit and counts it as one — thus called two-as-one counting.</div></div>
+<div class="row" id="sbh2.6:8.14"><div class="seg-id"><a href="#sbh2.6:8.14">sbh2.6:8.14</a></div><div class="san">anulomagaṇanā katamā |</div><div class="en">What is forward counting?</div></div>
+<div class="row" id="sbh2.6:8.15"><div class="seg-id"><a href="#sbh2.6:8.15">sbh2.6:8.15</a></div><div class="san">anayaivaikaikagaṇanayā, dvayaikagaṇanayā vā, anulomaṁ yāvaddaśa gaṇayati |</div><div class="en">By either one-by-one counting or two-as-one counting, he counts forward up to ten.</div></div>
+<div class="row" id="sbh2.6:8.16"><div class="seg-id"><a href="#sbh2.6:8.16">sbh2.6:8.16</a></div><div class="san">iyamucyate anulomagaṇanā |</div><div class="en">This is called forward counting.</div></div>
+<div class="row" id="sbh2.6:8.17"><div class="seg-id"><a href="#sbh2.6:8.17">sbh2.6:8.17</a></div><div class="san">pratilomagaṇanā katamā |</div><div class="en">What is reverse counting?</div></div>
+<div class="row" id="sbh2.6:8.18"><div class="seg-id"><a href="#sbh2.6:8.18">sbh2.6:8.18</a></div><div class="san">pratilomaṁ daśa upādāya, navāṣṭau, sapta, ṣaṭ, pañca, yāvadekaṁ gaṇayati |</div><div class="en">Starting from ten in reverse — nine, eight, seven, six, five — down to one.</div></div>
+<div class="row" id="sbh2.6:8.19"><div class="seg-id"><a href="#sbh2.6:8.19">sbh2.6:8.19</a></div><div class="san">iyamucyate pratilomagaṇanā |</div><div class="en">This is called reverse counting.</div></div>
+<div class="row" id="sbh2.6:8.20"><div class="seg-id"><a href="#sbh2.6:8.20">sbh2.6:8.20</a></div><div class="san">yadā sa ekaikagaṇanāṁ niśritya, dvayaikagaṇanāṁ vā, anulomagaṇanāyāṁ, pratilomagaṇanāyāṁ ca kṛtaparicayo bhavati |</div><div class="en">When, relying on one-by-one counting or two-as-one counting, he has made familiarity with forward and reverse counting,</div></div>
+<div class="row" id="sbh2.6:8.21"><div class="seg-id"><a href="#sbh2.6:8.21">sbh2.6:8.21</a></div><div class="san">na cāsyāntarāccittaṁ vikṣipyate |</div><div class="en">and the mind does not become distracted in the meantime,</div></div>
+<div class="row" id="sbh2.6:8.22"><div class="seg-id"><a href="#sbh2.6:8.22">sbh2.6:8.22</a></div><div class="san">avikṣiptacittaśca gaṇayati |</div><div class="en">but counts with undistracted mind —</div></div>
+<div class="row" id="sbh2.6:8.23"><div class="seg-id"><a href="#sbh2.6:8.23">sbh2.6:8.23</a></div><div class="san">tadāsyottaragaṇanāviśeṣo vyapadiśyate |</div><div class="en">then his subsequent superior counting is described.</div></div>
+<div class="row" id="sbh2.6:8.24"><div class="seg-id"><a href="#sbh2.6:8.24">sbh2.6:8.24</a></div><div class="san">katamo gaṇanāviśeṣaḥ |</div><div class="en">What is the superior counting?</div></div>
+<div class="row" id="sbh2.6:8.25"><div class="seg-id"><a href="#sbh2.6:8.25">sbh2.6:8.25</a></div><div class="san">ekaikagaṇanayā vā, dvayaikagaṇanayā vā, dvayamekaṁ kṛtvā gaṇayati |</div><div class="en">By either one-by-one or two-as-one counting, he makes two-as-one and counts.</div></div>
+<div class="row" id="sbh2.6:8.26"><div class="seg-id"><a href="#sbh2.6:8.26">sbh2.6:8.26</a></div><div class="san">tatra dvayaikagaṇanayā catvāra āśvāsapraśvāsā ekaṁ bhavati |</div><div class="en">By two-as-one counting, four in-and-out-breaths are one unit.</div></div>
+<div class="row" id="sbh2.6:8.27"><div class="seg-id"><a href="#sbh2.6:8.27">sbh2.6:8.27</a></div><div class="san">ekaikagaṇanayā punarāśvāsapraśvāsaścaikaṁ bhavatyevaṁ yāvaddaśa gaṇayati |</div><div class="en">By one-by-one counting, an in-and-out pair is one. Thus he counts up to ten.</div></div>
+<div class="row" id="sbh2.6:8.28"><div class="seg-id"><a href="#sbh2.6:8.28">sbh2.6:8.28</a></div><div class="san">evamuttarottaravṛddhyā yāvaccchatamapyekaṁ kṛtvā gaṇayati |</div><div class="en-cell"><div class="en">By such progressive enlargement, he eventually makes a hundred breaths one unit and counts.</div><div class="comment">A precise scaling protocol: one-per-breath (<em>ekaika</em>), then two-per-count, then four, then ten, eventually a hundred. Each scale-up permitted only when the mind doesn&#x27;t drift in between — a graduated extension of the duration of attention.</div></div></div>
+<div class="row" id="sbh2.6:8.29"><div class="seg-id"><a href="#sbh2.6:8.29">sbh2.6:8.29</a></div><div class="san">tadā śataikagaṇanayānupūrveṇa yāvaddaśa gaṇayati |</div><div class="en">Then by hundred-as-one counting in sequence he counts up to ten.</div></div>
+<div class="row" id="sbh2.6:8.30"><div class="seg-id"><a href="#sbh2.6:8.30">sbh2.6:8.30</a></div><div class="san">evamasya gaṇanāprayuktasya yāvaddaśaikaṁ kṛtvā gaṇayati |</div><div class="en">When this counting-engaged practitioner makes ten-as-one and counts up to ten —</div></div>
+<div class="row" id="sbh2.6:8.31"><div class="seg-id"><a href="#sbh2.6:8.31">sbh2.6:8.31</a></div><div class="san">yāvacca daśa paripūrayati |</div><div class="en">as long as he fulfills the ten —</div></div>
+<div class="row" id="sbh2.6:8.32"><div class="seg-id"><a href="#sbh2.6:8.32">sbh2.6:8.32</a></div><div class="san">tayā daśaikagaṇanayā na cāsyottarāccittam vikṣipyate |</div><div class="en">by this ten-as-one counting the mind does not become distracted afterward.</div></div>
+<div class="row" id="sbh2.6:8.33"><div class="seg-id"><a href="#sbh2.6:8.33">sbh2.6:8.33</a></div><div class="san">iyatā tena gaṇanāparicayaḥ kṛto bhavati |</div><div class="en">By this much, his counting-familiarity is accomplished.</div></div>
+<div class="row" id="sbh2.6:8.34"><div class="seg-id"><a href="#sbh2.6:8.34">sbh2.6:8.34</a></div><div class="san">tasya ca gaṇanāprayuktasya sa ced antarāc cittaṁ vikṣipyate tadā punaḥ pratinivartyādito gaṇayitumārabhate |</div><div class="en">Of this counting-engaged practitioner, if the mind becomes distracted in the meantime, he turns back and starts counting again from the beginning,</div></div>
+<div class="row" id="sbh2.6:8.35"><div class="seg-id"><a href="#sbh2.6:8.35">sbh2.6:8.35</a></div><div class="san">anulomaṁ vā, pratilomaṁ vā |</div><div class="en">either forward or reverse.</div></div>
+<div class="row" id="sbh2.6:8.36"><div class="seg-id"><a href="#sbh2.6:8.36">sbh2.6:8.36</a></div><div class="san">yadā cāsya gadhayāccittaṁ svarasenaiva svarasavāhimārgeṇaiva samārūḍhamāśvāsapraśvāsālambanopanibaddhamavyavacchinnaṁ nirantaraṁ, pravartamāne āśvāse pravṛttigrāhakaṁ, niruddhe āśvāse praśvāsaśūnyāvasthāgrāhakaṁ, pravṛtte praśvāse pravṛttigrāhakaṁ, nivṛtte punarnivṛttigrāhakam, avikampyamavicalamavikṣepākāraṁ, sābhirāmaṁ ca pravartate |</div><div class="en-cell"><div class="en">When his mind, by its own nature (*svarasa*), goes along the inner path of natural movement — having mounted onto the in-and-out-breath object — uninterrupted, without gap, taking the in-breath as it proceeds, taking the empty-of-out-breath state when the in-breath has ceased, taking the out-breath as it proceeds, taking the cessation when it ceases — unwavering, unmoving, without aspect of distraction, and accompanied by delight —</div><div class="comment"><em>svarasa-vāhin</em> — &#x27;carried by its own essence.&#x27; Echoes stage 9 of the nine mental abidings (<em>svarasa-vāhana</em>). The practitioner has reached the point where the mind goes naturally on the breath — counting becomes unnecessary because attention is self-sustaining.</div></div></div>
+<div class="row" id="sbh2.6:8.37"><div class="seg-id"><a href="#sbh2.6:8.37">sbh2.6:8.37</a></div><div class="san">iyatā gaṇanābhūmisamatikramo bhavati |</div><div class="en">by this much the counting-stage is transcended.</div></div>
+<div class="row" id="sbh2.6:8.38"><div class="seg-id"><a href="#sbh2.6:8.38">sbh2.6:8.38</a></div><div class="san">punastadā gaṇayitavyaṁ na bhavati |</div><div class="en">Then no more counting is to be done.</div></div>
+<div class="row" id="sbh2.6:8.39"><div class="seg-id"><a href="#sbh2.6:8.39">sbh2.6:8.39</a></div><div class="san">nānyatrāśvāsapraśvāsālambanaṁ cittamupanibadhyate |</div><div class="en">Mind is no longer bound to any object other than the in-and-out-breaths.</div></div>
+<div class="row" id="sbh2.6:8.40"><div class="seg-id"><a href="#sbh2.6:8.40">sbh2.6:8.40</a></div><div class="san">āśvāsapraśvāsā anugantavyāścābhilakṣayitavyāśca sāntarāśvāsapraśvāsāḥ sapravṛttinivṛttyavasthāḥ |</div><div class="en">The in-and-out-breaths — together with the inner pauses, and with their states of arising and ceasing — are to be followed and characterized.</div></div>
+<div class="row" id="sbh2.6:8.41"><div class="seg-id"><a href="#sbh2.6:8.41">sbh2.6:8.41</a></div><div class="san">ayamucyate gaṇanāparicayaḥ |</div><div class="en">This is called counting-familiarity.</div></div>
+<div class="row" id="sbh2.6:8.42"><div class="seg-id"><a href="#sbh2.6:8.42">sbh2.6:8.42</a></div><div class="san">sa khalveṣa gaṇanāparicayo mṛdvindriyāṇāṁ vyapadiśyate |</div><div class="en">This counting-familiarity is prescribed for those of dull faculties.</div></div>
+<div class="row" id="sbh2.6:8.43"><div class="seg-id"><a href="#sbh2.6:8.43">sbh2.6:8.43</a></div><div class="san">teṣāmetadvyākṣepasthānaṁ bhavati |</div><div class="en">For them, [the breath alone] is a place of distraction.</div></div>
+<div class="row" id="sbh2.6:8.44"><div class="seg-id"><a href="#sbh2.6:8.44">sbh2.6:8.44</a></div><div class="san">cittasthitaye cittaniratiye |</div><div class="en">For mental abiding, for mental enjoyment, [counting is needed];</div></div>
+<div class="row" id="sbh2.6:8.45"><div class="seg-id"><a href="#sbh2.6:8.45">sbh2.6:8.45</a></div><div class="san">anyathā gaṇanāmantareṇa teṣāṁ styānamiddhaṁ vā cittaṁ paryavahet, bahirdhā vā cittaṁ vikṣipyeta, gaṇanāprayuktena tu teṣāmetanna bhavati |</div><div class="en">without counting, sloth-and-torpor would overcome them, or the mind would be distracted outwardly — counting-engagement prevents this.</div></div>
+<div class="row" id="sbh2.6:8.46"><div class="seg-id"><a href="#sbh2.6:8.46">sbh2.6:8.46</a></div><div class="san">ye tu tīkṣṇendriyāḥ paṭubuddhayaḥ teṣāṁ punargaṇanāprayogeṇa priyārohatā bhavati |</div><div class="en-cell"><div class="en">But for those of sharp faculties, with quick understanding, the use of counting becomes too elementary.</div><div class="comment">Asanga explicitly says counting is the <em>training-wheel</em> for those who need it. Sharp-faculty practitioners can skip directly to attentive characterization of the breath. The modern question of whether counting is necessary gets a direct answer: only if the mind would otherwise drift.</div></div></div>
+<div class="row" id="sbh2.6:8.47"><div class="seg-id"><a href="#sbh2.6:8.47">sbh2.6:8.47</a></div><div class="san">tatropadiṣṭā evaṁ gaṇanāprayogaṁ laghu laghveva pratividhyanti |</div><div class="en">Once instructed, they penetrate the counting-engagement very quickly,</div></div>
+<div class="row" id="sbh2.6:8.48"><div class="seg-id"><a href="#sbh2.6:8.48">sbh2.6:8.48</a></div><div class="san">na ca tenābhiramante |</div><div class="en">and do not find delight in it.</div></div>
+<div class="row" id="sbh2.6:8.49"><div class="seg-id"><a href="#sbh2.6:8.49">sbh2.6:8.49</a></div><div class="san">te punarāśvāsapraśvāsālambanāṁ smṛtimupanibadhya yatra ca pravartante, yāvacca pravartante, yathā ca pravartante, yadā ca pravartante |</div><div class="en">They bind mindfulness to the in-and-out-breath object, and concerning *where* it proceeds, *how far* it proceeds, *in what manner* it proceeds, and *when* it proceeds —</div></div>
+<div class="row" id="sbh2.6:8.50"><div class="seg-id"><a href="#sbh2.6:8.50">sbh2.6:8.50</a></div><div class="san">tatsarvamanugacchantyupalakṣayantyupasthitayā smṛtyā |</div><div class="en">they investigate and characterize all of it with established mindfulness.</div></div>
+<div class="row" id="sbh2.6:8.51"><div class="seg-id"><a href="#sbh2.6:8.51">sbh2.6:8.51</a></div><div class="san">ayamevaṁ rūpasteṣāṁ prayogaḥ |</div><div class="en">This is the form of their engagement.</div></div>
+<div class="row" id="sbh2.6:8.52"><div class="seg-id"><a href="#sbh2.6:8.52">sbh2.6:8.52</a></div><div class="san">tasya ca prayogasyāsevanānvayād bhāvanānvayād bahulīkārānvayāt kāyapraśrabdhirutpadyate, cittapraśrabdhiśca |</div><div class="en">Through familiarization, cultivation, and frequent practice of this engagement, bodily pliancy and mental pliancy arise.</div></div>
+<div class="row" id="sbh2.6:8.53"><div class="seg-id"><a href="#sbh2.6:8.53">sbh2.6:8.53</a></div><div class="san">ekāgratāṁ ca spṛśatyālambanābhiratiṁ ca nirgacchati |</div><div class="en">He attains one-pointedness and emerges with delight in the object.</div></div>
+<div class="row" id="sbh2.6:9.1"><div class="seg-id"><a href="#sbh2.6:9.1">sbh2.6:9.1</a></div><div class="san">ya evaṁ kṛtaparicayo grāhyagrāhakavastumanaskāreṇa skandhānavatarati |</div><div class="en">He who has thus made counting-familiarity, by attending to the matter of grasper-and-grasped, enters the aggregates.</div></div>
+<div class="row" id="sbh2.6:9.2"><div class="seg-id"><a href="#sbh2.6:9.2">sbh2.6:9.2</a></div><div class="san">ye cāśvāsapraśvāsā yaścaiṣāmāśrayakāyastaṁ manasi kurvan rūpaskandhamavatarati |</div><div class="en">The in-and-out-breaths, and that body which is their support — attending to these, he enters the form-aggregate.</div></div>
+<div class="row" id="sbh2.6:9.3"><div class="seg-id"><a href="#sbh2.6:9.3">sbh2.6:9.3</a></div><div class="san">yā teṣāmāśvāsapraśvāsānāṁ tadgrāhikayā smṛtyā saṁprayuktā anubhāvanā sa vedanāskandha ityavatarati |</div><div class="en">The experience-and-undergoing of those in-and-out-breaths, conjoined with the mindfulness that grasps them — this he enters as the feeling-aggregate.</div></div>
+<div class="row" id="sbh2.6:9.4"><div class="seg-id"><a href="#sbh2.6:9.4">sbh2.6:9.4</a></div><div class="san">yā saṁjānanā saṁjñāskandha ityavatarati |</div><div class="en">The cognizing of them — this he enters as the perception-aggregate.</div></div>
+<div class="row" id="sbh2.6:9.5"><div class="seg-id"><a href="#sbh2.6:9.5">sbh2.6:9.5</a></div><div class="san">yā cāsau smṛtiryā ca cetanā, yā ca tatra prajñā |</div><div class="en">The mindfulness, the volition, and the discernment present here —</div></div>
+<div class="row" id="sbh2.6:9.6"><div class="seg-id"><a href="#sbh2.6:9.6">sbh2.6:9.6</a></div><div class="san">ayaṁ saṁskāra ityavatarati |</div><div class="en">this he enters as the formations-aggregate.</div></div>
+<div class="row" id="sbh2.6:9.7"><div class="seg-id"><a href="#sbh2.6:9.7">sbh2.6:9.7</a></div><div class="san">yaccittaṁ, mano, vijñānamayaṁ vijñānaskandha ityavatarati |</div><div class="en-cell"><div class="en">The mind, mentation, consciousness — this he enters as the consciousness-aggregate.</div><div class="comment">This is the pivot from <em>śamatha</em> into <em>vipaśyanā</em> applied to the breath. The breath is <em>rūpa</em>; the felt-tone of attending to it is <em>vedanā</em>; the recognizing &#x27;this is in-breath&#x27; is <em>saṁjñā</em>; the mindfulness-intention-discernment present is <em>saṁskāra</em>; the bare cognizing is <em>vijñāna</em>. Breath becomes a fully analyzed phenomenological event.</div></div></div>
+<div class="row" id="sbh2.6:9.8"><div class="seg-id"><a href="#sbh2.6:9.8">sbh2.6:9.8</a></div><div class="san">yā tadbahulavihāritā |</div><div class="en">Frequently abiding in this —</div></div>
+<div class="row" id="sbh2.6:9.9"><div class="seg-id"><a href="#sbh2.6:9.9">sbh2.6:9.9</a></div><div class="san">evaṁ skandheṣvavatīrṇasyāyamucyate skandhāvatāraparicayaḥ |</div><div class="en">thus having entered the aggregates — this is called aggregate-entry-familiarity.</div></div>
+<div class="row" id="sbh2.6:10.1"><div class="seg-id"><a href="#sbh2.6:10.1">sbh2.6:10.1</a></div><div class="san">yadā cānena skandhamātraṁ dṛṣṭaṁ bhavati |</div><div class="en">When through this he has seen mere aggregate,</div></div>
+<div class="row" id="sbh2.6:10.2"><div class="seg-id"><a href="#sbh2.6:10.2">sbh2.6:10.2</a></div><div class="san">parijñātaṁ saṁskāramātraṁ, vastumātraṁ, tadā sa eṣāmeva saṁskārāṇāṁ pratītyasamutpādamavatarati |</div><div class="en">fully understood it as mere formation, mere substance, then he enters the dependent origination of these very formations.</div></div>
+<div class="row" id="sbh2.6:10.3"><div class="seg-id"><a href="#sbh2.6:10.3">sbh2.6:10.3</a></div><div class="san">kathaṁ ca punaravatarati |</div><div class="en">How does he enter?</div></div>
+<div class="row" id="sbh2.6:10.4"><div class="seg-id"><a href="#sbh2.6:10.4">sbh2.6:10.4</a></div><div class="san">sa evaṁ rūpamanveṣate, paryeṣate, itīye āśvāsapraśvāsāḥ kimāśritāḥ, kiṁpratyayāstasyaivaṁ bhavati |</div><div class="en">He searches and seeks: &#x27;These in-and-out-breaths — supported by what? Conditioned by what?&#x27;</div></div>
+<div class="row" id="sbh2.6:10.5"><div class="seg-id"><a href="#sbh2.6:10.5">sbh2.6:10.5</a></div><div class="san">kāyāśritā ete āśvāsapraśvāsāḥ kāyapratyayāścittāśritāścittapratyayāśca |</div><div class="en">It occurs to him: &#x27;These in-and-out-breaths are body-supported, body-conditioned; mind-supported, mind-conditioned.</div></div>
+<div class="row" id="sbh2.6:10.6"><div class="seg-id"><a href="#sbh2.6:10.6">sbh2.6:10.6</a></div><div class="san">kāyaḥ punaścittaṁ ca kiṁ pratyayaṁ ca |</div><div class="en">The body and the mind — what are they conditioned by?&#x27;</div></div>
+<div class="row" id="sbh2.6:10.7"><div class="seg-id"><a href="#sbh2.6:10.7">sbh2.6:10.7</a></div><div class="san">sa kāyaṁ yaḥ cittaṁ ca jīvitendriyapratyayamityavatarati |</div><div class="en">He enters: &#x27;The body and the mind are conditioned by the life-faculty.&#x27;</div></div>
+<div class="row" id="sbh2.6:10.8"><div class="seg-id"><a href="#sbh2.6:10.8">sbh2.6:10.8</a></div><div class="san">pūrvakaḥ saṁskāraḥ |</div><div class="en">The previous-formation:</div></div>
+<div class="row" id="sbh2.6:10.9"><div class="seg-id"><a href="#sbh2.6:10.9">sbh2.6:10.9</a></div><div class="san">sa pūrvakaṁ saṁskāramavidyāpratyayamityavatarati |</div><div class="en">he enters: &#x27;The previous-formation is conditioned by ignorance.&#x27;</div></div>
+<div class="row" id="sbh2.6:10.10"><div class="seg-id"><a href="#sbh2.6:10.10">sbh2.6:10.10</a></div><div class="san">iti hi avidyāpratyayaḥ pūrvakaḥ saṁskāraḥ sarvasaṁskārapratyayaṁ jīvitendriyaṁ, jīvitendriyapratyayaḥ kāyo, vijñānaṁ ca, kāyacittapratyayā āśvāsapraśvāsāḥ |</div><div class="en">Thus: ignorance-conditioned previous-formation; the previous-formation conditioning all formations is the life-faculty; the life-faculty-conditioned body, and consciousness; the body-and-mind-conditioned in-and-out-breaths.</div></div>
+<div class="row" id="sbh2.6:10.11"><div class="seg-id"><a href="#sbh2.6:10.11">sbh2.6:10.11</a></div><div class="san">tatrāvidyānirodhāt saṁskāranirodhaḥ |</div><div class="en">From the cessation of ignorance, cessation of formations.</div></div>
+<div class="row" id="sbh2.6:10.12"><div class="seg-id"><a href="#sbh2.6:10.12">sbh2.6:10.12</a></div><div class="san">saṁskāranirodhājjīvitendriyanirodhaḥ |</div><div class="en">From the cessation of formations, cessation of the life-faculty.</div></div>
+<div class="row" id="sbh2.6:10.13"><div class="seg-id"><a href="#sbh2.6:10.13">sbh2.6:10.13</a></div><div class="san">jīvitendriyanirodhāt kāyacittanirodhaḥ |</div><div class="en">From the cessation of the life-faculty, cessation of body-and-mind.</div></div>
+<div class="row" id="sbh2.6:10.14"><div class="seg-id"><a href="#sbh2.6:10.14">sbh2.6:10.14</a></div><div class="san">kāyacittanirodhādāśvāsapraśvāsanirodhaḥ |</div><div class="en">From the cessation of body-and-mind, cessation of in-and-out-breaths.</div></div>
+<div class="row" id="sbh2.6:10.15"><div class="seg-id"><a href="#sbh2.6:10.15">sbh2.6:10.15</a></div><div class="san">evamasau pratītyasamutpādamavatarati |</div><div class="en">Thus he enters dependent origination.</div></div>
+<div class="row" id="sbh2.6:10.16"><div class="seg-id"><a href="#sbh2.6:10.16">sbh2.6:10.16</a></div><div class="san">sa tadbahulavihārī pratītyasamutpādākāre kṛtaparicaya ityucyate |</div><div class="en-cell"><div class="en">Frequently abiding in this, he is said to have made familiarity in the dependent-origination aspect.</div><div class="comment">A compressed five-link chain (ignorance → previous-formations → life-faculty → body/consciousness → breath), focused on what makes breathing happen. Asanga grounds the abstract twelve-link doctrine in immediate experiential observation: <em>this very breath</em> depends on these conditions.</div></div></div>
+<div class="row" id="sbh2.6:10.17"><div class="seg-id"><a href="#sbh2.6:10.17">sbh2.6:10.17</a></div><div class="san">ayamucyate pratītyasamutpādāvatāraparicayaḥ |</div><div class="en">This is called dependent-origination-entry-familiarity.</div></div>
+<div class="row" id="sbh2.6:11.1"><div class="seg-id"><a href="#sbh2.6:11.1">sbh2.6:11.1</a></div><div class="san">sa evaṁ pratītyasamutpāde kṛtaparicayo ya ete saṁskārāḥ pratītyasamutpannāḥ |</div><div class="en">Having thus made familiarity in dependent origination: &#x27;These formations which are dependently arisen —</div></div>
+<div class="row" id="sbh2.6:11.2"><div class="seg-id"><a href="#sbh2.6:11.2">sbh2.6:11.2</a></div><div class="san">anityā eta ityavatarati |</div><div class="en">they are impermanent&#x27; — he enters [this].</div></div>
+<div class="row" id="sbh2.6:11.3"><div class="seg-id"><a href="#sbh2.6:11.3">sbh2.6:11.3</a></div><div class="san">anityatvādabhūtvā ca prativigacchanti |</div><div class="en">Because of impermanence: not having been, they pass away.</div></div>
+<div class="row" id="sbh2.6:11.4"><div class="seg-id"><a href="#sbh2.6:11.4">sbh2.6:11.4</a></div><div class="san">punarete abhūtvā bhavanti |</div><div class="en">Again, not having been, they come to be;</div></div>
+<div class="row" id="sbh2.6:11.5"><div class="seg-id"><a href="#sbh2.6:11.5">sbh2.6:11.5</a></div><div class="san">bhūtvā ca prativigacchanti |</div><div class="en-cell"><div class="en">having come to be, they pass away.</div><div class="comment"><em>abhūtvā bhavanti, bhūtvā ca prativigacchanti</em> — &#x27;not having been, they come to be; having come to be, they pass away.&#x27; The canonical Pali <em>anicca</em> refrain rendered into Sanskrit, anchoring the move to MN 118&#x27;s &#x27;contemplating impermanence&#x27; sixteenth aspect.</div></div></div>
+<div class="row" id="sbh2.6:11.6"><div class="seg-id"><a href="#sbh2.6:11.6">sbh2.6:11.6</a></div><div class="san">te jātidharmāṇo, jarādharmāṇo, vyādhidharmāṇo, maraṇadharmāṇaḥ |</div><div class="en">They are subject to birth, aging, illness, death.</div></div>
+<div class="row" id="sbh2.6:11.7"><div class="seg-id"><a href="#sbh2.6:11.7">sbh2.6:11.7</a></div><div class="san">ye jātijarāvyādhimaraṇadharmāṇaste duḥkhā, ye duḥkhāste anātmānaḥ, asvatantrāḥ, svāmivirahitāḥ |</div><div class="en">What is subject to birth, aging, illness, death — that is suffering. What is suffering — that is not-self, not autonomous, devoid of master.</div></div>
+<div class="row" id="sbh2.6:11.8"><div class="seg-id"><a href="#sbh2.6:11.8">sbh2.6:11.8</a></div><div class="san">evaṁ so &#x27;nityaduḥkhaśūnyānātmākārairduḥkhasatyamavatīrṇo bhavati |</div><div class="en">Thus by the aspects of impermanent, suffering, empty, and not-self, he has entered the truth of suffering.</div></div>
+<div class="row" id="sbh2.6:11.9"><div class="seg-id"><a href="#sbh2.6:11.9">sbh2.6:11.9</a></div><div class="san">yā kācideṣāṁ saṁskārāṇāmabhinirvṛttiḥ |</div><div class="en">Whatever arising there is of these formations —</div></div>
+<div class="row" id="sbh2.6:11.10"><div class="seg-id"><a href="#sbh2.6:11.10">sbh2.6:11.10</a></div><div class="san">duḥkhabhūtā, rogabhūtā, gaṇḍabhūtā, sarvāsau tṛṣṇāpratyayāḥ |</div><div class="en">that is suffering-become, illness-become, ulcer-become; all of it conditioned by craving.</div></div>
+<div class="row" id="sbh2.6:11.11"><div class="seg-id"><a href="#sbh2.6:11.11">sbh2.6:11.11</a></div><div class="san">yat punarasyā duḥkhajanikāyāstṛṣṇāyā aśeṣaprahāṇametacchāntametat praṇītametat tamevaṁ ca me jānata, evaṁ bahulavihāriṇastṛṣṇāyā aśeṣaprahāṇaṁ bhaviṣyatīti |</div><div class="en">Whatever the complete abandoning of this craving that gives rise to suffering — this is peace, this is excellent, this is [the path] — knowing thus, abiding frequently thus, the complete abandoning of craving will come to be.</div></div>
+<div class="row" id="sbh2.6:11.12"><div class="seg-id"><a href="#sbh2.6:11.12">sbh2.6:11.12</a></div><div class="san">evaṁ hi samudayasatyaṁ, nirodhasatyaṁ, mārgasatyamavatīrṇo bhavati |</div><div class="en">Thus he enters the truth of arising, the truth of cessation, and the truth of the path.</div></div>
+<div class="row" id="sbh2.6:11.13"><div class="seg-id"><a href="#sbh2.6:11.13">sbh2.6:11.13</a></div><div class="san">sa tadbahulavihārī yadā satyānyabhisamāgacchati |</div><div class="en">Frequently abiding in this — when he comprehends the truths —</div></div>
+<div class="row" id="sbh2.6:11.14"><div class="seg-id"><a href="#sbh2.6:11.14">sbh2.6:11.14</a></div><div class="san">ayamucyate satyāvatāraparicayaḥ |</div><div class="en">this is called truth-entry-familiarity.</div></div>
+<div class="row" id="sbh2.6:12.1"><div class="seg-id"><a href="#sbh2.6:12.1">sbh2.6:12.1</a></div><div class="san">tasyaivaṁ satyeṣu kṛtaparicayasya |</div><div class="en">For one who has thus made familiarity in the truths,</div></div>
+<div class="row" id="sbh2.6:12.2"><div class="seg-id"><a href="#sbh2.6:12.2">sbh2.6:12.2</a></div><div class="san">darśanaprahātavyeṣu dharmeṣu prahīṇeṣu bhāvanāprahātavyā avaśiṣṭā bhavanti |</div><div class="en">with the abandoning of dharmas to be abandoned by seeing, the dharmas to be abandoned by cultivation remain.</div></div>
+<div class="row" id="sbh2.6:12.3"><div class="seg-id"><a href="#sbh2.6:12.3">sbh2.6:12.3</a></div><div class="san">yeṣāṁ prahāṇāya ṣoḍaśākāraparicayaṁ karoti |</div><div class="en">For their abandoning, he makes the sixteen-aspect-familiarity.</div></div>
+<div class="row" id="sbh2.6:13.1"><div class="seg-id"><a href="#sbh2.6:13.1">sbh2.6:13.1</a></div><div class="san">katame punaḥ ṣoḍaśākārāḥ |</div><div class="en">What are the sixteen aspects?</div></div>
+<div class="row" id="sbh2.6:13.2"><div class="seg-id"><a href="#sbh2.6:13.2">sbh2.6:13.2</a></div><div class="san">smṛta āśvāsaḥ ta āśvasan smṛta āśvasimīti śikṣate |</div><div class="en">Mindful while breathing in: he trains &#x27;I breathe in mindful.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.3"><div class="seg-id"><a href="#sbh2.6:13.3">sbh2.6:13.3</a></div><div class="san">smṛtaḥ praśvasan praśvasimīti śikṣate |</div><div class="en">Mindful while breathing out: he trains &#x27;I breathe out mindful.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.4"><div class="seg-id"><a href="#sbh2.6:13.4">sbh2.6:13.4</a></div><div class="san">dīrghaṁ hrasvaṁ sarvakāyapratisamvedī |</div><div class="en">Long. Short. Experiencing the whole body.</div></div>
+<div class="row" id="sbh2.6:13.5"><div class="seg-id"><a href="#sbh2.6:13.5">sbh2.6:13.5</a></div><div class="san">āśvasan sarvakāyapratisaṁvedī āśvasimīti śikṣate |</div><div class="en">Breathing in experiencing the whole body, he trains &#x27;I breathe in experiencing the whole body.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.6"><div class="seg-id"><a href="#sbh2.6:13.6">sbh2.6:13.6</a></div><div class="san">sarvakāyapratisaṁvedī praśvasan |</div><div class="en">Breathing out experiencing the whole body,</div></div>
+<div class="row" id="sbh2.6:13.7"><div class="seg-id"><a href="#sbh2.6:13.7">sbh2.6:13.7</a></div><div class="san">sarvakāyapratisaṁvedī praśvasimīti śikṣate |</div><div class="en">he trains &#x27;I breathe out experiencing the whole body.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.8"><div class="seg-id"><a href="#sbh2.6:13.8">sbh2.6:13.8</a></div><div class="san">praśrabhya kāyasaṁskārān āśvasan praśrabhya kāyasaṁskārān āśvasimīti śikṣate |</div><div class="en">Calming the body-formation, breathing in, he trains &#x27;I breathe in calming the body-formation.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.9"><div class="seg-id"><a href="#sbh2.6:13.9">sbh2.6:13.9</a></div><div class="san">praśrabhya kāyasaṁskārān praśvasan, praśrabhya kāyasaṁskārān praśvasimīti śikṣate |</div><div class="en">Breathing out, he trains &#x27;I breathe out calming the body-formation.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.10"><div class="seg-id"><a href="#sbh2.6:13.10">sbh2.6:13.10</a></div><div class="san">prītipratisaṁvedī sukhapratisaṁvedī śikṣate |</div><div class="en">Experiencing rapture; experiencing happiness — he trains.</div></div>
+<div class="row" id="sbh2.6:13.11"><div class="seg-id"><a href="#sbh2.6:13.11">sbh2.6:13.11</a></div><div class="san">cittasaṁskārapratisamvedī praśrabhya cittasaṁskārān āśvasan, praśrabhya cittasaṁskārān āśvasimīti śikṣate |</div><div class="en">Experiencing the mental-formation; calming the mental-formation, breathing in: he trains &#x27;I breathe in calming the mental-formation.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.12"><div class="seg-id"><a href="#sbh2.6:13.12">sbh2.6:13.12</a></div><div class="san">praśrabhya cittasaṁskārān praśvasan, praśrabhya cittasaṁskārān praśvasimīti śikṣate |</div><div class="en">Breathing out, he trains &#x27;I breathe out calming the mental-formation.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.13"><div class="seg-id"><a href="#sbh2.6:13.13">sbh2.6:13.13</a></div><div class="san">cittapratisaṁvedī |</div><div class="en">Experiencing the mind.</div></div>
+<div class="row" id="sbh2.6:13.14"><div class="seg-id"><a href="#sbh2.6:13.14">sbh2.6:13.14</a></div><div class="san">abhipramodayaṁścittaṁ, samādadhaccittaṁ, vimocayañcittaṁ āśvasan vimocayan cittaṁ āśvasimīti śikṣate |</div><div class="en">Gladdening the mind; concentrating the mind; liberating the mind, breathing in: he trains &#x27;I breathe in liberating the mind.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.15"><div class="seg-id"><a href="#sbh2.6:13.15">sbh2.6:13.15</a></div><div class="san">vimocayaṁścittaṁ praśvasan vimocayaṁścittaṁ praśvasimīti śikṣate |</div><div class="en">Breathing out, he trains &#x27;I breathe out liberating the mind.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.16"><div class="seg-id"><a href="#sbh2.6:13.16">sbh2.6:13.16</a></div><div class="san">anityānudarśī, prahāṇānudarśī, virāgānudarśī āśvasan nirodhānudarśī āśvasimīti śikṣate |</div><div class="en">Contemplating impermanence; contemplating abandoning; contemplating dispassion; breathing in: he trains &#x27;I breathe in contemplating cessation.&#x27;</div></div>
+<div class="row" id="sbh2.6:13.17"><div class="seg-id"><a href="#sbh2.6:13.17">sbh2.6:13.17</a></div><div class="san">nirodhānudarśī praśvasan nirodhānudarśī praśvasimīti śikṣate |</div><div class="en">Breathing out, he trains &#x27;I breathe out contemplating cessation.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.1"><div class="seg-id"><a href="#sbh2.6:14.1">sbh2.6:14.1</a></div><div class="san">kaḥ punareṣāṁ vibhāgaḥ |</div><div class="en">What is the distinction of these?</div></div>
+<div class="row" id="sbh2.6:14.2"><div class="seg-id"><a href="#sbh2.6:14.2">sbh2.6:14.2</a></div><div class="san">ākārāṇāṁ |</div><div class="en">Of the aspects:</div></div>
+<div class="row" id="sbh2.6:14.3"><div class="seg-id"><a href="#sbh2.6:14.3">sbh2.6:14.3</a></div><div class="san">sa śaikṣo dṛṣṭaprapavādo lābhī bhavati |</div><div class="en">the trainee, accomplished in seeing, becomes capable</div></div>
+<div class="row" id="sbh2.6:14.4"><div class="seg-id"><a href="#sbh2.6:14.4">sbh2.6:14.4</a></div><div class="san">caturṇāṁ smṛtyupasthānānāṁ āśvāsapraśvāsālambanaṁ ca |</div><div class="en">of attending to the four foundations of mindfulness with the in-and-out-breath as object;</div></div>
+<div class="row" id="sbh2.6:14.5"><div class="seg-id"><a href="#sbh2.6:14.5">sbh2.6:14.5</a></div><div class="san">manaskāramārabhate |</div><div class="en">he undertakes attention</div></div>
+<div class="row" id="sbh2.6:14.6"><div class="seg-id"><a href="#sbh2.6:14.6">sbh2.6:14.6</a></div><div class="san">avaśiṣṭānāṁ saṁyojanānāṁ prahāṇāya |</div><div class="en">for the abandoning of the remaining fetters.</div></div>
+<div class="row" id="sbh2.6:14.7"><div class="seg-id"><a href="#sbh2.6:14.7">sbh2.6:14.7</a></div><div class="san">tenāha smṛtaḥ |</div><div class="en">Therefore he says &#x27;mindful.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.8"><div class="seg-id"><a href="#sbh2.6:14.8">sbh2.6:14.8</a></div><div class="san">āśvasan smṛta āśvasimīti śikṣate |</div><div class="en">Breathing in, he trains &#x27;I breathe in mindful.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.9"><div class="seg-id"><a href="#sbh2.6:14.9">sbh2.6:14.9</a></div><div class="san">yadā āśvāsaṁ vā praśvāsaṁ vā ālambate tadā dīrghamāśvasimi praśvasimīti śikṣate |</div><div class="en">When he takes the in-breath or out-breath as object, he trains &#x27;I breathe in long, I breathe out long.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.10"><div class="seg-id"><a href="#sbh2.6:14.10">sbh2.6:14.10</a></div><div class="san">yadā antarāśvāsamantaraḥpraśvāsaṁ vālambanīkaroti |</div><div class="en-cell"><div class="en">When he makes the inner-in-breath or inner-out-breath the object,</div><div class="comment">Asanga&#x27;s gloss on &#x27;long/short&#x27; is unique. The &#x27;long&#x27; breath is the standard in/out cycle. The &#x27;short&#x27; breath is the <em>inner</em> in-breath and <em>inner</em> out-breath — the brief turnaround pauses. So &#x27;long&#x27; and &#x27;short&#x27; are not about duration but about which phase of respiration is the object. This resolves a long-standing ambiguity in MN 118.</div></div></div>
+<div class="row" id="sbh2.6:14.11"><div class="seg-id"><a href="#sbh2.6:14.11">sbh2.6:14.11</a></div><div class="san">tadā hrasvamāśvasimi praśvasimīti śikṣate |</div><div class="en">he trains &#x27;I breathe in short, I breathe out short.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.12"><div class="seg-id"><a href="#sbh2.6:14.12">sbh2.6:14.12</a></div><div class="san">tathā hi āśvāsapraśvāsā dīrghāḥ pravartante |</div><div class="en">Thus indeed the in-and-out-breaths proceed long;</div></div>
+<div class="row" id="sbh2.6:14.13"><div class="seg-id"><a href="#sbh2.6:14.13">sbh2.6:14.13</a></div><div class="san">antarāśvāsā antaraḥpraśvāsāśca hrasvāste tathaiva pravartante |</div><div class="en">the inner-in-breaths and inner-out-breaths are short, and proceed accordingly.</div></div>
+<div class="row" id="sbh2.6:14.14"><div class="seg-id"><a href="#sbh2.6:14.14">sbh2.6:14.14</a></div><div class="san">tathaivopalakṣayati |</div><div class="en">Just so he characterizes them,</div></div>
+<div class="row" id="sbh2.6:14.15"><div class="seg-id"><a href="#sbh2.6:14.15">sbh2.6:14.15</a></div><div class="san">jānāti |</div><div class="en">and knows.</div></div>
+<div class="row" id="sbh2.6:14.16"><div class="seg-id"><a href="#sbh2.6:14.16">sbh2.6:14.16</a></div><div class="san">yadā sūkṣmasauṣiryagatānāśvāsapraśvāsā vikṣepānupraviṣṭān kāye adhimucyate |</div><div class="en">When he resolves on the in-and-out-breaths reaching the subtle-cavity-state, penetrating into [the body&#x27;s] dispersion,</div></div>
+<div class="row" id="sbh2.6:14.17"><div class="seg-id"><a href="#sbh2.6:14.17">sbh2.6:14.17</a></div><div class="san">ālambanīkaroti |</div><div class="en">he makes [the whole body] the object.</div></div>
+<div class="row" id="sbh2.6:14.18"><div class="seg-id"><a href="#sbh2.6:14.18">sbh2.6:14.18</a></div><div class="san">niruddhe ca praśvāse &#x27;ntaraḥpraśvāse ca |</div><div class="en">When the out-breath has ceased and the inner-out-breath is present,</div></div>
+<div class="row" id="sbh2.6:14.19"><div class="seg-id"><a href="#sbh2.6:14.19">sbh2.6:14.19</a></div><div class="san">anutpanne āśvāse &#x27;ntarāśvāse ca |</div><div class="en">when the in-breath has not yet arisen and the inner-in-breath is present,</div></div>
+<div class="row" id="sbh2.6:14.20"><div class="seg-id"><a href="#sbh2.6:14.20">sbh2.6:14.20</a></div><div class="san">praśvāsāśvāsaśūnyāṁ, tadvyupetāṁ, tadvyavahitāṁ sitāmavasthāmālambanī karoti |</div><div class="en">he makes the empty-of-breath state — the state separated from breath, the state obstructed by [its absence], the white state — the object.</div></div>
+<div class="row" id="sbh2.6:14.21"><div class="seg-id"><a href="#sbh2.6:14.21">sbh2.6:14.21</a></div><div class="san">tasmin samaye praśrabhya kāyasaṁskārān āśvasan, praśrabhya kāyasaṁskārān āśvasimīti śikṣate |</div><div class="en">At that time, calming the body-formation, breathing in — he trains &#x27;I breathe in calming the body-formation.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.22"><div class="seg-id"><a href="#sbh2.6:14.22">sbh2.6:14.22</a></div><div class="san">praśrabhya kāyasaṁskārān praśvasan, praśrabhya kāyasaṁskārān praśvasimīti śikṣate |</div><div class="en">Breathing out, he trains &#x27;I breathe out calming the body-formation.&#x27;</div></div>
+<div class="row" id="sbh2.6:14.23"><div class="seg-id"><a href="#sbh2.6:14.23">sbh2.6:14.23</a></div><div class="san">api tu khalu tasyāsevanānvayād bhāvanānvayād bahulīkārānvayāt |</div><div class="en">Through familiarization, cultivation, and frequent practice —</div></div>
+<div class="row" id="sbh2.6:14.24"><div class="seg-id"><a href="#sbh2.6:14.24">sbh2.6:14.24</a></div><div class="san">ye kharā, duḥsaṁsparśā, āśvāsapraśvāsāḥ pūrva-akṛtaparicayasya pravṛttā bhavanti |</div><div class="en">those rough, unpleasant-to-touch in-and-out-breaths that proceeded for one previously not familiar —</div></div>
+<div class="row" id="sbh2.6:14.25"><div class="seg-id"><a href="#sbh2.6:14.25">sbh2.6:14.25</a></div><div class="san">kṛtaparicayasya anye ca mṛdavaḥ sukhasaṁsparśāḥ pravartante |</div><div class="en-cell"><div class="en">for the familiarized one, other breaths proceed: soft, pleasant-to-touch.</div><div class="comment">An empirical observation: beginning practice produces breath that is <em>kharā, duḥsaṁsparśā</em> (rough, unpleasant-to-touch). Mature practice produces breath that is <em>mṛdavaḥ, sukha-saṁsparśāḥ</em> (soft, pleasant-to-touch). Every meditator notices this; Asanga grounds the sutta phrase &#x27;calming the body-formation&#x27; in it.</div></div></div>
+<div class="row" id="sbh2.6:14.26"><div class="seg-id"><a href="#sbh2.6:14.26">sbh2.6:14.26</a></div><div class="san">tenāha praśrabhya kāyasaṁskārān āśvasimīti śikṣate |</div><div class="en">Therefore he says, &#x27;calming the body-formation, I breathe in&#x27; — he trains.</div></div>
+<div class="row" id="sbh2.6:15.1"><div class="seg-id"><a href="#sbh2.6:15.1">sbh2.6:15.1</a></div><div class="san">sa caivamānāpānasmṛtiprayogeṇa ca yuktaḥ sa cel lābhī bhavati |</div><div class="en">Engaged in *ānāpānasmṛti* in this manner, if he is one who attains</div></div>
+<div class="row" id="sbh2.6:15.2"><div class="seg-id"><a href="#sbh2.6:15.2">sbh2.6:15.2</a></div><div class="san">prathamasya vā dhyānasya, dvitīyasya vā yasmin samaye prītipratisaṁvedī āśvasan, prītipratisaṁvedī āśvasimīti śikṣate |</div><div class="en">the first or the second absorption — at that time, &#x27;experiencing rapture, breathing in, he trains: experiencing rapture, I breathe in.&#x27;</div></div>
+<div class="row" id="sbh2.6:15.3"><div class="seg-id"><a href="#sbh2.6:15.3">sbh2.6:15.3</a></div><div class="san">sa cet punarlābhī bhavati |</div><div class="en">If he is one who attains</div></div>
+<div class="row" id="sbh2.6:15.4"><div class="seg-id"><a href="#sbh2.6:15.4">sbh2.6:15.4</a></div><div class="san">niṣprītikasya tṛtīyasya dhyānasya |</div><div class="en">the third absorption without rapture,</div></div>
+<div class="row" id="sbh2.6:15.5"><div class="seg-id"><a href="#sbh2.6:15.5">sbh2.6:15.5</a></div><div class="san">sa tasmin samaye sukhapratisaṁvedī bhavati |</div><div class="en">at that time he is &#x27;experiencing happiness.&#x27;</div></div>
+<div class="row" id="sbh2.6:15.6"><div class="seg-id"><a href="#sbh2.6:15.6">sbh2.6:15.6</a></div><div class="san">tṛtīyadhyānādūrdhvaṁ ānāpānasmṛtisaṁprayogo nāsti |</div><div class="en-cell"><div class="en">Beyond the third absorption, *ānāpānasmṛti* is no longer applicable.</div><div class="comment">Breath practice is viable through the third jhāna; in the fourth, breath ceases (consistent with the earlier statement that fourth-jhāna attainers don&#x27;t breathe). The sixteen aspects don&#x27;t extend past the third tetrad in a fourth-jhāna context.</div></div></div>
+<div class="row" id="sbh2.6:15.7"><div class="seg-id"><a href="#sbh2.6:15.7">sbh2.6:15.7</a></div><div class="san">yena yāvattṛtīyadhyānāt parikīrtitaṁ saṁgṛhītaṁ |</div><div class="en">&#x27;As far as the third absorption&#x27; — by this much the practice is comprehended.</div></div>
+<div class="row" id="sbh2.6:16.1"><div class="seg-id"><a href="#sbh2.6:16.1">sbh2.6:16.1</a></div><div class="san">tasyaivaṁ prītipratisaṁvedino vā, sukhapratisaṁvedino vā |</div><div class="en">Of this practitioner — experiencing rapture, or experiencing happiness —</div></div>
+<div class="row" id="sbh2.6:16.2"><div class="seg-id"><a href="#sbh2.6:16.2">sbh2.6:16.2</a></div><div class="san">sa cet kadācitkarhicit smṛtisaṁpramoṣādutpadyate |</div><div class="en">if at some time, due to occasional loss of mindfulness, [confusion] arises:</div></div>
+<div class="row" id="sbh2.6:16.3"><div class="seg-id"><a href="#sbh2.6:16.3">sbh2.6:16.3</a></div><div class="san">asmīti vā ayamahamasmīti vā bhaviṣyāmīti vā, na bhaviṣyāmīti vā, rūpī bhaviṣyāmyarūpī bhaviṣyāmi |</div><div class="en">&#x27;I am,&#x27; or &#x27;this very I am,&#x27; &#x27;I shall be&#x27; or &#x27;I shall not be,&#x27; &#x27;I shall be with form, I shall be without form,&#x27;</div></div>
+<div class="row" id="sbh2.6:16.4"><div class="seg-id"><a href="#sbh2.6:16.4">sbh2.6:16.4</a></div><div class="san">saṁjñī, asaṁjñī |</div><div class="en">&#x27;percipient, non-percipient,&#x27;</div></div>
+<div class="row" id="sbh2.6:16.5"><div class="seg-id"><a href="#sbh2.6:16.5">sbh2.6:16.5</a></div><div class="san">naiva saṁjñī, nāsaṁjñī bhaviṣyāmītyevaṁ saṁmohasaṁjñācetanāsahagatamiñjitaṁ manthitaprapañcitamabhisaṁskṛtaṁ tṛṣṇāgatamutpadyate |</div><div class="en-cell"><div class="en">&#x27;I shall be neither-percipient-nor-non-percipient&#x27; — when such confusion-perception-volition-accompanied agitation, conceptual fabrication, and craving-laden formed state arises,</div><div class="comment">Even in jhāna, the eight standard self-related conceptual moves can intrude — &#x27;I am, I shall be, I shall not be, I shall be with form, without form, percipient, non-percipient, neither.&#x27; The practitioner abandons these at first sign. This is the <em>prapañca</em> (proliferation) detection mapped onto the third tetrad&#x27;s &#x27;calming the mental-formation.&#x27;</div></div></div>
+<div class="row" id="sbh2.6:16.6"><div class="seg-id"><a href="#sbh2.6:16.6">sbh2.6:16.6</a></div><div class="san">yat tadutpannaṁ laghu laghveva prajñayā pratividhyati |</div><div class="en">that which has arisen, he penetrates quickly with discernment.</div></div>
+<div class="row" id="sbh2.6:16.7"><div class="seg-id"><a href="#sbh2.6:16.7">sbh2.6:16.7</a></div><div class="san">nādhivāsayati |</div><div class="en">He does not endure it;</div></div>
+<div class="row" id="sbh2.6:16.8"><div class="seg-id"><a href="#sbh2.6:16.8">sbh2.6:16.8</a></div><div class="san">prajahāti |</div><div class="en">he abandons it;</div></div>
+<div class="row" id="sbh2.6:16.9"><div class="seg-id"><a href="#sbh2.6:16.9">sbh2.6:16.9</a></div><div class="san">vinodayati |</div><div class="en">he removes it;</div></div>
+<div class="row" id="sbh2.6:16.10"><div class="seg-id"><a href="#sbh2.6:16.10">sbh2.6:16.10</a></div><div class="san">vyantīkaroti |</div><div class="en">he extinguishes it.</div></div>
+<div class="row" id="sbh2.6:16.11"><div class="seg-id"><a href="#sbh2.6:16.11">sbh2.6:16.11</a></div><div class="san">evaṁ cittasaṁskārapratisaṁvedī praśrabhya cittasaṁskārān āśvasimīti āśvasan praśrabhya cittasaṁskārān āśvasimīti śikṣate |</div><div class="en">Thus, &#x27;experiencing the mental-formation, calming the mental-formation, breathing in, I breathe in calming the mental-formation&#x27; — he trains.</div></div>
+<div class="row" id="sbh2.6:17.1"><div class="seg-id"><a href="#sbh2.6:17.1">sbh2.6:17.1</a></div><div class="san">sa cet punarlābhī bhavati maulānāṁ prathamadvitīyatṛtīyadhyānānāṁ sa cāvaśyamanāgamyasya prathamadhyānasāmantakasya lābhī bhavati |</div><div class="en">If he is one who attains the basic first, second, or third absorptions, and is necessarily an attainer of the access (*anāgamya*) of the first absorption,</div></div>
+<div class="row" id="sbh2.6:17.2"><div class="seg-id"><a href="#sbh2.6:17.2">sbh2.6:17.2</a></div><div class="san">sa taṁ niśrityotpannaṁ svaṁ cittaṁ pratyavekṣate |</div><div class="en">taking that as support, he reviews his arisen mind:</div></div>
+<div class="row" id="sbh2.6:17.3"><div class="seg-id"><a href="#sbh2.6:17.3">sbh2.6:17.3</a></div><div class="san">sarāgaṁ vā, vigatarāgaṁ vā, sadveṣaṁ vā, vigatadveṣaṁ vā, samohaṁ vā, vigatamohaṁ, saṁkṣiptaṁ, līnaṁ, pragṛhītamuddhatamanuddhataṁ, vyupaśāntamavyupaśāntaṁ, samāhitamasamāhitaṁ, subhāvitamasubhāvitaṁ, vimuktaṁ cittamavimuktaṁ cittamiti yathābhūtaṁ prajānāti |</div><div class="en">with passion or without passion; with hatred or without; with delusion or without; contracted, slack, exalted-or-not, calmed-or-not, concentrated-or-not, well-cultivated-or-not, liberated-or-not — thus he knows the mind as-it-actually-is.</div></div>
+<div class="row" id="sbh2.6:17.4"><div class="seg-id"><a href="#sbh2.6:17.4">sbh2.6:17.4</a></div><div class="san">pratisaṁvedayati |</div><div class="en">He experiences it.</div></div>
+<div class="row" id="sbh2.6:17.5"><div class="seg-id"><a href="#sbh2.6:17.5">sbh2.6:17.5</a></div><div class="san">tenāha cittapratisaṁvedī |</div><div class="en">Therefore &#x27;experiencing the mind.&#x27;</div></div>
+<div class="row" id="sbh2.6:17.6"><div class="seg-id"><a href="#sbh2.6:17.6">sbh2.6:17.6</a></div><div class="san">sa yadā styānamiddhanivaraṇe cittaṁ niśritaṁ bhavati |</div><div class="en">When the mind is fixed on the hindrance of sloth-and-torpor,</div></div>
+<div class="row" id="sbh2.6:17.7"><div class="seg-id"><a href="#sbh2.6:17.7">sbh2.6:17.7</a></div><div class="san">adhyātmaṁ saṁgamayataḥ yadānyatamānyatamena prasādanīyenālambanena saṁdarśayati |</div><div class="en">gathering it inwardly, he displays one or another inspiring object,</div></div>
+<div class="row" id="sbh2.6:17.8"><div class="seg-id"><a href="#sbh2.6:17.8">sbh2.6:17.8</a></div><div class="san">samādāpayati |</div><div class="en">rouses,</div></div>
+<div class="row" id="sbh2.6:17.9"><div class="seg-id"><a href="#sbh2.6:17.9">sbh2.6:17.9</a></div><div class="san">samuttejayati |</div><div class="en">energizes,</div></div>
+<div class="row" id="sbh2.6:17.10"><div class="seg-id"><a href="#sbh2.6:17.10">sbh2.6:17.10</a></div><div class="san">saṁpradīpayati |</div><div class="en">illuminates the mind.</div></div>
+<div class="row" id="sbh2.6:17.11"><div class="seg-id"><a href="#sbh2.6:17.11">sbh2.6:17.11</a></div><div class="san">tenāha abhipramodayaṁścittaṁ |</div><div class="en">Therefore &#x27;gladdening the mind.&#x27;</div></div>
+<div class="row" id="sbh2.6:17.12"><div class="seg-id"><a href="#sbh2.6:17.12">sbh2.6:17.12</a></div><div class="san">yadā punarauddhatyanivaraṇena kaukṛtyanivaraṇena nivṛttaṁ paśyati |</div><div class="en">When he sees [the mind] checked by the hindrance of agitation, the hindrance of remorse,</div></div>
+<div class="row" id="sbh2.6:17.13"><div class="seg-id"><a href="#sbh2.6:17.13">sbh2.6:17.13</a></div><div class="san">abhisaṁpragṛhṇatastadā anyatamamanyatamena prasādanīyenālambanena saṁdarśayatyadhyātmamavasthāpayati |</div><div class="en-cell"><div class="en">drawing it up, he displays one or another inspiring object, establishes it inwardly.</div><div class="comment">The mind-tetrad operationalized as hindrance-management. Sloth-and-torpor calls for <em>gladdening</em>. Agitation-and-remorse calls for <em>concentrating</em>. When neither is present, the mind is <em>liberated</em> from hindrances. Same instruction as VSM Ch 4&#x27;s balancing of faculties, applied here as breath-tetrad commentary.</div></div></div>
+<div class="row" id="sbh2.6:17.14"><div class="seg-id"><a href="#sbh2.6:17.14">sbh2.6:17.14</a></div><div class="san">śamayati, samādhatte |</div><div class="en">He calms, concentrates.</div></div>
+<div class="row" id="sbh2.6:17.15"><div class="seg-id"><a href="#sbh2.6:17.15">sbh2.6:17.15</a></div><div class="san">tenāha samādadhañcittaṁ |</div><div class="en">Therefore &#x27;concentrating the mind.&#x27;</div></div>
+<div class="row" id="sbh2.6:17.16"><div class="seg-id"><a href="#sbh2.6:17.16">sbh2.6:17.16</a></div><div class="san">yadā ca taccittamāsevanānvayād bhāvanānvayād bahulīkārānvayānnivaraṇasamudācārāya dūrīkṛtaṁ bhavati |</div><div class="en">When through familiarization, cultivation, and frequent practice that mind has become distanced from the active occurrence of hindrances,</div></div>
+<div class="row" id="sbh2.6:17.17"><div class="seg-id"><a href="#sbh2.6:17.17">sbh2.6:17.17</a></div><div class="san">nivaraṇebhyo viśodhitaṁ vimocitaṁ |</div><div class="en">purified from the hindrances, liberated —</div></div>
+<div class="row" id="sbh2.6:17.18"><div class="seg-id"><a href="#sbh2.6:17.18">sbh2.6:17.18</a></div><div class="san">tenāha vimocayañcittamāśvasan vimocayañcittamāśvasimīti śikṣate |</div><div class="en">therefore &#x27;liberating the mind, breathing in, I breathe in liberating the mind&#x27; — he trains.</div></div>
+<div class="row" id="sbh2.6:18.1"><div class="seg-id"><a href="#sbh2.6:18.1">sbh2.6:18.1</a></div><div class="san">tasya nivaraṇebhyo vimuktacetaso mārgabhāvanāyā āntarāyikebhyaḥ anuśayā avaśiṣṭā bhavanti |</div><div class="en">Of the one whose mind is liberated from the hindrances obstructive to path-cultivation, the latent tendencies remain.</div></div>
+<div class="row" id="sbh2.6:18.2"><div class="seg-id"><a href="#sbh2.6:18.2">sbh2.6:18.2</a></div><div class="san">prahātavyāḥ |</div><div class="en">They are to be abandoned.</div></div>
+<div class="row" id="sbh2.6:18.3"><div class="seg-id"><a href="#sbh2.6:18.3">sbh2.6:18.3</a></div><div class="san">sa teṣāṁ prahāṇāya mārgaṁ saṁmukhīkaroti yaduta saṁskārānityatāmeva sādhu ca, suṣṭhu ca, yoniśaḥ pratyavekṣate |</div><div class="en">For their abandoning, he confronts the path — namely, he carefully, properly, and wisely examines the impermanence of formations.</div></div>
+<div class="row" id="sbh2.6:18.4"><div class="seg-id"><a href="#sbh2.6:18.4">sbh2.6:18.4</a></div><div class="san">tenāha anityānudarśī |</div><div class="en">Therefore &#x27;contemplating impermanence.&#x27;</div></div>
+<div class="row" id="sbh2.6:18.5"><div class="seg-id"><a href="#sbh2.6:18.5">sbh2.6:18.5</a></div><div class="san">tena ca pūrvaṁ prathamadvitīyatṛtīyadhyānasanniśrayeṇānāgamyasaṁniśrayeṇa vā punaḥ śamathayogaḥ |</div><div class="en">Supported by either the first, second, or third absorption, or by access — [previously] the *śamatha* engagement.</div></div>
+<div class="row" id="sbh2.6:18.6"><div class="seg-id"><a href="#sbh2.6:18.6">sbh2.6:18.6</a></div><div class="san">ṛjuṁ etarhi anityānudarśīvipaśyanāyāṁ yogaṁ karotyevaṁ asya taccittaṁ śamathavipaśyanāparibhāvitaṁ dhātuṣu vimucyate |</div><div class="en">Now, engaging directly in the contemplation of impermanence, he engages in *vipaśyanā*. Thus his mind, perfumed by *śamatha-vipaśyanā*, is liberated in the elements,</div></div>
+<div class="row" id="sbh2.6:18.7"><div class="seg-id"><a href="#sbh2.6:18.7">sbh2.6:18.7</a></div><div class="san">yadutānuśayebhyaḥ |</div><div class="en">namely, from the latent tendencies.</div></div>
+<div class="row" id="sbh2.6:18.8"><div class="seg-id"><a href="#sbh2.6:18.8">sbh2.6:18.8</a></div><div class="san">katame dhātavaḥ |</div><div class="en">What are the elements?</div></div>
+<div class="row" id="sbh2.6:18.9"><div class="seg-id"><a href="#sbh2.6:18.9">sbh2.6:18.9</a></div><div class="san">yaśca prahāṇadhāturyaśca virāgadhātuḥ, yaśca nirodhadhātuḥ |</div><div class="en-cell"><div class="en">The element of abandoning, the element of dispassion, and the element of cessation.</div><div class="comment">Three &#x27;elements&#x27; name the three remaining work-products of the path: <em>prahāṇa-dhātu</em> (abandoning, for seeing-abandonable defilements), <em>virāga-dhātu</em> (dispassion, for cultivation-abandonable defilements), <em>nirodha-dhātu</em> (cessation, for the bases of clinging). <em>Śamatha-vipaśyanā</em> on the breath with these as aim brings the mind to liberation.</div></div></div>
+<div class="row" id="sbh2.6:18.10"><div class="seg-id"><a href="#sbh2.6:18.10">sbh2.6:18.10</a></div><div class="san">tatra sarvasaṁskārāṇāṁ darśanaprahātavyānāṁ prahāṇāt prahāṇadhātuḥ |</div><div class="en">The abandoning of all formations to be abandoned by seeing — that is the abandoning-element.</div></div>
+<div class="row" id="sbh2.6:18.11"><div class="seg-id"><a href="#sbh2.6:18.11">sbh2.6:18.11</a></div><div class="san">sarvasaṁskārāṇāṁ bhāvanāprahātavyānāṁ prahāṇādvirāgadhātuḥ |</div><div class="en">The abandoning of all formations to be abandoned by cultivation — that is the dispassion-element.</div></div>
+<div class="row" id="sbh2.6:18.12"><div class="seg-id"><a href="#sbh2.6:18.12">sbh2.6:18.12</a></div><div class="san">sarvopadhinirodhānnirodhadhātuḥ |</div><div class="en">The cessation of all bases of clinging — that is the cessation-element.</div></div>
+<div class="row" id="sbh2.6:18.13"><div class="seg-id"><a href="#sbh2.6:18.13">sbh2.6:18.13</a></div><div class="san">sa evaṁ trīn dhātūn śāntato manasi kurvan, kṣemataḥ, ārogyataḥ, śamathavipaśyanāṁ bhāvayati |</div><div class="en">Thus, attending to the three elements as peace, as security, as health, he cultivates *śamatha-vipaśyanā*.</div></div>
+<div class="row" id="sbh2.6:18.14"><div class="seg-id"><a href="#sbh2.6:18.14">sbh2.6:18.14</a></div><div class="san">yenāsyāsevanānvayād bhāvanānvayād bahulīkārānvayādavaśiṣṭebhyo bhāvanāprahātavyebhyaḥ kleśebhyaścittaṁ vimucyate |</div><div class="en">Through familiarization, cultivation, and frequent practice, the mind is liberated from the remaining cultivation-abandonable defilements.</div></div>
+<div class="row" id="sbh2.6:18.15"><div class="seg-id"><a href="#sbh2.6:18.15">sbh2.6:18.15</a></div><div class="san">tenāha prahāṇānudarśī, virāgānudarśī, nirodhānudarśī āśvasan nirodhānudarśī āśvasimīti śikṣate |</div><div class="en">Therefore &#x27;contemplating abandoning, contemplating dispassion, contemplating cessation, breathing in, I breathe in contemplating cessation&#x27; — he trains.</div></div>
+<div class="row" id="sbh2.6:19.1"><div class="seg-id"><a href="#sbh2.6:19.1">sbh2.6:19.1</a></div><div class="san">evamayaṁ darśanabhāvanāprahātavyeṣu kleśeṣu |</div><div class="en">Thus, when the defilements abandonable by seeing and by cultivation</div></div>
+<div class="row" id="sbh2.6:19.2"><div class="seg-id"><a href="#sbh2.6:19.2">sbh2.6:19.2</a></div><div class="san">prahīṇeṣvarhan bhavati |</div><div class="en-cell"><div class="en">have been abandoned, he becomes an arhat,</div><div class="comment">Breath practice, fully matured through the five familiarities, yields <em>arhatship</em>. The same claim MN 118 makes. The sixteen aspects, properly developed, are sufficient for full liberation.</div></div></div>
+<div class="row" id="sbh2.6:19.3"><div class="seg-id"><a href="#sbh2.6:19.3">sbh2.6:19.3</a></div><div class="san">kṣīṇāsravaḥ nāstyasyāta uttarakaraṇīyaṁ bhavati |</div><div class="en">one whose outflows are exhausted. There is nothing further to be done by him.</div></div>
+<div class="row" id="sbh2.6:19.4"><div class="seg-id"><a href="#sbh2.6:19.4">sbh2.6:19.4</a></div><div class="san">kṛtasya vā paricayaḥ |</div><div class="en">Or there is only familiarity with what has been done.</div></div>
+<div class="row" id="sbh2.6:19.5"><div class="seg-id"><a href="#sbh2.6:19.5">sbh2.6:19.5</a></div><div class="san">ayamasyocyate ṣoḍaśākāraḥ paricayaḥ |</div><div class="en">This is called the sixteen-aspect-familiarity.</div></div>
+<div class="row" id="sbh2.6:19.6"><div class="seg-id"><a href="#sbh2.6:19.6">sbh2.6:19.6</a></div><div class="san">yaścāyaṁ pañcavidhaḥ paricaya iyamasyocyate |</div><div class="en">And this is the fivefold familiarity.</div></div>
+<div class="row" id="sbh2.6:19.7"><div class="seg-id"><a href="#sbh2.6:19.7">sbh2.6:19.7</a></div><div class="san">ānāpānasmṛtiḥ |</div><div class="en">This is *ānāpānasmṛti*.</div></div>
+<div class="row" id="sbh2.6:20.1"><div class="seg-id"><a href="#sbh2.6:20.1">sbh2.6:20.1</a></div><div class="san">yatra vitarkacaritaḥ pudgalaḥ prayujyamānaḥ priyārohatayā prayujyate |</div><div class="en">Where a person of discursive-thought temperament is engaged, he engages with delight.</div></div>
+<div class="row" id="sbh2.6:20.2"><div class="seg-id"><a href="#sbh2.6:20.2">sbh2.6:20.2</a></div><div class="san">savyāpāraṁ caitadālambanaṁ |</div><div class="en">This object is active;</div></div>
+<div class="row" id="sbh2.6:20.3"><div class="seg-id"><a href="#sbh2.6:20.3">sbh2.6:20.3</a></div><div class="san">savyokṣepamadhyātmaṁ pratyātmaṁ āsannāsannaṁ yenāsya tatra prayujyamānasya yo vitarkasaṁkṣobhaḥ sa na bhavati |</div><div class="en">with [bringing of] inwardness, near-and-near in the inmost — hereby, the agitation of discursive thought that would arise for one engaging does not arise.</div></div>
+<div class="row" id="sbh2.6:20.4"><div class="seg-id"><a href="#sbh2.6:20.4">sbh2.6:20.4</a></div><div class="san">tvaritatvaritaṁ ca cittamālambane santiṣṭhate |</div><div class="en">The mind quickly settles on the object;</div></div>
+<div class="row" id="sbh2.6:20.5"><div class="seg-id"><a href="#sbh2.6:20.5">sbh2.6:20.5</a></div><div class="san">abhiramate |</div><div class="en">it delights;</div></div>
+<div class="row" id="sbh2.6:20.6"><div class="seg-id"><a href="#sbh2.6:20.6">sbh2.6:20.6</a></div><div class="san">saṁjāyate |</div><div class="en">it comes to be.</div></div>
+<div class="row" id="sbh2.6:20.7"><div class="seg-id"><a href="#sbh2.6:20.7">sbh2.6:20.7</a></div><div class="san">idaṁ pañcavidhaṁ vitarkacaritasya pudgalasya caritaviśodhanamālambanaṁ |</div><div class="en">This is the fivefold purifying-conduct object for the discursive-temperament person.</div></div>
+</main>
+</body>
+</html>
