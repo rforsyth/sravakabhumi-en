@@ -1,17 +1,17 @@
 # Translator's notes: sbh2.0 (Yogasthāna II — framework topics)
 
-This file collects the framework of Yogasthāna II that surrounds the focused topics in sbh2.1–sbh2.7. The opening (paragraphs 1–34) covers the *pudgala-vyavasthāna* — the enumeration and delineation of the 28 person-types of the disciple-vehicle path, classified by faculty, sect, conduct, vow, practice, path-fruit, application, attainment, rebirth, falling-back, and obscuration. The middle (paragraphs 35–67) treats the *ālambana* schema (object-supports for both laukika and lokottara paths), instruction (*avavāda*), the three trainings, the dharmas conducive to training, and the *yoga*/*manaskāra* taxonomies. The latter sections (paragraphs 68–103) treat the foundations of mindfulness, the wholesome/unwholesome dharmas, the supramundane path, the six *pudgala-prajñapti* (person-designations), the four māras, and the conditions of fruitful undertaking.
+The framework chapter for Yogasthāna II — the categories and taxonomies that the focused practice-chapters (sbh2.1–sbh2.7) then deploy. A seventeen-question opening unfolds into the 28-person typology of the disciple-vehicle path (classified by faculty, defilement-temperament, vow, path-fruit, and trajectory), the *ālambana* schema of object-supports for both worldly and supramundane paths, instruction and the three higher trainings, the *yoga* and *manaskāra* taxonomies of mental engagement, the foundations of mindfulness, the supramundane path proper, the six reclaimed person-designations (monk, ascetic, renunciant, and so on), the four *māra*s as obstacles to practice, and the conditions under which practice bears fruit.
 
 ## Structural overview
 
 Yogasthāna II opens with a seventeen-question framework (paragraph 2.1–2.17) that is the table of contents for the entire second yogasthāna. Each question is answered at length in turn:
 
-1. **Persons** (¶¶2–19): the 28-person typology — faculty (mild/sharp), defilement-typing (lust/hatred/delusion/conceit/vitarka-intoxicated + balanced-attaining + slight-dust), path-stage typing (practitioner, fruit-attainer, faith-/dharma-follower, śraddhādhimukta, dṛṣṭiprāpta, kāyasākṣin, etc.), and liberation-typing (samaya-vimukta, akopya-dharman, prajñā-vimukta, ubhayatobhāga-vimukta).
+1. **Persons** (¶¶2–19): the 28-person typology — faculty (mild/sharp), defilement-typing (lust/hatred/delusion/conceit/vitarka-intoxicated + balanced + slight-dust), path-stage typing (practitioner, fruit-attainer, faith-/dharma-follower, śraddhādhimukta, dṛṣṭiprāpta, kāyasākṣin, etc.), and liberation-typing (samaya-vimukta, akopya-dharman, prajñā-vimukta, ubhayatobhāga-vimukta).
 2. **Delineation of persons** (¶¶20–36): the eleven-fold classification grid by which any practitioner is positioned — by faculty, sect, conduct, vow, practice, path-fruit, application, attainment, rebirth, falling-back, and obscuration.
 3. **Object-support** (¶¶35–46): the worldly path's grossness/calmness contrast, and a brief preview of the *kleśa-viśodhana* object-support (the four noble truths) before handing off to the four-fold *ālambana* schema (*vyāpī*, *carita-viśodhana*, *kauśalya*, *kleśa-viśodhana*) that organizes sbh2.1–sbh2.7.
 4. **Instruction** (¶¶47–48): the four kinds of instruction (unperverted, graduated, from tradition, from direct realization) and the three *prātihārya* wonders.
 5. **Trainings** (¶¶49–55): the three *adhi-śikṣā* (higher virtue / higher mind / higher wisdom), the three doors of liberation (*śūnyatā/apraṇihita/animitta*).
-6. **Dharmas conducive to training** (¶¶56–64): two lists of ten dharmas — the first via antidotes to the ten adverse dharmas (perceptions of foulness, impermanence, etc.), the second a constructive list (prior cause through freedom from conceit). Followed by *yoga-bhraṁśa* (the four kinds of loss of yoga), the fourfold *yoga* (desire/exertion/means/yoga proper), the four *manaskāra* (force-/interrupted-/uninterrupted-/effortless-borne), the four *nimitta* (signs), the nine *adhimokṣa* (resolves), and the four *karaṇīya* (tasks of yoga).
+6. **Dharmas conducive to training** (¶¶56–64): two lists of ten dharmas — the first via antidotes to the ten adverse dharmas (perceptions of unattractiveness, impermanence, etc.), the second a constructive list (prior cause through freedom from conceit). Followed by *yoga-bhraṁśa* (the four kinds of loss of yoga), the fourfold *yoga* (desire/exertion/means/yoga proper), the four *manaskāra* (forceful/interrupted/uninterrupted/effortless), the four *nimitta* (signs), the nine *adhimokṣa* (resolves), and the four *karaṇīya* (tasks of yoga).
 7. **Practitioners of yoga** (¶¶65–67): three types — *ādikarmika* (beginner), *kṛta-paricaya* (experienced), *atikrānta-manaskāra* (one who has gone beyond mental engagement) — paired with the seven attentions at [sbh4.1](sbh4.1.html) and with the four *nirvedha-bhāgīya* (warmth, summits, patience, supreme worldly dharmas).
 8. **Foundations of mindfulness, wholesome/unwholesome dharmas, path** (¶¶68–88): body, feeling, mind treated under the *smṛtyupasthāna* framework; followed by analysis of evil unwholesome dharmas, the four concentrations of *iddhipāda* (desire/exertion/mind/investigation), the five faculties and powers, the *laukikāgra-dharmas*, and the supramundane path proper.
 9. **Stream-entry and arhatship** (¶¶87–88): the canonical fetters abandoned at each stage.
@@ -45,15 +45,15 @@ The migration from the original sbh1 monolith left many lists fragmented into si
 
 ### 3. Bracket-clarifying technical pairs and lists
 
-Throughout, technical terminology that the seventeen-question framework presupposes is restored in brackets at first occurrence: *nirvedha-bhāgīya* (warmth, summits, kṣānti, laukikāgra-dharmas) at 67.19–21; the eight *vimokṣa* at 33.9–12; the four *māra* at 94.6–7; the three *vimokṣa-mukha* at 55.17–18; the four *prātipakṣika*/*ānulomika*/*prasadanīya*/*pratyavekṣaṇīya* mental engagements at 59.129; the four *karaṇīya* of yoga at 64.17–20; the four *ālambana* at 46.19; the six *sāmīcī-dharma* (cross-reference to sbh1.3); etc.
+Throughout, technical terminology that the seventeen-question framework presupposes is restored in brackets at first occurrence: *nirvedha-bhāgīya* (warmth, summits, kṣānti, laukikāgra-dharmas) at 67.19–21; the eight *vimokṣa* at 33.9–12; the four *māra* at 94.6–7; the three *vimokṣa-mukha* at 55.17–18; the four *prātipakṣika*/*ānulomika*/*prasadanīya*/*pratyavekṣaṇīya* mental engagements at 59.136; the four *karaṇīya* of yoga at 64.17–20; the four *ālambana* at 46.19; the six *sāmīcī-dharma* (cross-reference to sbh1.3); etc.
 
 ### 4. Cross-references to sbh1.1, sbh1.3, sbh2.1, sbh3.1, sbh4.1
 
 The chapter heavily presupposes earlier and later material. Cross-references added in brackets at key junctures: faculty definitions at 2.48 refer back to [sbh1.1:13](sbh1.1.html#sbh1.1:13.1); the *triśikṣā* discussion at 50.2 refers back to [sbh1.3:3](sbh1.3.html#sbh1.3:3.1); the seven attentions at 67.8 refer forward to [sbh4.1](sbh4.1.html); the nine-stage mental abiding at sbh3.1 is referenced in the *manaskāra* discussion. These cross-references are now visible in the translation, not just in the comment file.
 
-### 5. Damaged-text passages preserved with `(text damaged)` markers
+### 5. Damaged-text passages preserved with `[Damaged]` markers
 
-Paragraphs 93.10–93.15 and 93.19 have several lacunae in the source, which were carried over from the prior draft as `(text damaged)` and are preserved here. The surrounding context (the six person-designation summary, leading into the time-distinction analysis at 93.11) is intact enough to follow without the missing pieces.
+Paragraphs 59.38, 75.7, 80.4, 86.19, 93.10–93.15, and 93.19 have lacunae in the source. These are marked inline with `[Damaged]` and, at 93.10, with a block-level comment. The surrounding context is intact enough to follow without the missing pieces, but these segments should not be used as secure evidence for close philological claims.
 
 ## Pattern of textual issues
 
@@ -63,4 +63,4 @@ Paragraphs 93.10–93.15 and 93.19 have several lacunae in the source, which wer
 
 ## On the *manaskāra* schemes
 
-The chapter's four-*manaskāra* schema (force-/interrupted-/uninterrupted-/effortless-borne) and the *sapta-manaskāra* (seven attentions) of [sbh4.1](sbh4.1.html) are likely two views of the same path-mechanism — the four-mode classifies *how* the engagement proceeds; the seven-fold marks *which stage* of the engagement. The relationship is not formally harmonized in the source.
+The chapter's four-*manaskāra* schema (forceful/interrupted/uninterrupted/effortless) and the *sapta-manaskāra* (seven attentions) of [sbh4.1](sbh4.1.html) are likely two views of the same path-mechanism — the four-mode classifies *how* the engagement proceeds; the seven-fold marks *which stage* of the engagement. The relationship is not formally harmonized in the source.

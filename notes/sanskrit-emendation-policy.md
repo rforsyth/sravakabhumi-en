@@ -1,6 +1,6 @@
 ---
 title: Sanskrit emendation policy
-status: working note (pre-METHOD.md)
+status: working note
 created: 2026-05-11
 ---
 
@@ -10,7 +10,7 @@ created: 2026-05-11
 
 The Sanskrit source file extracted from SuttaCentral's Shukla edition contains intra-word whitespace artifacts, almost certainly introduced by PDF→text extraction (or upstream OCR). They split single Sanskrit words across spaces in places no Sanskrit reader would accept — typically around ligature characters (`cch`, `ścch`, `ñch`).
 
-These are **silently rejoined** in the root JSONs. No per-correction apparatus; the general policy is documented here and will move to METHOD.md when that file is written.
+These are **silently rejoined** in the root JSONs. No per-correction apparatus; the general policy is documented here, with per-topic audit trails below. The level of detail in those trails varies — cleaner topics are itemized in tables; noisier passages where corrections follow recurring patterns are summarized in prose.
 
 ## Scope
 
@@ -26,9 +26,26 @@ Not covered (left as-is, treated as Shukla's reading):
 - Edition-level spellings like `cittasaṁtathau` for `cittasaṁtatau`
 - Manuscript-level features in Shukla's text (he reconstructed from manuscripts; what he printed is the source of truth)
 
+## PDF/browser extraction artifacts
+
+Obvious non-Sanskrit page headers, page counters, and browser timestamps are removed from root JSONs when discovered. These are not textual emendations; they are extraction contamination. Unlike recurring intra-word whitespace artifacts, these should be itemized because their presence is highly visible to reviewers.
+
+| Segment | Removed artifact |
+|---|---|
+| `sbh1.3:64.11` | `41 of 146 5/2/26, 6:49 AM` |
+| `sbh4.3:29.31` | `144 of 146 5/2/26, 6:49 AM` |
+
+## Source restorations from dropped extraction text
+
+Occasionally the local extraction drops an initial clause while preserving the end of the Sanskrit segment. When the missing text is attested in digitized Shukla witnesses and the local segment is syntactically incomplete without it, the root JSON may be restored with an explicit audit entry.
+
+| Segment | Local extraction | Restored opening |
+|---|---|---|
+| `sbh4.3:1.1` | `guṇānāmapṛthagjanasandhāraṇānāṁ yathāyogamabhinirhāro veditavyaḥ` | `evamābhirdvādaśabhiḥ saṁjñābhirbahulīkārānvayādyathāyogaṁ sa pañcānāmabhijñānāmāryāṇāṁ ca ...` |
+
 ## Editorial supplements
 
-A category beyond the whitespace policy: occasionally the source omits a word that context requires (e.g., a member of a canonical list). These are supplied silently in the JSON; the literal translation flags them with brackets. Each supplement is listed in the per-topic audit trail under "Supplements."
+A category beyond the whitespace policy: occasionally the source omits a word that context requires (e.g., a member of a canonical list). These are supplied silently in the JSON; the English translation flags them with brackets. Each supplement is listed in the per-topic audit trail under "Supplements."
 
 ## Audit trail — sbh3.1
 
@@ -49,7 +66,7 @@ Fixes applied to `root/san/sastra/sbh/sbh3.1_root-san-shukla.json`:
 
 ## Audit trail — sbh2.1, sbh2.6 (Vyāpī, Ānāpānasmṛti)
 
-Whitespace rejoins and minor restorations applied to the root JSONs for these two topics follow the recurring patterns established earlier: intra-word whitespace splits, anusvāra-`m` artifacts, dittographies, and ligature splits. Both passages are typographically noisier than sbh3.1 but cleaner than sbh2.5/sbh2.2. No semantic emendation. The Sanskrit-level corruptions in the sixteen-aspect list (sbh2.6:13.10–13.16) are preserved as-is and flagged in the comment file.
+Whitespace rejoins and minor restorations applied to the root JSONs for these two topics follow the recurring patterns established earlier: intra-word whitespace splits, anusvāra-`m` artifacts, dittographies, and ligature splits. Both passages are typographically noisier than sbh3.1 but cleaner than sbh2.5/sbh2.2. No semantic emendation. The Sanskrit-level corruptions in the sixteen-aspect list (sbh2.6:14.10–14.16) are preserved as-is and flagged in the comment file.
 
 ## Audit trail — sbh2.2 (Aśubhā)
 
@@ -57,7 +74,7 @@ Whitespace rejoins and minor restorations applied to `root/san/sastra/sbh/sbh2.2
 
 - Intra-word whitespace splits and anusvāra-`m` artifacts (recurring throughout)
 - Compound-list normalization (commas and spacing in long body-parts and cemetery-aspect enumerations)
-- The unusual `vibhadrātmaka` reading is preserved as-is (Asanga's reading; possibly a variant of *vipadumaka*)
+- The unusual `vibhadrātmaka` reading is preserved as-is (Asaṅga's reading; possibly a variant of *vipadumaka*)
 - `gūtha-kaṭhilla` ('dung-clod' / 'dung-heap') preserved despite being a hapax legomenon
 
 The passage is among the noisier in the source (the body-parts and cemetery enumerations accumulate small errors). No semantic emendation.
@@ -138,7 +155,7 @@ Supplements applied to `root/san/sastra/sbh/sbh2.7_root-san-shukla.json`:
 |---|---|---|
 | `sbh2.7:2.4` | `rūpaskandho vedanāskandhaḥ saṁskāraskandho vijñānaskandhaśca` (4 aggregates listed) | `rūpaskandho vedanāskandhaḥ saṁjñāskandhaḥ saṁskāraskandho vijñānaskandhaśca` (5 aggregates — *saṁjñāskandhaḥ* supplied by context) |
 
-The 5-aggregate doctrine is universally attested; *saṁjñāskandha* is supplied because the per-aggregate definitions immediately following cover all five, and a missing-aggregate reading would be incoherent. Literal English translation flags the supplement with brackets: `[perception-aggregate,]`.
+The 5-aggregate doctrine is universally attested; *saṁjñāskandha* is supplied because the per-aggregate definitions immediately following cover all five, and a missing-aggregate reading would be incoherent. The English translation flags the supplement with brackets: `[perception-aggregate,]`.
 
 ## Workflow for future topics
 
@@ -160,9 +177,8 @@ Changes (applied symmetrically to both `root/san/.../*.json` and `translation/en
 | `sbh1.2:1.1` (heading + body merged) | `:1.1` = "............................. II. avatārabhūmiḥ ........... yaiḥ ṣaḍbhir..." | split: `:1.0` = "............................. II. avatārabhūmiḥ ........... "; `:1.1` = "yaiḥ ṣaḍbhir..." |
 | `sbh1.3:1.1` (doubled term) | `:1.1` = "naiṣkramyabhūmiḥ naiṣkramyabhūmiḥ katamā \|" | split: `:1.0` = "[III.] naiṣkramyabhūmiḥ "; `:1.1` = "naiṣkramyabhūmiḥ katamā \|" |
 | `sbh2.0:1.1` (heading + body merged) | `:1.1` = "II. dvitīyaṁ yogasthānam laukikaṁ caiva..." | split: `:1.0` = "II. dvitīyaṁ yogasthānam "; `:1.1` = "laukikaṁ caiva..." |
-| `sbh2.0:104.1` (mid-text Yogasthāna boundary) | `:104.1` = "III. tṛtīyaṁ yogasthānam evaṁ kṛte..." | split: `:104.0` = "III. tṛtīyaṁ yogasthānam "; `:104.1` = "evaṁ kṛte..." |
+| `sbh3.0:1.1` (mid-text Yogasthāna boundary) | `:1.1` = "III. tṛtīyaṁ yogasthānam evaṁ kṛte..." | split: `:1.0` = "III. tṛtīyaṁ yogasthānam "; `:1.1` = "evaṁ kṛte..." |
 
 These are structural splits at recognizable section boundaries in the source — not semantic emendations. The 12 Category B chapters (sbh2.1–2.7, sbh3.1–3.2, sbh4.1–4.3) were not modified; they don't have embedded body-text headings, and their chapter title is displayed via the page H1 sourced from `:0.2`.
 
 **Restoration in sbh1.3**: the Sanskrit source at this point has *naiṣkramyabhūmiḥ naiṣkramyabhūmiḥ katamā* — the bhūmi name doubled, with no Roman-numeral marker. The doubling is anomalous and most plausibly preserves a scribal error covering a lost *III.* (the previous two sub-bhūmis of Yogasthāna I, sbh1.1 and sbh1.2, carry explicit *I.* and *II.* markers). Bracketed *III.* has been editorially restored in both Sanskrit (`[III.]`) and English (`[III.]`) — the brackets signal the editorial nature of the restoration.
-

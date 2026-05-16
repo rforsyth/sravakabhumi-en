@@ -17,7 +17,7 @@ The bhūmi ends mid-list — see "Abrupt ending" below.
 Shukla 1973 reflects manuscript variants and PDF-extraction artifacts that show up across sbh1.1 in three patterns:
 
 - **Scribal duplications.** sbh1.1:18.2 has `nātyarthaṁ ... atyarthaṁ dhandhavāhīni` where only `atyarthaṁ dhandhavāhīni` makes sense — the leading `nātyarthaṁ` is almost certainly copied from the *madhyendriya* entry in 19.2. Read here without the *na*; otherwise mild and middle faculty become indistinguishable.
-- **Lacunae.** sbh1.1:12.5 has a marked gap (`..............`) in the source. Translated through the gap as `…`; the surrounding context (`anekaparyāyeṇa … gāmī-duḥkha-apatrāpyeṇa samanvāgataḥ`) suggests a missing modifier like *durgati-* before *gāmī*.
+- **Lacunae.** sbh1.1:12.5 has a marked gap (`..............`) in the source. It is marked `[Damaged]` and translated through the gap as `…`; the surrounding context (`anekaparyāyeṇa … gāmī-duḥkha-apatrāpyeṇa samanvāgataḥ`) suggests a missing modifier like *durgati-* before *gāmī*.
 - **Compound boundary errors.** The migration from monolithic `sbh1` collapsed the long fault-list at paragraphs 12.10–12.11 into one segment, leaving 12.11 a fragment ("Action — taking up the past, future, or present"). Restored at the source's `|` boundary in the quality pass.
 
 ## Major terminology decisions
@@ -29,6 +29,9 @@ A few choices warrant cross-cutting explanation:
 - **`parataḥ pratyanukampā` → "the responsive support of others"** (1.26, 2.1–2.2). "Compassion from another" reads coldly and abstractly; the source clearly means concrete material support (robes, alms-food, lodging, medicine) given by donors and patrons in response to a renunciant's situation. *Pratyanukampā* (`prati-anu-kampā`) carries both the "responsive" and "supportive" senses; "responsive support" preserves both.
 - **`(a)parivṛttakarmāntatā` → "(un)obstructed action"** (1.18, 1.21). Kept the conventional rendering despite the looser fit. Literally "having (not) had the karma-end turned-around/sealed" — referring specifically to the five immediate-retribution actions whose karmic consequences are held to be irreversible in this very life. "Sealed" or "irreversible" would be more literal but less recognizable in the broader Buddhist-translation literature.
 - **`indriyāvaikalya` → "intactness of the faculties"** (1.12), harmonized with `indriyairavikalatā` ("having faculties intact") at 1.2 and 1.9. The source uses two related forms (one a noun, one an adverbial); collapsed to a single English idiom for readability.
+- **`niṣkrānta` → "gone out"** (14.4, 16.1–17.2), kept distinct from *pravrajita/pravrajyā* ("gone forth"). In the lineage taxonomy, *niṣkrānta* marks the person who has gone out into the noble path and its fruit, not simply a person who has entered monastic life.
+- **`kalatra-varga` → "spouse-and-family"** (3.5). The extracted source splits this as `kaḍa la travarga`; it belongs with the renunciation list of what is left behind at going-forth, before wealth, grain, and gold.
+- **`rājābhinirṇīta / caurābhinirṇīta` → "under pressure from a king / thieves"** (12.14). This is the bad-motivation list for going forth: coercion, debt, fear, livelihood anxiety, etc. "Resolved upon" is avoided because it sounds like an internal mental act.
 
 ## Abrupt ending at 25.1
 
@@ -37,4 +40,3 @@ The file ends with the bare phrase "The person who is near," — the last item i
 The "matured / not matured" pair (also enumerated at 14.7 but not separately defined) is treated the same way — picked up by the six-factors framework at the start of avatārabhūmi.
 
 A clean re-read of sbh1.1 should therefore continue into sbh1.2 without pause; the bhūmi headings mark a doctrinal pivot, not a content discontinuity.
-

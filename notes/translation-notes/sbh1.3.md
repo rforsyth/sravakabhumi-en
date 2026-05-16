@@ -1,25 +1,25 @@
 # Translator's notes: sbh1.3 (Naiṣkramyabhūmi)
 
-The third and longest sub-bhūmi of Yogasthāna I. *Naiṣkramyabhūmi* covers *renunciation* (*naiṣkramya*) — the practitioner's actual work after going forth: gathering the requisites (*saṁbhāra*) for dispassion (*vairāgya*), traversing the worldly and supramundane paths, and embodying the concrete shape of the renunciant's life. At ~2049 segments this is by far the largest file in Yogasthāna I.
+The third and longest sub-bhūmi of Yogasthāna I. *Naiṣkramyabhūmi* covers *renunciation* (*naiṣkramya*) — the practitioner's actual work after going forth: gathering the requisites (*saṁbhāra*) for dispassion (*vairāgya*), traversing the worldly and supramundane paths, and embodying the concrete shape of the renunciant's life.
 
 ## Structural overview
 
 The naiṣkramyabhūmi unfolds in three broad movements, with the closing *uddāna* verses (paragraphs 79–84) confirming the architecture.
 
 1. **The opening definition (1.1–1.22):** *naiṣkramya* defined twofold — as *laukika-vairāgya* (worldly dispassion, reached through the eight samāpatti/upapatti dhyānas) and *lokottara-vairāgya* (supramundane dispassion, reached through the *darśana-* and *bhāvanā-mārga*). The two-track structure governs everything that follows: the requisites equip the practitioner for both paths simultaneously.
-2. **The twelve (or thirteen) saṁbhāras** (2.1–78.104), each treated under its own `tatra X katamaḥ?` block:
+2. **The twelve (or thirteen) saṁbhāras** (2.1–80.104), each treated under its own `tatra X katamaḥ?` block:
     - *ātmasampat*, *parasampat*, *kuśala-dharma-cchanda* (2.5; inherited from gotrabhūmi)
     - *śīla-saṁvara* (3.1–31.3)
     - *indriya-saṁvara* (32.1–35.50)
     - *bhojane mātrajñatā* (36.1–41.1)
-    - *jāgarika-anuyoga* (42.1–217)
-    - *saṁprajāna-vihāritā* (42.218–46.66)
-    - *kalyāṇa-mitratā* (47.1–54.1)
-    - *saddharma-śravaṇa-cintā* (55.1–63.30)
-    - *anantarāya* (62.1–64.30)
-    - *tyāga* (65.1–70.x)
-    - *śramaṇālaṅkāra* (71.1–78.104)
-3. **The closing uddāna and colophon** (79.1–84.1): two summary-verse sets — paragraphs 80–81 enumerate the twelve saṁbhāras of the chapter; paragraphs 82–83 enumerate the qualities of the recluse-ornament treated in sections 71–78. Paragraph 84 is the closing colophon for the entire Yogasthāna I, not just naiṣkramyabhūmi.
+    - *jāgarika-anuyoga* (42.1–220)
+    - *saṁprajāna-vihāritā* (43.1–47.66)
+    - *kalyāṇa-mitratā* (48.1–55.1)
+    - *saddharma-śravaṇa-cintā* (56.1–65.30)
+    - *anantarāya* (64.1–66.30)
+    - *tyāga* (67.1–72.x)
+    - *śramaṇālaṅkāra* (73.1–80.104)
+3. **The closing uddāna and colophon** (81.1–86.1): two summary-verse sets — paragraphs 82–83 enumerate the twelve saṁbhāras of the chapter; paragraphs 84–85 enumerate the qualities of the recluse-ornament treated in sections 73–80. Paragraph 86 is the closing colophon for the entire Yogasthāna I, not just naiṣkramyabhūmi.
 
 ## The two-path architecture
 
@@ -28,7 +28,7 @@ Naiṣkramyabhūmi works through two soteriological paths that share infrastruct
 - **Laukika-vairāgya** is dispassion accomplished through the worldly path: cultivating the four dhyānas (and the four formless attainments), each entered both as a meditative attainment (*samāpatti*) and as a corresponding rebirth-realm (*upapatti*). The result is *satkāya-vairāgya* — dispassion toward the kāmadhātu-bound personality (1.9), which suppresses but does not uproot the underlying defilements.
 - **Lokottara-vairāgya** is supramundane dispassion accomplished through the *darśana-mārga* (path of seeing, which abandons the intellectually-grasped defilements at first true insight) and the *bhāvanā-mārga* (path of cultivation, which gradually wears down the residual affective defilements). The result is final destruction of the *anuśayas* (latent tendencies, 35.50) at the root.
 
-The thirteen saṁbhāras equip the practitioner for both paths in parallel. Some — *śīla-saṁvara*, *indriya-saṁvara*, *bhojane mātrajñatā*, *jāgarika-anuyoga* — clearly serve the worldly path's *samādhi*-base. Others — *saddharma-śravaṇa-cintā*, *kalyāṇa-mitratā*, *anantarāya* — are specifically directed at the analytical engine of the supramundane path (the four *yukti* introduced at 60.44 and explicated in section 61). The treatment never separates them: the same requisites are described once, but each gets unpacked with respect to both paths in turn.
+The thirteen saṁbhāras equip the practitioner for both paths in parallel. Some — *śīla-saṁvara*, *indriya-saṁvara*, *bhojane mātrajñatā*, *jāgarika-anuyoga* — clearly serve the worldly path's *samādhi*-base. Others — *saddharma-śravaṇa-cintā*, *kalyāṇa-mitratā*, *anantarāya* — are specifically directed at the analytical engine of the supramundane path (the four *yukti* introduced at 62.44 and explicated in section 63). The treatment never separates them: the same requisites are described once, but each gets unpacked with respect to both paths in turn. The extracted root enumeration at 2.3 omits *indriya-saṁvara*, but the closing *uddāna* at 82.1 and the dedicated treatment at 32.1–35.65 confirm that sense-faculty restraint belongs in the list; the English supplies it in brackets.
 
 ## Cross-cutting patterns
 
@@ -44,7 +44,7 @@ The text uses two abbreviation conventions extensively: *iti vistaraḥ* ('thus 
 
 ### 3. Restructuring Sanskrit-shaped relative clauses
 
-Long Sanskrit sentences with multiple relative-clause prefixes (*yo... yat... yatra... taṁ tena yathā*) get pulled apart in the source's segmentation, leaving English fragments that don't parse. Section 11.20–11.27 (the description of wrong livelihood through chatter and extortion) and section 47.13–47.50 (the alms-round protocol) are the densest examples. The pass restructures these as cascading dependent clauses with bracketed gap-fillers, preserving the segment boundaries but producing readable English.
+Long Sanskrit sentences with multiple relative-clause prefixes (*yo... yat... yatra... taṁ tena yathā*) get pulled apart in the source's segmentation, leaving English fragments that don't parse. Section 11.20–11.27 (the description of wrong livelihood through chatter and extortion) and section 48.13–48.50 (the alms-round protocol) are the densest examples. The pass restructures these as cascading dependent clauses with bracketed gap-fillers, preserving the segment boundaries but producing readable English.
 
 ### 4. Bracket-clarifying technical pairs
 
@@ -59,9 +59,10 @@ The chapter inherits the requisite-cluster terminology from sbh1.1 — *ātmasam
 Naiṣkramyabhūmi is long enough that manuscript pathology surfaces in several distinct patterns:
 
 - **Scribal duplications and stuck negatives.** sbh1.3:42.20 has *anavadyāḥ* ('blameless') for the closing item in a list of effort-synonyms — earlier draft read it as *avadyāḥ* ('blameworthy'), which contradicts the entire list. Restored here to read the list as a positive enumeration of right-effort qualities.
-- **Compound boundary errors from sbh1 → sbh1.3 split.** The original sbh1 monolith collapsed several long lists into single segments that the segmentation pass had to re-split, sometimes mid-clause. The food-danger lists at 37.31–37.35 (the six subtypes of *paryeṣaṇa-pariniṣpatti* danger) and the *dhutaguṇa* list at 72.53–72.59 are the clearest cases — restored in the quality pass at the source's `|` boundaries.
-- **The *aṅga*-to-piṭaka mapping at 60.4** gives a Yogācāra-specific assignment of the twelve aṅgas to the three piṭakas (ten aṅgas → sūtra-piṭaka; *nidāna* alone → vinaya-piṭaka; *upadeśa* → abhidharma-piṭaka). This is preserved exactly and noted in the inline comment, since other traditions (Theravāda especially) assign differently and a reader who knows the Pāli schema may otherwise assume a translation error.
-- **Negative definition at 62.4** (*anantarāya* defined by negation through its opposite *antarāya* at 62.7–62.30). The translation preserves the negative-definition shape rather than reconstructing a positive definition — the *anantarāya* requisite is doctrinally meaningful only as the absence of the obstacles enumerated.
+- **Lacunae marked in-line.** sbh1.3:18.17 and 25.5 are smooth restorations over lacunose source, so they are marked `[Damaged/Conjectural]` rather than left as secure translation.
+- **Compound boundary errors from sbh1 → sbh1.3 split.** The original sbh1 monolith collapsed several long lists into single segments that the segmentation pass had to re-split, sometimes mid-clause. The food-danger lists at 37.31–37.35 (the six subtypes of *paryeṣaṇa-pariniṣpatti* danger) and the *dhutaguṇa* list at 74.53–74.59 are the clearest cases — restored in the quality pass at the source's `|` boundaries.
+- **The *aṅga*-to-piṭaka mapping at 62.4** gives a Yogācāra-specific assignment of the twelve aṅgas to the three piṭakas (ten aṅgas → sūtra-piṭaka; *nidāna* alone → vinaya-piṭaka; *upadeśa* → abhidharma-piṭaka). This is preserved exactly and noted in the inline comment, since other traditions (Theravāda especially) assign differently and a reader who knows the Pāli schema may otherwise assume a translation error.
+- **Negative definition at 64.4** (*anantarāya* defined by negation through its opposite *antarāya* at 64.7–64.30). The translation preserves the negative-definition shape rather than reconstructing a positive definition — the *anantarāya* requisite is doctrinally meaningful only as the absence of the obstacles enumerated.
 
 ## Two long structural arguments worth seeing whole
 
@@ -69,8 +70,8 @@ Two pieces of the chapter benefit from being read across multiple segments at on
 
 **The three *ādhipateya* purifications (42.95–108).** The wakefulness-yoga's mind-purification (purifying obscuring dharmas from the mind) is presented under three predominances: *dharma-ādhipateya* (the practitioner's own analytical work with antidotes against each hindrance, 42.21–94), *ātma-ādhipateya* (the motive of self-respect — 'let me not be known as a hindrance-maker,' 42.97–100), and *loka-ādhipateya* (the motive of accountability before the Teacher, deities, wise, and saṅgha, 42.101–108). The same practice has three motivational angles, and the chapter unpacks each separately. The threefold framework recurs throughout the Yogācārabhūmi as the standard motivational analysis whenever a single practice has multiple subjective grounds.
 
-**The dhutaguṇa-as-antidote analysis (78.1–16).** The Yogācāra abhidharma treatment of the twelve (or thirteen) *dhutaguṇa* differs from the Pāli Visuddhimagga not in the list itself but in what's done with it: each ascetic practice is mapped onto the specific kind of lust (*rāga*) it counteracts. Four kinds of lust are distinguished — for plentiful food, for fine robes, for soft contact in robes, for lodging — and lodging-lust further subdivides into four sub-types (contact-lust, shelter-lust, side/lying-pleasure-lust, spread/coverlet-lust). Each dhutaguṇa is then named as the antidote to one specific lust. This converts the dhutaguṇa list from a catalogue of ascetic practices into a typology of antidotes — a Yogācāra move that fits the chapter's larger architecture of mapping every requisite to a specific path-function.
+**The dhutaguṇa-as-antidote analysis (80.1–16).** The Yogācāra abhidharma treatment of the twelve (or thirteen) *dhutaguṇa* differs from the Pāli Visuddhimagga not in the list itself but in what's done with it: each ascetic practice is mapped onto the specific kind of lust (*rāga*) it counteracts. Four kinds of lust are distinguished — for plentiful food, for fine robes, for soft contact in robes, for lodging — and lodging-lust further subdivides into four sub-types (contact-lust, shelter-lust, side-comfort-and-lying-down-comfort lust, spread/coverlet-lust). Each dhutaguṇa is then named as the antidote to one specific lust. This converts the dhutaguṇa list from a catalogue of ascetic practices into a typology of antidotes — a Yogācāra move that fits the chapter's larger architecture of mapping every requisite to a specific path-function.
 
 ## A note on the closing verses
 
-The verses at paragraphs 80–83 are in *śloka* meter in the source; the translation renders them as a list of pointers in English prose rather than attempting verse, preserving the doctrinal precision that makes the verses useful as a recall aid.
+The verses at paragraphs 82–85 are in *śloka* meter in the source; the translation renders them as a list of pointers in English prose rather than attempting verse, preserving the doctrinal precision that makes the verses useful as a recall aid.

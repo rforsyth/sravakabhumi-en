@@ -18,7 +18,35 @@ import sys
 import html
 from pathlib import Path
 
-EM_PATTERN = re.compile(r"\*([^*\n]+)\*")
+_CODE_SPAN = re.compile(r"`([^`\n]+)`")
+_STRONG_PATTERN = re.compile(r"\*\*([^*\n]+?)\*\*")
+_EM_PATTERN = re.compile(r"\*([^*\n]+?)\*")
+_CODE_PLACEHOLDER = re.compile(r"\x00CODE(\d+)\x00")
+
+
+def inline_markup(text: str) -> str:
+    """HTML-escape text and apply lightweight Markdown emphasis.
+
+    Supports `code`, **strong**, *em* spans. Code spans are protected before
+    escaping/emphasis so their contents are not interpreted. **strong** is
+    matched before *em* so paired double-asterisks render as <strong>, not as
+    nested broken <em>. Newlines terminate any span — this is intentional, to
+    avoid runaway matches across paragraph boundaries."""
+    stashed_code: list[str] = []
+
+    def _stash(m: re.Match) -> str:
+        stashed_code.append(m.group(1))
+        return f"\x00CODE{len(stashed_code) - 1}\x00"
+
+    with_placeholders = _CODE_SPAN.sub(_stash, text)
+    escaped = html.escape(with_placeholders)
+    with_strong = _STRONG_PATTERN.sub(r"<strong>\1</strong>", escaped)
+    with_em = _EM_PATTERN.sub(r"<em>\1</em>", with_strong)
+
+    def _unstash(m: re.Match) -> str:
+        return f"<code>{html.escape(stashed_code[int(m.group(1))])}</code>"
+
+    return _CODE_PLACEHOLDER.sub(_unstash, with_em)
 
 REPO = Path(__file__).resolve().parent.parent
 ROOT_DIR = REPO / "root" / "san" / "sastra" / "sbh"
@@ -237,11 +265,28 @@ PAGE_BOOK_TEMPLATE = """<!DOCTYPE html>
     text-align: justify;
     hyphens: auto;
   }}
-  p:target {{
+  p:target, ul:target {{
     background: #f4ecd8;
     border-left: 3px solid #c9a96e;
     padding-left: 0.75rem;
     margin-left: -0.75rem;
+  }}
+  p.uddana {{
+    text-align: left;
+    color: #4a4a4a;
+    margin: 1.5rem 0 1.1rem;
+  }}
+  ul.seg-list {{
+    margin: 0 0 1.1rem;
+    padding-left: 1.5rem;
+  }}
+  ul.seg-list li {{
+    margin-bottom: 0.25rem;
+  }}
+  p.def-question {{
+    text-align: left;
+    color: #4a4a4a;
+    margin-top: 1.3rem;
   }}
   h2 {{
     margin: 2rem 0 0.6rem;
@@ -344,6 +389,17 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
     justify-content: space-between;
     gap: 1rem;
   }}
+  ul.topics li.yoggroup {{
+    display: block;
+    padding: 1.1rem 0 0.35rem;
+    border-bottom: none;
+    color: #8a7a4a;
+    font-size: 0.82rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+  }}
+  ul.topics li.yoggroup:first-child {{ padding-top: 0.6rem; }}
   ul.topics a.alt {{
     color: #888;
     font-size: 0.85rem;
@@ -383,11 +439,11 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <h1>Śrāvakabhūmi</h1>
 <div class="tagline">A working bilingual edition of Asaṅga's Śrāvakabhūmi, in Sanskrit (Shukla 1973) and English.</div>
 
-<h2>About</h2>
-<p><em>Śrāvakabhūmi</em> means "The Stage of the Disciple" — from <em>śrāvaka</em>, literally "hearer," the term for those who heard the Buddha's teaching directly and trained for liberation as arhats, and <em>bhūmi</em>, "ground" or "stage." It is a section of the <em>Yogācārabhūmi-Śāstra</em>, the encyclopedic treatise on yogic practice traditionally ascribed to Asaṅga (4th century CE). Organized into four <em>yogasthānas</em> ("yogic foundations"), it lays out a detailed program of contemplative training: the nine stages of mental abiding (<em>śamatha</em>), the method of insight (<em>vipaśyanā</em>), the five temperament-matched practices (foulness, lovingkindness, dependent origination, elements, breath), and the seven attentions of the mundane path.</p>
+<h2>Introduction</h2>
+<p><em>Śrāvakabhūmi</em> means "The Stage of the Disciple" — from <em>śrāvaka</em>, literally "hearer," the term for those who heard the Buddha's teaching directly and trained for liberation as arhats, and <em>bhūmi</em>, "ground" or "stage." It is a section of the <em>Yogācārabhūmi-Śāstra</em>, the encyclopedic treatise on yogic practice traditionally ascribed to Asaṅga (4th century CE). Organized into four <em>yogasthānas</em> ("yogic foundations"), it lays out a detailed program of contemplative training: the nine stages of mental abiding (<em>śamatha</em>), the method of insight (<em>vipaśyanā</em>), the five temperament-matched practices (unattractiveness, lovingkindness, dependent origination, elements, breath), and the seven attentions of the mundane path.</p>
 <p>The Sanskrit original was long thought lost in India until 1938, when the explorer-scholar Rāhula Sāṅkṛtyāyana located and photographed a palm-leaf manuscript at Shalu Monastery in Tibet; those photographs are the basis for every modern Sanskrit edition, including the source text used here.</p>
 
-<h2>Topics</h2>
+<h2>Contents</h2>
 <ul class="topics">
 {items}
 </ul>
@@ -405,6 +461,9 @@ Prepared from the Sanskrit with reference to standard Buddhist Sanskrit dictiona
 <dt>License</dt><dd><a class="link" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> — dedicated to the public domain.</dd>
 </dl>
 
+<h2>Textual status</h2>
+<p>The Sanskrit layer is based on Shukla 1973 (via SuttaCentral) but is not a fully diplomatic transcription. Obvious PDF/OCR extraction artifacts — chiefly intra-word whitespace breaks — have been normalized; a small number of documented restorations and supplements are recorded in the <a class="link" href="https://github.com/rforsyth/sravakabhumi-en/blob/main/notes/sanskrit-emendation-policy.md">emendation policy</a>. The English marks damaged or conjecturally reconstructed passages inline. For close philological argument, cite the segment ID and check the Sanskrit against Shukla and, where available, against the Tibetan and Chinese witnesses.</p>
+
 <h2>Contributing</h2>
 <p>Errors, alternative readings, and improvements are welcome via GitHub issues or pull requests on the source repository.</p>
 
@@ -418,12 +477,27 @@ Cite as: Forsyth, R. (2026). <em>Śrāvakabhūmi (working bilingual edition)</em
 """
 
 
-def extract_intro(uid: str) -> str:
+_SBH_HTML_HREF = re.compile(r'^(sbh[0-9.]+)\.html(#.*)?$')
+
+
+def _rewrite_href_for_en(href: str) -> str:
+    """For the English-only book view, rewrite `sbhX.html[#anchor]` link targets
+    to `sbhX-en.html[#anchor]` so readers stay in the en view when navigating
+    between chapters. External and anchor-only hrefs are left untouched."""
+    m = _SBH_HTML_HREF.match(href)
+    if not m:
+        return href
+    return f"{m.group(1)}-en.html{m.group(2) or ''}"
+
+
+def extract_intro(uid: str, en_only: bool = False) -> str:
     """Pull the first paragraph after the H1 from notes/translation-notes/<uid>.md
     and return as an HTML block. Convention: that paragraph is the website intro;
     subsequent paragraphs and sections stay file-only.
 
     *italic* spans are converted to <em>; backtick `code` spans to <code>.
+    When `en_only=True`, `sbhX.html` link targets are rewritten to `sbhX-en.html`
+    so cross-chapter navigation stays in the English-only view.
     Returns empty string if the notes file is absent or has no intro paragraph."""
     path = TRANS_NOTES_DIR / f"{uid}.md"
     if not path.exists():
@@ -447,14 +521,27 @@ def extract_intro(uid: str) -> str:
     if not intro_lines:
         return ""
     text = " ".join(intro_lines)
-    escaped = html.escape(text)
-    with_em = re.sub(r"\*([^*\n]+)\*", r"<em>\1</em>", escaped)
-    with_code = re.sub(r"`([^`\n]+)`", r"<code>\1</code>", with_em)
-    with_links = re.sub(
-        r"\[([^\]\n]+)\]\(([^)\n]+)\)",
-        r'<a href="\2">\1</a>',
-        with_code,
-    )
+
+    # Extract markdown links first so their label/href don't get inline-markup'd
+    # in conflicting ways. Stash each as a placeholder, then re-insert after
+    # inline_markup has escaped & emphasized the surrounding prose.
+    stashed_links: list[tuple[str, str]] = []
+
+    def _stash_link(m: re.Match) -> str:
+        label, href = m.group(1), m.group(2)
+        if en_only:
+            href = _rewrite_href_for_en(href)
+        stashed_links.append((label, href))
+        return f"\x00LINK{len(stashed_links) - 1}\x00"
+
+    text_with_link_holes = re.sub(r"\[([^\]\n]+)\]\(([^)\n]+)\)", _stash_link, text)
+    rendered = inline_markup(text_with_link_holes)
+
+    def _unstash_link(m: re.Match) -> str:
+        label, href = stashed_links[int(m.group(1))]
+        return f'<a href="{html.escape(href, quote=True)}">{inline_markup(label)}</a>'
+
+    with_links = re.sub(r"\x00LINK(\d+)\x00", _unstash_link, rendered)
     return f'<div class="intro"><p>{with_links}</p></div>'
 
 
@@ -480,18 +567,20 @@ def comment_path(creator: str, uid: str) -> Path:
     return COMMENT_BASE / creator / "sastra" / "sbh" / f"{uid}_comment-en-{creator}.json"
 
 
+def structure_path(creator: str, uid: str) -> Path:
+    return TRANS_BASE / creator / "sastra" / "sbh" / f"{uid}_structure-en-{creator}.json"
+
+
 def _is_heading(seg_id: str) -> bool:
     last = seg_id.split(":")[-1]
     return seg_id.endswith(":0.1") or seg_id.endswith(":0.2") or last.endswith(".0")
 
 
 def _en_cell(en: str, comment: str) -> str:
-    en_html = f'<div class="en">{html.escape(en.rstrip())}</div>'
+    en_html = f'<div class="en">{inline_markup(en.rstrip())}</div>'
     if not comment:
         return en_html
-    escaped = html.escape(comment.rstrip())
-    with_em = EM_PATTERN.sub(r"<em>\1</em>", escaped)
-    return f'<div class="en-cell">{en_html}<div class="comment">{with_em}</div></div>'
+    return f'<div class="en-cell">{en_html}<div class="comment">{inline_markup(comment.rstrip())}</div></div>'
 
 
 def render_row(seg_id: str, san: str, columns: list[tuple[str, str]]) -> str:
@@ -500,46 +589,119 @@ def render_row(seg_id: str, san: str, columns: list[tuple[str, str]]) -> str:
     esc_id = html.escape(seg_id, quote=True)
     cells = [
         f'<div class="seg-id"><a href="#{esc_id}">{html.escape(seg_id)}</a></div>',
-        f'<div class="san">{html.escape(san.rstrip())}</div>',
+        f'<div class="san">{inline_markup(san.rstrip())}</div>',
     ]
     for en, comment in columns:
         cells.append(_en_cell(en, comment))
     return f'<div class="{cls}" id="{esc_id}">' + "".join(cells) + "</div>"
 
 
-def render_book_paragraphs(translation: dict) -> str:
+DEF_QUESTION_MAX_LEN = 200
+
+
+def is_def_question(text: str) -> bool:
+    """Short interrogative segment — the source's `katama-` definition-question
+    opening. Each gets its own paragraph so Q&A pairs read distinctly."""
+    t = text.strip()
+    return t.endswith("?") and 0 < len(t) <= DEF_QUESTION_MAX_LEN
+
+
+def render_book_paragraphs(translation: dict, structure: dict) -> str:
     """Group translation segments into paragraphs by the digit before the dot in
     the segment ID (which encodes the source's `||` paragraph boundary), and
-    emit one <p> per paragraph. Segments ending in `.0` (e.g. `:1.0`, `:104.0`)
-    are section headings and are emitted as <h2> before their paragraph body.
-    Skips the 0.x title segments (the page-level title slots).
+    emit appropriate HTML blocks. Segments ending in `.0` (e.g. `:1.0`,
+    `:104.0`) are section headings and are emitted as <h2>. Skips the 0.x title
+    segments (the page-level title slots).
+
+    `structure` maps segment-id -> role. Within each paragraph, consecutive
+    segments are grouped by role and rendered per-role:
+      - "uddana"          : italicised topic-line/list, joined into one <p><em>…</em></p>
+      - "list", "question": <ul><li>…</li></ul>
+      - (unset)           : default flowing prose joined into one <p>…</p>
     """
     from itertools import groupby
 
     def para_key(seg_id: str) -> str:
-        # "sbh2.0:3.1" → "3"
         return seg_id.split(":")[1].split(".")[0]
 
     def clause_idx(seg_id: str) -> str:
-        # "sbh2.0:3.1" → "1"
         return seg_id.split(":")[1].split(".")[1]
 
-    out = []
+    def render_run(role: str, texts: list[str], key: str, run_idx: int) -> str:
+        pid = html.escape(f"p-{key}-{run_idx}", quote=True)
+        if role == "uddana":
+            joined = inline_markup(" ".join(texts).rstrip(". "))
+            return f'<p id="{pid}" class="uddana"><em>{joined}</em></p>'
+        if role in ("list", "question"):
+            items = "".join(f"<li>{inline_markup(t)}</li>" for t in texts)
+            return f'<ul id="{pid}" class="seg-list">{items}</ul>'
+        if role == "def-question":
+            joined = inline_markup(" ".join(texts))
+            return f'<p id="{pid}" class="def-question">{joined}</p>'
+        joined = inline_markup(" ".join(texts))
+        return f'<p id="{pid}">{joined}</p>'
+
+    SPANNING_ROLES = {"list", "question", "uddana"}
+
+    def ends_terminally(text: str) -> bool:
+        s = text.rstrip()
+        while len(s) > 1 and s[-1] in ")]\"'’”|":
+            s = s[:-1].rstrip()
+        return bool(s) and s[-1] in ".!?"
+
+    out: list[str] = []
+    run_role: str | None = None
+    run_texts: list[str] = []
+    run_start_key: str = ""
+    key_run_counts: dict[str, int] = {}
+
+    def flush():
+        nonlocal run_role, run_texts
+        if run_texts:
+            idx = key_run_counts.get(run_start_key, 0)
+            key_run_counts[run_start_key] = idx + 1
+            out.append(render_run(run_role or "", run_texts, run_start_key, idx))
+            run_texts = []
+            run_role = None
+
     for key, group in groupby(translation.keys(), key=para_key):
         if key == "0":
             continue
         seg_ids = list(group)
         headings = [sid for sid in seg_ids if clause_idx(sid) == "0"]
         body_ids = [sid for sid in seg_ids if clause_idx(sid) != "0"]
+
+        if headings:
+            flush()
         for hid in headings:
             heading_text = translation[hid].strip()
             if heading_text:
-                out.append(f'<h2 id="h-{html.escape(key, quote=True)}">{html.escape(heading_text)}</h2>')
-        clauses = [translation[sid].strip() for sid in body_ids]
-        text = " ".join(c for c in clauses if c)
-        if not text:
-            continue
-        out.append(f'<p id="p-{html.escape(key, quote=True)}">{html.escape(text)}</p>')
+                out.append(f'<h2 id="h-{html.escape(key, quote=True)}">{inline_markup(heading_text)}</h2>')
+
+        for sid in body_ids:
+            text = translation[sid].strip()
+            if not text:
+                continue
+            role = structure.get(sid, "")
+            if not role and is_def_question(text) and (
+                not run_texts or ends_terminally(run_texts[-1])
+            ):
+                role = "def-question"
+            if run_texts and role != run_role:
+                flush()
+            if not run_texts:
+                run_start_key = key
+            run_role = role
+            run_texts.append(text)
+            if role == "def-question" and text.rstrip().endswith("?"):
+                flush()
+
+        if run_role not in SPANNING_ROLES and (
+            not run_texts or ends_terminally(run_texts[-1])
+        ):
+            flush()
+
+    flush()
     return "\n".join(out)
 
 
@@ -597,13 +759,15 @@ def build_topic(uid: str, creators: list[str]) -> tuple[str, str]:
     out.write_text(page, encoding="utf-8")
 
     if translations:
-        book_html = render_book_paragraphs(translations[0])
+        sp = structure_path(available[0], uid)
+        structure = json.loads(sp.read_text(encoding="utf-8")) if sp.exists() else {}
+        book_html = render_book_paragraphs(translations[0], structure)
         book_page = PAGE_BOOK_TEMPLATE.format(
             title=html.escape(title),
             subtitle="Śrāvakabhūmi · English working translation",
             paragraphs=book_html,
             uid=html.escape(uid, quote=True),
-            intro=intro_html,
+            intro=extract_intro(uid, en_only=True),
         )
         (DOCS_DIR / f"{uid}-en.html").write_text(book_page, encoding="utf-8")
 
@@ -619,12 +783,35 @@ def label_for(creator: str) -> str:
     return f"English ({suffix})"
 
 
+YOG_GROUP_HEADERS = {
+    "1": "Yogasthāna I — Gotrabhūmi, Avatārabhūmi, Naiṣkramyabhūmi",
+    "2": "Yogasthāna II — Framework and the Seven Object-Supports",
+    "3": "Yogasthāna III — Approaching the Teacher, Śamatha, Vipaśyanā",
+    "4": "Yogasthāna IV — Seven Attentions, Samāpattis, Lokottara Path",
+}
+
+
+def _yog_of(uid: str) -> str:
+    # uid looks like "sbh3.2"; return the major number as a string ("3").
+    m = re.match(r"sbh(\d+)", uid)
+    return m.group(1) if m else ""
+
+
 def build_index(topics: list[tuple[str, str]]) -> None:
-    items = "\n".join(
-        f'<li><a href="{uid}-en.html"><span class="uid">{uid}</span>{html.escape(title)}</a>'
-        f'<a class="alt" href="{uid}.html">side-by-side</a></li>'
-        for uid, title in topics
-    )
+    rows: list[str] = []
+    current_yog = ""
+    for uid, title in topics:
+        yog = _yog_of(uid)
+        if yog and yog != current_yog:
+            header = YOG_GROUP_HEADERS.get(yog)
+            if header:
+                rows.append(f'<li class="yoggroup">{html.escape(header)}</li>')
+            current_yog = yog
+        rows.append(
+            f'<li><a href="{uid}-en.html"><span class="uid">{uid}</span>{html.escape(title)}</a>'
+            f'<a class="alt" href="{uid}.html">side-by-side</a></li>'
+        )
+    items = "\n".join(rows)
     page = INDEX_TEMPLATE.format(items=items)
     (DOCS_DIR / "index.html").write_text(page, encoding="utf-8")
 
@@ -641,7 +828,8 @@ def main() -> None:
         print("no translations found under translation/en/")
         sys.exit(1)
 
-    if args == ["--all"]:
+    build_all = args == ["--all"]
+    if build_all:
         def natural_key(uid: str) -> tuple:
             return tuple(int(p) if p.isdigit() else p for p in re.split(r"(\d+)", uid))
         uids = sorted(
@@ -657,8 +845,11 @@ def main() -> None:
         topics.append(topic)
         print(f"built docs/{topic[0]}.html ({len(creators)} translation cols)")
 
-    build_index(topics)
-    print(f"built docs/index.html ({len(topics)} topics)")
+    if build_all:
+        build_index(topics)
+        print(f"built docs/index.html ({len(topics)} topics)")
+    else:
+        print("skipped docs/index.html (rebuild with --all to refresh)")
 
 
 if __name__ == "__main__":
