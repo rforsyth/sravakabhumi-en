@@ -925,10 +925,16 @@ def build_robots() -> None:
 
 
 def copy_verification_files() -> None:
-    """Copy any Google Search Console verification files (google*.html) staged in
-    scripts/ into docs/ so they are served at the site root. Kept under scripts/
-    in source and copied on build so a clean docs rebuild never drops them."""
-    for src in SCRIPTS_DIR.glob("google*.html"):
+    """Copy search-engine ownership-verification files staged in scripts/ into
+    docs/ so they are served at the site root: Google Search Console
+    (google*.html) and Bing Webmaster Tools (BingSiteAuth.xml). Kept under
+    scripts/ in source and copied on build so a clean docs rebuild never drops
+    them."""
+    sources = list(SCRIPTS_DIR.glob("google*.html"))
+    bing = SCRIPTS_DIR / "BingSiteAuth.xml"
+    if bing.exists():
+        sources.append(bing)
+    for src in sources:
         shutil.copy2(src, DOCS_DIR / src.name)
         print(f"copied {src.name} -> docs/")
 
