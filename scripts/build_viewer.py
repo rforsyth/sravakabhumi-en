@@ -16,6 +16,8 @@ import json
 import re
 import sys
 import html
+import shutil
+from datetime import datetime
 from pathlib import Path
 
 _CODE_SPAN = re.compile(r"`([^`\n]+)`")
@@ -53,13 +55,23 @@ ROOT_DIR = REPO / "root" / "san" / "sastra" / "sbh"
 TRANS_BASE = REPO / "translation" / "en"
 COMMENT_BASE = REPO / "comment" / "en"
 TRANS_NOTES_DIR = REPO / "notes" / "translation-notes"
+SCRIPTS_DIR = REPO / "scripts"
 DOCS_DIR = REPO / "docs"
+
+# Canonical base URL of the published GitHub Pages site (no trailing slash).
+SITE_BASE = "https://rforsyth.github.io/sravakabhumi-en"
+
+SITE_DESCRIPTION = (
+    "A working bilingual edition of Asaṅga's Śrāvakabhūmi (\"The Stage of the "
+    "Disciple\") from the Yogācārabhūmi, in Sanskrit (Shukla 1973) and English."
+)
 
 PAGE_TEMPLATE = """<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{head_tags}
 <title>{title} — Śrāvakabhūmi</title>
 <style>
   :root {{
@@ -227,6 +239,7 @@ PAGE_BOOK_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{head_tags}
 <title>{title} — Śrāvakabhūmi (English)</title>
 <style>
   :root {{
@@ -330,6 +343,7 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+{head_tags}
 <title>Śrāvakabhūmi — Working Bilingual Edition</title>
 <style>
   body {{
@@ -490,15 +504,10 @@ def _rewrite_href_for_en(href: str) -> str:
     return f"{m.group(1)}-en.html{m.group(2) or ''}"
 
 
-def extract_intro(uid: str, en_only: bool = False) -> str:
-    """Pull the first paragraph after the H1 from notes/translation-notes/<uid>.md
-    and return as an HTML block. Convention: that paragraph is the website intro;
-    subsequent paragraphs and sections stay file-only.
-
-    *italic* spans are converted to <em>; backtick `code` spans to <code>.
-    When `en_only=True`, `sbhX.html` link targets are rewritten to `sbhX-en.html`
-    so cross-chapter navigation stays in the English-only view.
-    Returns empty string if the notes file is absent or has no intro paragraph."""
+def first_note_paragraph(uid: str) -> str:
+    """Return the first paragraph after the H1 in notes/translation-notes/<uid>.md
+    as raw Markdown text (the website-intro paragraph, by convention), or empty
+    string if the notes file is absent or has no such paragraph."""
     path = TRANS_NOTES_DIR / f"{uid}.md"
     if not path.exists():
         return ""
@@ -518,9 +527,20 @@ def extract_intro(uid: str, en_only: bool = False) -> str:
                 break  # blank line ends the first paragraph
             continue  # skip leading blank lines
         intro_lines.append(line.strip())
-    if not intro_lines:
+    return " ".join(intro_lines)
+
+
+def extract_intro(uid: str, en_only: bool = False) -> str:
+    """Render the first note paragraph (see first_note_paragraph) as an HTML
+    intro block. Subsequent paragraphs and sections stay file-only.
+
+    *italic* spans are converted to <em>; backtick `code` spans to <code>.
+    When `en_only=True`, `sbhX.html` link targets are rewritten to `sbhX-en.html`
+    so cross-chapter navigation stays in the English-only view.
+    Returns empty string if there is no intro paragraph."""
+    text = first_note_paragraph(uid)
+    if not text:
         return ""
-    text = " ".join(intro_lines)
 
     # Extract markdown links first so their label/href don't get inline-markup'd
     # in conflicting ways. Stash each as a placeholder, then re-insert after
@@ -543,6 +563,45 @@ def extract_intro(uid: str, en_only: bool = False) -> str:
 
     with_links = re.sub(r"\x00LINK(\d+)\x00", _unstash_link, rendered)
     return f'<div class="intro"><p>{with_links}</p></div>'
+
+
+_MD_LINK = re.compile(r"\[([^\]\n]+)\]\([^)\n]+\)")
+
+
+def _plain_text(md: str) -> str:
+    """Reduce inline Markdown to plain text for use in a meta description:
+    links -> their label, drop `code`/*emphasis* markers, collapse whitespace."""
+    text = _MD_LINK.sub(r"\1", md)
+    text = text.replace("`", "").replace("*", "")
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def _truncate(text: str, limit: int = 155) -> str:
+    """Trim to <=limit chars on a word boundary, appending an ellipsis."""
+    if len(text) <= limit:
+        return text
+    return text[:limit].rsplit(" ", 1)[0].rstrip(" ,;:—-") + "…"
+
+
+def extract_description(uid: str, title: str, en_only: bool) -> str:
+    """Plain-text meta description for a topic page: the intro note's first
+    paragraph when present, else a title-based fallback."""
+    raw = first_note_paragraph(uid)
+    if raw:
+        return _truncate(_plain_text(raw))
+    view = "English working translation" if en_only else "Sanskrit (Shukla 1973) with English"
+    return f"{title} — {view}, from Asaṅga's Śrāvakabhūmi."
+
+
+def head_tags(description: str, canonical_path: str) -> str:
+    """Meta description + canonical link for a page's <head>. canonical_path is
+    the page filename relative to the site root ('' for the homepage)."""
+    desc = html.escape(description, quote=True)
+    url = html.escape(f"{SITE_BASE}/{canonical_path}", quote=True)
+    return (
+        f'<meta name="description" content="{desc}">\n'
+        f'<link rel="canonical" href="{url}">'
+    )
 
 
 def discover_creators() -> list[str]:
@@ -753,6 +812,7 @@ def build_topic(uid: str, creators: list[str]) -> tuple[str, str]:
         column_labels=column_labels,
         uid=html.escape(uid, quote=True),
         intro=intro_html,
+        head_tags=head_tags(extract_description(uid, title, en_only=False), f"{uid}.html"),
     )
 
     out = DOCS_DIR / f"{uid}.html"
@@ -768,6 +828,7 @@ def build_topic(uid: str, creators: list[str]) -> tuple[str, str]:
             paragraphs=book_html,
             uid=html.escape(uid, quote=True),
             intro=extract_intro(uid, en_only=True),
+            head_tags=head_tags(extract_description(uid, title, en_only=True), f"{uid}-en.html"),
         )
         (DOCS_DIR / f"{uid}-en.html").write_text(book_page, encoding="utf-8")
 
@@ -812,8 +873,64 @@ def build_index(topics: list[tuple[str, str]]) -> None:
             f'<a class="alt" href="{uid}.html">side-by-side</a></li>'
         )
     items = "\n".join(rows)
-    page = INDEX_TEMPLATE.format(items=items)
+    page = INDEX_TEMPLATE.format(items=items, head_tags=head_tags(SITE_DESCRIPTION, ""))
     (DOCS_DIR / "index.html").write_text(page, encoding="utf-8")
+
+
+def _lastmod(path: Path) -> str:
+    """File modification date as YYYY-MM-DD for the sitemap <lastmod>."""
+    return datetime.fromtimestamp(path.stat().st_mtime).strftime("%Y-%m-%d")
+
+
+def build_sitemap(topics: list[tuple[str, str]]) -> None:
+    """Write docs/sitemap.xml listing the homepage and every topic page.
+
+    The English-only book views are the primary readable pages (priority 0.8);
+    the side-by-side source views are secondary (0.5). The homepage is listed
+    with its trailing-slash directory URL as the canonical entry point."""
+    urls: list[tuple[str, str, str]] = []  # (loc, lastmod, priority)
+
+    index_file = DOCS_DIR / "index.html"
+    if index_file.exists():
+        urls.append((f"{SITE_BASE}/", _lastmod(index_file), "1.0"))
+
+    for uid, _title in topics:
+        for suffix, priority in ((f"{uid}-en.html", "0.8"), (f"{uid}.html", "0.5")):
+            page = DOCS_DIR / suffix
+            if page.exists():
+                urls.append((f"{SITE_BASE}/{suffix}", _lastmod(page), priority))
+
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, lastmod, priority in urls:
+        lines.append(
+            f"  <url><loc>{html.escape(loc, quote=True)}</loc>"
+            f"<lastmod>{lastmod}</lastmod>"
+            f"<priority>{priority}</priority></url>"
+        )
+    lines.append("</urlset>")
+    (DOCS_DIR / "sitemap.xml").write_text("\n".join(lines) + "\n", encoding="utf-8")
+    print(f"built docs/sitemap.xml ({len(urls)} urls)")
+
+
+def build_robots() -> None:
+    """Write docs/robots.txt allowing all crawlers and pointing to the sitemap."""
+    text = (
+        "User-agent: *\n"
+        "Allow: /\n\n"
+        f"Sitemap: {SITE_BASE}/sitemap.xml\n"
+    )
+    (DOCS_DIR / "robots.txt").write_text(text, encoding="utf-8")
+    print("built docs/robots.txt")
+
+
+def copy_verification_files() -> None:
+    """Copy any Google Search Console verification files (google*.html) staged in
+    scripts/ into docs/ so they are served at the site root. Kept under scripts/
+    in source and copied on build so a clean docs rebuild never drops them."""
+    for src in SCRIPTS_DIR.glob("google*.html"):
+        shutil.copy2(src, DOCS_DIR / src.name)
+        print(f"copied {src.name} -> docs/")
 
 
 def main() -> None:
@@ -845,11 +962,15 @@ def main() -> None:
         topics.append(topic)
         print(f"built docs/{topic[0]}.html ({len(creators)} translation cols)")
 
+    copy_verification_files()
+
     if build_all:
         build_index(topics)
         print(f"built docs/index.html ({len(topics)} topics)")
+        build_sitemap(topics)
+        build_robots()
     else:
-        print("skipped docs/index.html (rebuild with --all to refresh)")
+        print("skipped docs/index.html, sitemap.xml (rebuild with --all to refresh)")
 
 
 if __name__ == "__main__":
