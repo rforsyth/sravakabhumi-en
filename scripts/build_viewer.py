@@ -62,7 +62,7 @@ DOCS_DIR = REPO / "docs"
 SITE_BASE = "https://rforsyth.github.io/sravakabhumi-en"
 
 SITE_DESCRIPTION = (
-    "A working bilingual edition of Asaṅga's Śrāvakabhūmi (\"The Stage of the "
+    "A working bilingual edition of the Śrāvakabhūmi (\"The Stage of the "
     "Disciple\") from the Yogācārabhūmi, in Sanskrit (Shukla 1973) and English."
 )
 
@@ -213,6 +213,16 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
     .seg-id {{ font-size: 0.7rem; }}
     .col-headings {{ display: none; }}
   }}
+  footer.ai-note {{
+    max-width: 720px;
+    margin: 2.5rem auto 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e6e1d8;
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+  }}
+  footer.ai-note a {{ color: #5a4a2a; }}
 </style>
 </head>
 <body>
@@ -230,6 +240,7 @@ PAGE_TEMPLATE = """<!DOCTYPE html>
 </div>
 {rows}
 </main>
+<footer class="ai-note">AI-assisted working translation, not yet reviewed by a Sanskritist. <a href="index.html#about">How it was made →</a></footer>
 </body>
 </html>
 """
@@ -321,6 +332,16 @@ PAGE_BOOK_TEMPLATE = """<!DOCTYPE html>
   .intro p {{ margin: 0 0 0.6rem; text-align: left; }}
   .intro p:last-child {{ margin-bottom: 0; }}
   .intro em {{ font-style: italic; }}
+  footer.ai-note {{
+    max-width: 720px;
+    margin: 2.5rem auto 1.5rem;
+    padding-top: 1rem;
+    border-top: 1px solid #e6e1d8;
+    font-size: 0.85rem;
+    color: #888;
+    text-align: center;
+  }}
+  footer.ai-note a {{ color: #5a4a2a; }}
 </style>
 </head>
 <body>
@@ -333,6 +354,7 @@ PAGE_BOOK_TEMPLATE = """<!DOCTYPE html>
 {intro}
 {paragraphs}
 </main>
+<footer class="ai-note">AI-assisted working translation, not yet reviewed by a Sanskritist. <a href="index.html#about">How it was made →</a></footer>
 </body>
 </html>
 """
@@ -451,32 +473,35 @@ INDEX_TEMPLATE = """<!DOCTYPE html>
 <div class="wrap">
 
 <h1>Śrāvakabhūmi</h1>
-<div class="tagline">A working bilingual edition of Asaṅga's Śrāvakabhūmi, in Sanskrit (Shukla 1973) and English.</div>
+<div class="tagline">A working bilingual edition of the Śrāvakabhūmi, in Sanskrit (Shukla 1973) and English.</div>
 
 <h2>Introduction</h2>
 <p><em>Śrāvakabhūmi</em> means "The Stage of the Disciple" — from <em>śrāvaka</em>, literally "hearer," the term for those who heard the Buddha's teaching directly and trained for liberation as arhats, and <em>bhūmi</em>, "ground" or "stage." It is a section of the <em>Yogācārabhūmi-Śāstra</em>, the encyclopedic treatise on yogic practice traditionally ascribed to Asaṅga (4th century CE). Organized into four <em>yogasthānas</em> ("yogic foundations"), it lays out a detailed program of contemplative training: the nine stages of mental abiding (<em>śamatha</em>), the method of insight (<em>vipaśyanā</em>), the five temperament-matched practices (unattractiveness, lovingkindness, dependent origination, elements, breath), and the seven attentions of the mundane path.</p>
-<p>The Sanskrit original was long thought lost in India until 1938, when the explorer-scholar Rāhula Sāṅkṛtyāyana located and photographed a palm-leaf manuscript at Shalu Monastery in Tibet; those photographs are the basis for every modern Sanskrit edition, including the source text used here.</p>
+<p>The Sanskrit original was long thought lost in India until 1938, when the Indian scholar Rāhula Sāṅkṛtyāyana located and photographed a palm-leaf manuscript at the Ri phug hermitage of Zhalu (Źa lu) monastery in Tibet. Shukla's edition rests on those photographs; the manuscript itself was reproduced in facsimile in 1994, and that facsimile underlies the later critical editions.</p>
 
 <h2>Contents</h2>
 <ul class="topics">
 {items}
 </ul>
 
-<div class="disclosure">
+<div class="disclosure" id="about">
 <strong>This is an AI-assisted working translation.</strong>
-Prepared from the Sanskrit with reference to standard Buddhist Sanskrit dictionaries and established technical terminology in the secondary literature. It is not a scholarly critical edition. Reports of errors or improvements welcome (see Contributing below).
+The English was drafted with a large language model from Shukla's Sanskrit, cross-checked by a second model, and then reviewed section by section, also with AI assistance, against the Sanskrit, Xuanzang's Chinese translation (T1579), and, where available, the critical editions of Deleanu (2006) and the Taishō Śrāvakabhūmi Study Group. Ryan Forsyth, who does not read Sanskrit, directed the work, set the editorial policies, and is responsible for the result. It is not a scholarly critical edition. Reports of errors or improvements welcome (see Contributing below).
 </div>
 
 <h2>Edition details</h2>
 <dl class="meta">
-<dt>Sanskrit source</dt><dd>Karunesha Shukla edition (1973), as hosted on <a class="link" href="https://suttacentral.net/sbh/san/shukla">SuttaCentral</a>.</dd>
-<dt>Translator</dt><dd>Ryan Forsyth, AI-assisted, from the Shukla Sanskrit edition.</dd>
+<dt>Sanskrit source</dt><dd>Karunesha Shukla, <em>Śrāvakabhūmi of Ācārya Asaṅga</em> (Patna: K.P. Jayaswal Research Institute, 1973; Tibetan Sanskrit Works Series 14), in the transcription hosted on <a class="link" href="https://suttacentral.net/sbh/san/shukla">SuttaCentral</a>.</dd>
+<dt>Translator</dt><dd>Ryan Forsyth (see the note above).</dd>
 <dt>Format</dt><dd>Bilara-compatible segmented JSON (sources) rendered as side-by-side HTML.</dd>
-<dt>License</dt><dd><a class="link" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> — dedicated to the public domain.</dd>
+<dt>License</dt><dd><a class="link" href="https://creativecommons.org/publicdomain/zero/1.0/">CC0 1.0 Universal</a> for the English and apparatus. The Sanskrit is Shukla's 1973 edition, in SuttaCentral's transcription; the dedication does not cover it, and no license is claimed for it here.</dd>
 </dl>
 
 <h2>Textual status</h2>
-<p>The Sanskrit layer is based on Shukla 1973 (via SuttaCentral) but is not a fully diplomatic transcription. Obvious PDF/OCR extraction artifacts — chiefly intra-word whitespace breaks — have been normalized; a small number of documented restorations and supplements are recorded in the <a class="link" href="https://github.com/rforsyth/sravakabhumi-en/blob/main/notes/sanskrit-emendation-policy.md">emendation policy</a>. The English marks damaged or conjecturally reconstructed passages inline. For close philological argument, cite the segment ID and check the Sanskrit against Shukla and, where available, against the Tibetan and Chinese witnesses.</p>
+<p>The Sanskrit layer is based on Shukla 1973 (via SuttaCentral) but is not a fully diplomatic transcription. Obvious PDF/OCR extraction artifacts — chiefly intra-word whitespace breaks — have been normalized; the policy is in the <a class="link" href="https://github.com/rforsyth/sravakabhumi-en/blob/main/notes/sanskrit-emendation-policy.md">emendation policy</a>. Where the English departs from Shukla's printed text it says so inline (<code>[Lacuna]</code>, <code>[Damaged]</code>, <code>[Conjectural: …]</code>, <code>[Restored: …]</code>) with a one-line note naming the witness; the markers are defined in the <a class="link" href="https://github.com/rforsyth/sravakabhumi-en/blob/main/notes/editorial-conventions.md">editorial conventions</a>. For close philological argument, cite the segment ID and check the Sanskrit against Shukla and, where available, against the Tibetan and Chinese witnesses.</p>
+
+<h2 id="limitations">Known limitations</h2>
+<p>No Sanskritist has yet reviewed this translation, and its director does not read Sanskrit. Every section except two has been read in full, segment by segment, against Shukla's Sanskrit and Xuanzang's Chinese; sbh4.1 and sbh4.2, and parts of sbh3.2 and sbh4.3, were also collated against the critical editions of Deleanu (2006) and the Taishō Śrāvakabhūmi Study Group, which are the only ones in hand. The two longest sections, sbh1.3 and sbh2.0, have so far been read in full only in one sampled stretch each. Shukla's text also has gaps, the largest about ten pages inside sbh3.2:55.16, which are marked and not filled. The section-by-section account, the critical-edition coverage, the sample results, and the gaps are set out under <a class="link" href="https://github.com/rforsyth/sravakabhumi-en#known-limitations">Known limitations</a> in the README.</p>
 
 <h2>Contributing</h2>
 <p>Errors, alternative readings, and improvements are welcome via GitHub issues or pull requests on the source repository.</p>
@@ -588,9 +613,9 @@ def extract_description(uid: str, title: str, en_only: bool) -> str:
     paragraph when present, else a title-based fallback."""
     raw = first_note_paragraph(uid)
     if raw:
-        return _truncate(_plain_text(raw))
+        return _truncate("AI-assisted translation. " + _plain_text(raw))
     view = "English working translation" if en_only else "Sanskrit (Shukla 1973) with English"
-    return f"{title} — {view}, from Asaṅga's Śrāvakabhūmi."
+    return f"{title} — {view}, AI-assisted, from the Śrāvakabhūmi."
 
 
 def head_tags(description: str, canonical_path: str) -> str:
@@ -806,7 +831,7 @@ def build_topic(uid: str, creators: list[str]) -> tuple[str, str]:
 
     page = PAGE_TEMPLATE.format(
         title=html.escape(title),
-        subtitle=f"Śrāvakabhūmi · Sanskrit (Shukla 1973) ↔ English ({len(translations)} rendering{'s' if len(translations) != 1 else ''})",
+        subtitle="Śrāvakabhūmi · Sanskrit (Shukla 1973) ↔ AI-assisted English",
         rows=rows,
         grid_cols=grid_cols,
         column_labels=column_labels,
@@ -824,7 +849,7 @@ def build_topic(uid: str, creators: list[str]) -> tuple[str, str]:
         book_html = render_book_paragraphs(translations[0], structure)
         book_page = PAGE_BOOK_TEMPLATE.format(
             title=html.escape(title),
-            subtitle="Śrāvakabhūmi · English working translation",
+            subtitle="Śrāvakabhūmi · AI-assisted English working translation",
             paragraphs=book_html,
             uid=html.escape(uid, quote=True),
             intro=extract_intro(uid, en_only=True),

@@ -12,14 +12,14 @@
     "translation_title": "Śrāvakabhūmi",
     "translation_subtitle": "An English rendering from the Sanskrit of Shukla (1973), with translator's notes",
     "root_title": "Śrāvakabhūmi",
-    "creation_process": "AI-assisted working translation, prepared from the Karuṇeśa Śukla (1973) Sanskrit edition as hosted by SuttaCentral.",
-    "text_description": "A bilingual Sanskrit–English edition of the entire Śrāvakabhūmi (Asaṅga, 4th century CE) in working-translation form. The English is a single rendering with translator's notes.",
+    "creation_process": "The English was drafted with a large language model from Shukla's Sanskrit, cross-checked by a second model, and then reviewed section by section, also with AI assistance, against the Sanskrit, Xuanzang's Chinese translation (T1579), and, where available, the critical editions of Deleanu (2006) and the Taishō Śrāvakabhūmi Study Group. Ryan Forsyth, who does not read Sanskrit, directed the work, set the editorial policies, and is responsible for the result.",
+    "text_description": "A bilingual Sanskrit–English edition of the entire Śrāvakabhūmi in working-translation form. The English is a single rendering with translator's notes.",
     "is_published": true,
-    "publication_status": "Complete English working translation; Sanskrit complete.",
+    "publication_status": "Complete English working translation; Sanskrit as printed by Shukla 1973, with his lacunae.",
     "license_type": "Creative Commons Zero",
     "license_abbreviation": "CC0",
     "license_url": "https://creativecommons.org/publicdomain/zero/1.0/",
-    "license_statement": "This work is dedicated to the public domain under Creative Commons Zero (CC0 1.0 Universal). You may copy, reproduce, adapt, alter, translate, or otherwise make use of it without restriction or attribution. Citation is appreciated but not required.",
+    "license_statement": "The English translation and apparatus are dedicated to the public domain under Creative Commons Zero (CC0 1.0 Universal); you may copy, adapt, translate or otherwise use them without restriction or attribution. The Sanskrit root text is Karunesha Shukla's edition (1973) in the transcription hosted on SuttaCentral; the dedication does not cover it, and no license is claimed for it here.",
     "first_published": "2026",
     "editions_url": "https://github.com/rforsyth/sravakabhumi-en"
   }
