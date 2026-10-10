@@ -1,66 +1,28 @@
-# Translator's notes: sbh2.0 (Yogasthāna II — framework topics)
+# Translator's notes: sbh2.0 (The Second Yogasthāna)
 
-The framework chapter for Yogasthāna II — the categories and taxonomies that the focused practice-chapters (sbh2.1–sbh2.7) then deploy. A seventeen-question opening unfolds into the 28-person typology of the disciple-vehicle path (classified by faculty, defilement-temperament, vow, path-fruit, and trajectory), the *ālambana* schema of object-supports for both worldly and supramundane paths, instruction and the three higher trainings, the *yoga* and *manaskāra* taxonomies of mental engagement, the foundations of mindfulness, the supramundane path proper, the six reclaimed person-designations (monk, ascetic, renunciant, and so on), the four *māra*s as obstacles to practice, and the conditions under which practice bears fruit.
+The second yogasthāna. After a verse summarizing the stage of renunciation (1.1–2), the text puts seventeen questions (2.1–17) and answers each: the twenty-eight persons who go forth from that stage (2.18–19.9); the delineation of persons by eleven divisions (20.1–34.9); the object that purifies defilements, the fourth of the four objects (35.1–46.19); instruction (47.1–48.37); the three trainings (49.1–55.31); the dharmas conducive to training (56.1–59.2); loss of yoga, yoga, and attention (59.3–60.7), with the signs and the resolves (60.8–64.11); the tasks of yoga (64.12–36); the three practitioners of yoga (65.1–67.26); the cultivation of yoga, as cultivation of perception and of the thirty-seven dharmas on the side of awakening (67.27–86.57); the fruit of cultivation, the four fruits of asceticism (86.58–88.5; 88.6–88.100 return to the conduct-types and their marks); the six person-designations (89.1–93.28); the four māras and māra-actions (94.1–97.15); and the three conditions on which an undertaking is fruitful or fruitless (98.1–22). A summary verse (99.1–102.1) and the colophon (103.1) close the yogasthāna. The answer on the object begins at [sbh2.1](sbh2.1.html) 1.1, and the first three objects fill sbh2.1–sbh2.7; 35.1 resumes with the fourth, and 46.18–19 names all four and closes the answer.
 
-## Structural overview
+## Structure
 
-Yogasthāna II opens with a seventeen-question framework (paragraph 2.1–2.17) that is the table of contents for the entire second yogasthāna. Each question is answered at length in turn:
-
-1. **Persons** (¶¶2–19): the 28-person typology — faculty (mild/sharp), defilement-typing (lust/hatred/delusion/conceit/vitarka-intoxicated + balanced + slight-dust), path-stage typing (practitioner, fruit-attainer, faith-/dharma-follower, śraddhādhimukta, dṛṣṭiprāpta, kāyasākṣin, etc.), and liberation-typing (samaya-vimukta, akopya-dharman, prajñā-vimukta, ubhayatobhāga-vimukta).
-2. **Delineation of persons** (¶¶20–36): the eleven-fold classification grid by which any practitioner is positioned — by faculty, sect, conduct, vow, practice, path-fruit, application, attainment, rebirth, falling-back, and obscuration.
-3. **Object-support** (¶¶35–46): the worldly path's grossness/calmness contrast, and a brief preview of the *kleśa-viśodhana* object-support (the four noble truths) before handing off to the four-fold *ālambana* schema (*vyāpī*, *carita-viśodhana*, *kauśalya*, *kleśa-viśodhana*) that organizes sbh2.1–sbh2.7.
-4. **Instruction** (¶¶47–48): the four kinds of instruction (unperverted, graduated, from tradition, from direct realization) and the three *prātihārya* wonders.
-5. **Trainings** (¶¶49–55): the three *adhi-śikṣā* (higher virtue / higher mind / higher wisdom), the three doors of liberation (*śūnyatā/apraṇihita/animitta*).
-6. **Dharmas conducive to training** (¶¶56–64): two lists of ten dharmas — the first via antidotes to the ten adverse dharmas (perceptions of unattractiveness, impermanence, etc.), the second a constructive list (prior cause through freedom from conceit). Followed by *yoga-bhraṁśa* (the four kinds of loss of yoga), the fourfold *yoga* (desire/exertion/means/yoga proper), the four *manaskāra* (forceful/interrupted/uninterrupted/effortless), the four *nimitta* (signs), the nine *adhimokṣa* (resolves), and the four *karaṇīya* (tasks of yoga).
-7. **Practitioners of yoga** (¶¶65–67): three types — *ādikarmika* (beginner), *kṛta-paricaya* (experienced), *atikrānta-manaskāra* (one who has gone beyond mental engagement) — paired with the seven attentions at [sbh4.1](sbh4.1.html) and with the four *nirvedha-bhāgīya* (warmth, summits, patience, supreme worldly dharmas).
-8. **Foundations of mindfulness, wholesome/unwholesome dharmas, path** (¶¶68–88): body, feeling, mind treated under the *smṛtyupasthāna* framework; followed by analysis of evil unwholesome dharmas, the four concentrations of *iddhipāda* (desire/exertion/mind/investigation), the five faculties and powers, the *laukikāgra-dharmas*, and the supramundane path proper.
-9. **Stream-entry and arhatship** (¶¶87–88): the canonical fetters abandoned at each stage.
-10. **Person-designations** (¶¶89–93): the six terms (recluse, brāhmaṇa, brahma-farer, monk, ascetic, renunciant) reclaimed from general religious usage and redefined by reference to defilement-abandonment.
-11. **Māra and māra-actions** (¶¶94–97): the four māras (aggregate-, defilement-, death-, deva-son-) and the various forms their interference takes during practice.
-12. **Fruitful and fruitless undertaking** (¶¶98): the three-cause rule (faculties × instruction × concentration).
-13. **Summary verse and colophon** (¶¶99–103).
-
-The file ends at 103.1 with the colophon for Yogasthāna II. Paragraphs 104+, which appear to start Yogasthāna III, are organizational overflow that conceptually belongs to sbh3.x.
-
-## The two-track architecture
-
-Like naiṣkramyabhūmi ([sbh1.3](sbh1.3.html)), Yogasthāna II works through the *laukika*/*lokottara* dual path. But where sbh1.3 treated the *requisites* for both paths, sbh2.0 treats the *path-mechanics* themselves:
-
-- The **laukika** path is rooted in the grossness/calmness contrast (¶¶35.1–36.16). The practitioner ascends through the eight samāpattis by seeing the lower stage as both qualitatively flawed (more painful, less durable) and quantitatively more extensive in aggregates-to-be-abandoned. Defilements are abandoned stage-by-stage but not absolutely — they are subject to re-arising (36.15–16).
-- The **lokottara** path is rooted in the four noble truths (¶¶36.17–46.5). The truths are analyzed twofold: by cause-and-effect structure (suffering=effect of origin; cessation=effect of path) and by the illness-cause-health-medicine simile (40.5–12). The threefold suffering analysis (*duḥkha-duḥkhatā*, *vipariṇāma-duḥkhatā*, *saṁskāra-duḥkhatā*) at 41.4–46.5 unpacks the canonical formula "the five aggregates of clinging are suffering" — showing that the brief formula encodes all three sufferings even where only the first is named explicitly.
-
-The 28-person typology and the eleven-fold delineation framework are designed to position any individual practitioner in this two-track structure: faculty + conduct typing tells you *what kind of practitioner you are dealing with*, path-fruit + application + attainment typing tells you *where they are on the path*, and rebirth + falling-back + obscuration typing tells you *what their trajectory looks like* from here.
-
-## Cross-cutting patterns specific to sbh2.0
-
-The same general patterns established in sbh1.1–1.3 recur here. Five worth surfacing:
-
-### 1. Stilted *tatra* across every paragraph opening
-
-Almost every section opens with `tatra X katamaḥ?` — 'there, what is X?'. The pass replaces with 'Now, what is X?' or simply 'What is X?' depending on whether a topic shift is being marked. The repetition of 'There,' across 100+ paragraph openings made the original draft lurch unreadably. The smoothed version preserves the technical structure (a `tatra X katamaḥ?` definition block) while letting the English breathe.
-
-### 2. List-fragments restored as compound clauses
-
-The migration from the original sbh1 monolith left many lists fragmented into single-noun-phrase segments — e.g., *24.8–24.15* (the lust-conducted person's faculty/conduct/vow profile), *26.25–26.39* (the vitarka-conducted profile). The pass restores these as semicoloned compound clauses while preserving the segment boundaries — the reader sees one continuous typology rather than a sequence of fragments.
-
-### 3. Bracket-clarifying technical pairs and lists
-
-Throughout, technical terminology that the seventeen-question framework presupposes is restored in brackets at first occurrence: *nirvedha-bhāgīya* (warmth, summits, kṣānti, laukikāgra-dharmas) at 67.19–21; the eight *vimokṣa* at 33.9–12; the four *māra* at 94.6–7; the three *vimokṣa-mukha* at 55.17–18; the four *prātipakṣika*/*ānulomika*/*prasadanīya*/*pratyavekṣaṇīya* mental engagements at 59.136; the four *karaṇīya* of yoga at 64.17–20; the four *ālambana* at 46.19; the six *sāmīcī-dharma* (cross-reference to sbh1.3); etc.
-
-### 4. Cross-references to sbh1.1, sbh1.3, sbh2.1, sbh3.1, sbh4.1
-
-The chapter heavily presupposes earlier and later material. Cross-references added in brackets at key junctures: faculty definitions at 2.48 refer back to [sbh1.1:13](sbh1.1.html#sbh1.1:13.1); the *triśikṣā* discussion at 50.2 refers back to [sbh1.3:3](sbh1.3.html#sbh1.3:3.1); the seven attentions at 67.8 refer forward to [sbh4.1](sbh4.1.html); the nine-stage mental abiding at sbh3.1 is referenced in the *manaskāra* discussion. These cross-references are now visible in the translation, not just in the comment file.
-
-### 5. Damaged-text passages preserved with `[Damaged]` markers
-
-Paragraphs 59.38, 75.7, 80.4, 86.19, 93.10–93.15, and 93.19 have lacunae in the source. These are marked inline with `[Damaged]` and, at 93.10, with a block-level comment. The surrounding context is intact enough to follow without the missing pieces, but these segments should not be used as secure evidence for close philological claims.
-
-## Pattern of textual issues
-
-- **Scribal duplication at 98.16–98.18.** The fruitful/fruitless analysis at 98.13–98.18 repeats the same condition (faculties perfect, instruction conforming, concentration weak → fruitless) twice. Preserved in the translation but flagged in the comment at 98.1.
-- **Missing item in 20.3 enumeration of eleven divisions.** The text at 20.2 says 'eleven divisions' but 20.3–20.4 lists only ten (the *pratipatti*-division is dropped). Restored in brackets at 20.3, since paragraphs 30–31 actually unfold the missing division.
-- **Negative-list polarity flip at 42.20 (sbh1.3) repeated structurally here.** No major instance, but the standard pattern of the *avadya*/*anavadya* polarity flip recurs through the sbh2.0 person-type marks lists; corrected case-by-case in the translation.
-
-## On the *manaskāra* schemes
-
-The chapter's four-*manaskāra* schema (forceful/interrupted/uninterrupted/effortless) and the *sapta-manaskāra* (seven attentions) of [sbh4.1](sbh4.1.html) are likely two views of the same path-mechanism — the four-mode classifies *how* the engagement proceeds; the seven-fold marks *which stage* of the engagement. The relationship is not formally harmonized in the source.
+- 1.0–1.2. Heading, and a verse summarizing the stage of renunciation.
+- 2.1–2.17. The seventeen questions.
+- 2.18–19.9. The twenty-eight persons, listed (2.18–43) and defined one by one (2.44–19.9).
+- 20.1–34.9. The delineation of persons by eleven divisions (20.3–4): faculty (21.1–2), community (22.1–2), conduct, with the marks of the conduct-types (23.1–27.1), vow (28.1–29.1), practice (30.1–31.5), path-fruit (32.1–6), application (33.1–5), attainment (33.6–13), rebirth (33.14–17), falling-back (33.18–34.2), obscuration (34.3–9).
+- 35.1–46.19. The object that purifies defilements (*kleśaviśodhanam ālambanam*): by the worldly path, the grossness of the lower stages (35.1–36.16); by the supramundane path, the four truths (36.17–46.17); the four objects named and the answer closed (46.18–19).
+- 47.1–48.37. Instruction: four kinds (47.2–6), and the complete instruction, through the three wonders (48.26–37).
+- 49.1–55.31. The three trainings (49.4), higher virtue, higher mind, higher wisdom, and which of them can stand without the others (54.1–7); then the three persons who realize the truths (55.3–8), the three faculties (55.9–16), and the three doors of liberation (55.17–31).
+- 56.1–59.2. The dharmas conducive to training: ten, as antidotes to ten adverse dharmas (56.1–46), and another ten (57.1–59.2).
+- 59.3–59.66. Loss of yoga, fourfold (59.7–10).
+- 59.67–59.117. Yoga, fourfold — faith, desire, energy, means (59.70) — with sixteen aspects (59.106).
+- 59.118–60.7. Attention, fourfold: forceful, interrupted, uninterrupted, effortless (59.119); and four further attentions for one proceeding by the worldly path (59.143–60.7).
+- 60.8–62.5. The signs (*nimitta*), four (60.10).
+- 62.6–64.11. The resolves (*adhimokṣa*), nine (62.8–13).
+- 64.12–64.36. The four tasks of yoga (64.17–20).
+- 65.1–67.26. The three practitioners of yoga (65.3–4): the beginner, twofold (66.1–67.6), the experienced (67.7–8), the one gone beyond attention (67.9–14); the three again, by the roots conducive to penetration and entry into the fixed course of rightness (67.15–26).
+- 67.27–86.57. The cultivation of yoga, twofold (67.30): cultivation of perception (67.31–71), and cultivation of the thirty-seven dharmas on the side of awakening (67.72–86.57), listed at 67.76–92 and then taken group by group: the four foundations of mindfulness (68.1–77.71), the four right exertions (78.1–79.140), the four bases of psychic power (80.1–86), the five faculties and five powers (81.1–82.6), the wholesome roots conducive to penetration (82.7–83.3), the seven awakening-factors (83.4–17), the noble eightfold path (83.18–86.57).
+- 86.58–88.5. The fruit of cultivation: the four fruits of asceticism (86.60–62); asceticism is the path and its fruit the abandonment of defilements (86.66); stream-entry (to 86.85), once-returning and non-returning (87.1–8), arhatship (88.1), and the fetters abandoned at each of the last three (88.2–5).
+- 88.6–88.100. Which object each conduct-type takes (88.6–14); the marks of the person of even-balanced conduct and of the person of slight dust (88.15–100).
+- 89.1–93.28. The six person-designations (89.2): recluse, four kinds (89.3–44); brāhmaṇa, three (90.1–13); brahma-farer, three (90.14–23); monk, five (91.1–6); ascetic, three (92.1–18); renunciant, two (93.1–28).
+- 94.1–97.15. The four māras (94.6–7), each defined (94.8–96.6); māra-actions (96.7–97.15).
+- 98.1–98.22. The fruitless and the fruitful undertaking, by three conditions: faculties, instruction, concentration (98.2–4, 98.19–22).
+- 99.1–102.1. Summary verse. 103.1. Colophon of the second yogasthāna.

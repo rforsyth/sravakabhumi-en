@@ -1,10 +1,9 @@
 {
-  "sbh2.3:1.4": "Three intensities preserved: *mṛdu* (mild), *madhya* (middling), *adhimātra* (strong). The resolve is graduated, not all-or-nothing.",
-  "sbh2.3:1.11": "*Maitrī* defined as the compound of object (*ālambana* — the three categories of beings) and operator (*ālambaka* — *hitādhyāśaya* + *adhimokṣa*). Not a feeling; not a wish; a *resolve* on a specific cognitive object with a specific aspiration backing it.",
-  "sbh2.3:2.3": "Asanga is unpacking the standard sutta-formula *maitrī-sahagatena cittena... avaireṇa asapatnena avyābādhena* (Pali: *mettāsahagatena cetasā... averena avyāpajjena avirodhena*; MN 7 and many other places). The local explanation uses *asamarthatā* in the sense of non-opposition rather than literal incapacity, so the English avoids 'rivalry' here.",
-  "sbh2.3:3.2": "The intensity-gradation mapped onto cosmological structure: mild = *kāmāvacara* (desire-realm pleasure), middling = first-or-second-jhāna *prīti-sukha* (rapture-and-ease), strong = third-jhāna *niṣprītika-sukha* (ease without rapture). The root prints *pramāṇena*, but the standard brahmavihāra formula requires *apramāṇena* ('immeasurable'); translation follows the formula while leaving the Sanskrit unchanged. A practitioner can wish for others a happiness they themselves have access to.",
-  "sbh2.3:3.5": "The Sanskrit phrase *adhimucyasyānirvo* in the source is corrupt; reading uncertain. The functional sense is 'having resolved... having attained, he abides' — the standard sutta formula for absorption-grade radiation. A Sanskritist with the Tibetan parallel could resolve the reading.",
-  "sbh2.3:4.4": "*aduḥkhāsukhita* — literally 'non-suffering-non-happy,' the neutral baseline. The brahmavihāra division of labor: this neutral being is the object of *maitrī*; the suffering one is the object of *karuṇā*; the happy one is the object of *muditā*.",
-  "sbh2.3:4.5": "The source has *aduḥkhito* (non-suffering) where context suggests *sukhito* (happy); preserved as-is. The classification distinguishes the suffering being (→ karuṇā) from the happy being (→ muditā); the Sanskrit reading is likely correct as 'non-suffering' = 'happy.'",
-  "sbh2.3:5.1": "*Vyāpāda-carita* is kept as ill-will-conduct, distinct from the broader *dveṣa-carita* hatred-conduct label used in the five-practice summary. *Pratanu karoti* — 'attenuates,' literally 'makes thin.' The verb is precise: *maitrī* practice does not eliminate ill-will in a single move but progressively thins it. Same gradual-pacification model as the nine mental abidings."
+  "sbh2.3:2.3": "Printed *asampannena*; read *asapatnena* (Xuanzang 無敵, T1579 juan 26).",
+  "sbh2.3:2.5": "Printed *asamarthatayā*; read *asapatnatayā* (Xuanzang 無敵對, T1579 juan 26).",
+  "sbh2.3:2.6": "Printed *asamarthatā*; read *asapatnatā* (Xuanzang 無敵對, T1579 juan 26).",
+  "sbh2.3:2.7": "Printed *apakārāviṣaṣṭanārthena*, corrupt; the sense follows Xuanzang 不欲不饒益義 (T1579 juan 26).",
+  "sbh2.3:3.2": "Printed *pramāṇena*; read *apramāṇena* (Xuanzang 無量, T1579 juan 26).",
+  "sbh2.3:3.5": "Printed *adhimucyasyānirvopasampadya*; read *adhimucya spharitvopasampadya* (Xuanzang 勝解遍滿具足住, T1579 juan 26).",
+  "sbh2.3:4.5": "Printed *aduḥkhito*; read *sukhito* (4.8; Xuanzang 有樂, T1579 juan 26)."
 }
