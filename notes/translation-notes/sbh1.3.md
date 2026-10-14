@@ -10,7 +10,7 @@ The stage of renunciation (*naiṣkramya*), the longest section of the first yog
 - 32.1–35.66. Restraint of the senses (the list at 2.3 omits it; see the note there).
 - 36.1–41.1. Knowing the right measure in food.
 - 42.1–42.229. Application to wakefulness in the early and late watches of the night.
-- 43.1–55.1. Dwelling with full awareness (to 47.66, then the sequence of its practice from 48.1) and association with good friends, whose eight factors are summed up at 54.51–53 (summary meaning 54.55–55.1).
+- 43.1–55.1. Dwelling with full awareness (to 47.66, then the sequence of its practice from 48.1) and association with good friends, whose eight factors are summed up at 54.51–53 (summary meaning 54.55–55.1). The manuscript breaks off at 52.2 and resumes within the second factor; the lost passage survives in Xuanzang.
 - 56.1–63.39. Hearing-and-reflection on the true dharma: the true dharma as the twelve genres of the word (56.5–62.17), assigned to the three baskets at 62.4–14; hearing and reflection on it (62.18–63.39), including the four reasonings (62.43–63.37).
 - 64.1–65.90. Non-obstacle, defined as the absence of the inward and outward obstacles the text lists (64.2–6, 65.89–90).
 - 66.1–72.32. Generosity.

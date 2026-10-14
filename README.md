@@ -41,15 +41,19 @@ In the sections marked "in full" below, every segment's English was read against
 | Section | Segments | Read against the Sanskrit and Xuanzang | Collated against a critical edition |
 |---|---|---|---|
 | sbh1.1, sbh1.2 | 195, 122 | in full | none in hand |
-| sbh1.3 | 2,071 | **sampled**: 37.1–39.147 (215 segments) | none in hand |
-| sbh2.0 | 2,066 | **sampled**: 77.1–79.140 (217 segments) | none in hand |
+| sbh1.3 | 2,071 | in full | none in hand |
+| sbh2.0 | 2,066 | in full | none in hand |
 | sbh2.1–2.7 | 755 | in full | none in hand |
 | sbh3.0, sbh3.1 | 214, 72 | in full | none in hand |
 | sbh3.2 | 782 | in full | ŚBh-Gr III-(6), for 55.9–58.1 only |
 | sbh4.1, sbh4.2 | 221, 228 | in full | Deleanu 2006, throughout |
 | sbh4.3 | 561 | in full | Deleanu 2006 for ¶1–2; ŚBh-Gr IV(1)–IV(2) for 3.1–18.5; none exists for 18.6 to the end |
 
-sbh1.3 and sbh2.0 are 57% of the text. In each, one stretch of about 215 segments, chosen at random, was read in full; the rest has had only automated checks (bracketed forms, glossary consistency), corrections at the places that the audit of the translator's notes had flagged, and, in sbh1.3, the re-pairing of two stretches whose English had slipped one segment from its Sanskrit. In the samples, about 11 segments per hundred in sbh2.0 and 8 per hundred in sbh1.3 needed a correction of sense (wrong or misleading, not style), most often where the English had rendered a corrupt printed word as if it were sound. A reader should expect the unread remainder of both sections to be in about that state. A full read of both is planned, and this section will be updated when it is done.
+sbh1.3 and sbh2.0, 57% of the text, were read in full last, after a sampled stretch of each. About 8 segments per hundred in sbh1.3 and 10 per hundred in sbh2.0 needed a correction of sense (wrong or misleading, not style), close to what the samples had predicted; most often the English had rendered a corrupt printed word as if it were sound. All have been corrected.
+
+### The Sanskrit text against Shukla's print
+
+The Sanskrit shown here is SuttaCentral's transcription of Shukla's edition. It was collated against an OCR of Shukla's printed pages for the whole text, and every place where the two differed by more than a few letters was checked on the scan. At 25 places the transcription had dropped a printed phrase or sentence, spliced in text from elsewhere, or duplicated a line; each was brought back to the print, and the English translates the print. Shukla's own corrections and queried readings are left as he printed them.
 
 ### Critical editions: what exists, what is in hand
 
@@ -66,7 +70,7 @@ sbh1.3 and sbh2.0 are 57% of the text. In each, one stretch of about 215 segment
 
 ### Gaps in Shukla's text
 
-Shukla's edition has gaps where the manuscript photographs were damaged or a passage was skipped. They are marked `[Lacuna]` in the English and nothing is supplied for them. The largest is at Shukla p. 432 line 4, inside sbh3.2:55.16: about ten pages are missing, from the resolve on the space-element, through the whole beginner's instruction in mindfulness of breathing (*ānāpānasmṛti*), to the opening of the section's summary. ŚBh-Gr III-(6) (2013, pp. (78)–(88)) supplies the passage from two manuscripts, and Xuanzang has it at T1579 juan 32 (463c27–464c06); it is not translated here. The other gaps are shorter: the opening of sbh1.1 (the manuscript begins mid-list), the end of sbh1.1 ¶26, the closing block of sbh4.3 (29.44–29.65, where the leaf is damaged), and a number of lost clauses and list items that Xuanzang preserves.
+Shukla's edition has gaps where the manuscript photographs were damaged or a passage was skipped. They are marked `[Lacuna]` in the English and nothing is supplied for them. The largest is at Shukla p. 432 line 4, inside sbh3.2:55.16: about ten pages are missing, from the resolve on the space-element, through the whole beginner's instruction in mindfulness of breathing (*ānāpānasmṛti*), to the opening of the section's summary. ŚBh-Gr III-(6) (2013, pp. (78)–(88)) supplies the passage from two manuscripts, and Xuanzang has it at T1579 juan 32 (463c27–464c06); it is not translated here. The other gaps are shorter: the opening of sbh1.1 (the manuscript begins mid-list), the end of sbh1.1 ¶26, a manuscript break at sbh1.3:52.2 (the close of the account of full awareness and the opening of the account of good friends, which Xuanzang preserves), the closing block of sbh4.3 (29.44–29.65, where the leaf is damaged), and a number of lost clauses and list items that Xuanzang preserves.
 
 ### What the markers mean
 

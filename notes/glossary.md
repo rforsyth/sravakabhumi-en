@@ -14,6 +14,8 @@ One rendering per term, applied throughout (conventions §9).
 
 | Term | Rendering |
 |---|---|
+| *śamatha*, *vipaśyanā* | kept in Sanskrit (conventions §2); not "calm" (reserved for *śānta*) or "insight" |
+| *prahāṇa* | "abandonment" (of defilements; also *prahāṇārāma* "delighting in abandonment", paired with cultivation); **"exertion"** where it names a practice listed with retreat (*pratisaṁlayana*) or cultivation (sbh1.3:11.41, 50.2, 65.15; sbh2.0:56.11), as in *samyakprahāṇa* "right exertions" |
 | *manaskāra* | attention |
 | *praśrabdhi* | pliancy |
 | *dauṣṭhulya* | encumbrance |
