@@ -5,7 +5,9 @@ Each file contains the English translation, with clauses joined into paragraphs
 by the source's `||` boundary (encoded in the segment IDs). Filenames are
 ordinal-prefixed so they sort in canonical reading order.
 
-Output is a local build artifact, not committed to the repo (see .gitignore).
+Output is committed: it is the published plain-text edition that downstream
+users vendor at a pinned commit, so rebuild it in the same commit as any
+translation change.
 
 Usage:
     python3 scripts/build_markdown.py

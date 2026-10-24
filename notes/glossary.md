@@ -19,7 +19,7 @@ One rendering per term, applied throughout (conventions §9).
 | *manaskāra* | attention |
 | *praśrabdhi* | pliancy |
 | *dauṣṭhulya* | encumbrance |
-| *vastu* | thing (not "substance"; "object" is reserved for *ālambana*) |
+| *vastu* | entity, for the real referent a teaching points to (the second investigation-subject; *jñeya-vastu* "knowable entity"; *vastu-paryantatā* "full extent of the entity"; *vastu-mātra* "mere entity"); *ṣaḍ-vastu*, the list-word, is "the six investigation-subjects"; "thing" for an ordinary item (a lust-arousing thing, gifts, tools). Not "substance"; "object" is reserved for *ālambana* |
 | *ālambaka* | the apprehending [mind] |
 | *āyatana* (the twelve) | sense-base; *āyatana-kauśalya* "skill-in-sense-bases" |
 | formless *āyatana*s | sphere of infinite space, of infinite consciousness, of nothingness, of neither-perception-nor-non-perception |
@@ -61,7 +61,7 @@ Rendered **"unattractive"** / **"unattractiveness"**. *Aśubhā* as the name of 
 
 ## *ālambana* — "object"
 
-The object of cognition or meditation, what the mind takes as its referent. Rendered **"object"**; not "support". *Ālambana-vastu* is **"object"** (sbh2.1:1.3 "four objects (*ālambana-vastu*)"), or "the thing taken as object" where the *vastu* is in focus. *Vastu* on its own is "thing" (conventions §9).
+The object of cognition or meditation, what the mind takes as its referent. Rendered **"object"**; not "support". *Ālambana-vastu* is **"object"** (sbh2.1:1.3 "four objects (*ālambana-vastu*)"), or "the thing taken as object" where the *vastu* is in focus. *Vastu* on its own is "entity" in its technical sense and "thing" for an ordinary item (see the *vastu* entry).
 
 ### Worked examples
 
@@ -91,9 +91,25 @@ Rendered **"bringing forth"** where the verbal force is dominant (sbh4.2:13.1 "t
 - *janapada* — "country"; *madhya-janapada* "Middle Country" (sbh1.1:1.8)
 - *gati* — "resort" (sbh1.1:1.8 "wherever the resort of holy persons lies")
 - *ālambana* — "object" (see entry above)
-- *vastu* — "thing" (conventions §9)
+- *vastu* — "entity" / "thing" (see entry)
 - *dhātu* — "element" (the eighteen elements; sbh2.7:12.4)
 - *bhūmi* — "plane" (*samāhita-bhūmi* "concentrated plane"; "the lower planes"); "stage" for the divisions of the work
+
+## *vastu* — "entity" / "the six investigation-subjects" / "thing"
+
+Three senses, three renderings. Revised 2026-10-23; before that "thing" throughout.
+
+1. **The technical referent: "entity".** The real item a teaching points to, as against its name or meaning (*artha*) and before anything is said about its characteristics. This is the second of the six investigation-subjects (sbh3.2:4.4 "meaning, entity (*vastu*), characteristic, side, time, and reasoning"; 5.4 "The entity is twofold: inward and outward"), and the same sense in *jñeya-vastu* **"knowable entity"** (sbh2.1:4.1; sbh3.2:31.9 "the image conformable to the knowable entity"), *vastu-paryantatā* **"the full extent of the entity"** (sbh2.1:7.1; sbh3.2:6.8), *vastu-mātra* **"mere entity"** (sbh2.4:1.2; sbh2.7:11.3 "only the entity"), and the inward and outward *vastu* of the impermanence contemplation (sbh4.3:6.7 "the inward entity is the six sense-bases; the outward entity is sixteenfold", with the sixteen as "earth-entity", "park-entity", and so on). One word is used for all of these so the reader can see that the pervasive object of sbh2.1, the second investigation-subject of sbh3.2, and the inward/outward sweep of sbh4.3 are one idea.
+2. **The list-word: "the six investigation-subjects".** *ṣaḍ-vastu*, *ṣaḍ-vastu-prabheda* (sbh3.2:3.1, 4.1, 4.3, 6.1, 7.1, 17.21, 29.6, 31.14; sbh4.1:5.7, 13.1; sbh4.2:1.5). The Sanskrit uses *vastu* both for the list and for its second member; rendering the two alike ("six kinds of things" / "the thing") read as confusion in English, so the list-word takes the descriptive phrase.
+3. **An ordinary item: "thing".** A lust-arousing thing (sbh2.0:3.2), the things one gives (sbh1.3:69–72), the tools of a craft (sbh3.2:45.2), the six things possessed (sbh4.3:18.36).
+
+Why "entity" and not "thing" or "substance". Deleanu has "thing" for the second investigation-subject and "[real] thing" / "thing-in-itself" for *vastu* and *vastu-mātra* (2006, 3.28.2.1.2 and n. 106–107, after Frauwallner's *Ding an sich*); Xuanzang has 事 (義、事、相、品、時、理, T1579 juan 30). "Thing" is faithful but too weak to register as a term in a practice manual, and it collides with the list-word. "Substance" fits the contrast with meaning (substance against wording) but in the demonstrations the word is a locatable count noun ("an outward *vastu*", sbh3.2:19.2; "lovingkindness in the *vastu*", 19.3), where "substance" slides to underlying stuff, which this school denies. "Entity" is the usual English for the Tibetan translators' *dngos po*, carries a technical register, works in every sentence the text needs, and says nothing about permanence. Glossed once, at sbh3.2:4.4.
+
+### Adjacent terms (not to be conflated)
+
+- *ālambana* — "object" (see entry above)
+- *artha* — "meaning"; the first investigation-subject, paired against *vastu* as description against referent
+- *dravya* — not used in this text; would be "substance"
 
 ## *audārika* / *audārikatā* — "gross" / "grossness"
 

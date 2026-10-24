@@ -83,14 +83,14 @@ Each English segment translates its own root segment. Where a stretch is offset,
 
 ## 9. Terminology
 
-Controlled renderings are in `glossary.md`. Each term has one rendering. Where the text has drifted, the glossary rendering is applied throughout. Settled 2026-10-07:
+Controlled renderings are in `glossary.md`. Each term has one rendering. Where the text has drifted, the glossary rendering is applied throughout. Settled 2026-10-07; *vastu* revised 2026-10-23:
 
 | Term | Rendering |
 |---|---|
 | *manaskāra* | attention |
 | *praśrabdhi* | pliancy |
 | *dauṣṭhulya* | encumbrance |
-| *vastu* | thing (not "substance"; "object" is reserved for *ālambana*) |
+| *vastu* | entity, for the real referent a teaching points to (the second investigation-subject; *jñeya-vastu* "knowable entity"; *vastu-paryantatā* "full extent of the entity"; *vastu-mātra* "mere entity"); *ṣaḍ-vastu*, the list-word, is "the six investigation-subjects"; "thing" for an ordinary item (a lust-arousing thing, gifts, tools). Not "substance"; "object" is reserved for *ālambana* |
 | *ālambaka* | the apprehending [mind] |
 | *āyatana* (the twelve) | sense-base |
 | formless *āyatana*s | sphere of … |
